@@ -5,32 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Tech Briefing | 2026-04-16</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 980px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color: #222; }
-    h1, h2 { color: #111; }
-    .summary { background: #f4f7fb; border-left: 4px solid #2563eb; padding: 16px; margin: 20px 0 30px; }
-    .item { margin: 28px 0; padding-bottom: 20px; border-bottom: 1px solid #e5e7eb; }
-    .sources a { display: block; margin: 6px 0; color: #0b57d0; }
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
   </style>
 </head>
 <body>
-  <h1>Daily Tech Briefing</h1>
-  <p>날짜: 2026-04-16</p>
-  <div class="summary">
-    <strong>오늘의 핵심 포인트</strong>
-    <ul>
-      <li>이 페이지는 GitHub Pages용 기술 섹션 초기 샘플 페이지입니다.</li>
-      <li>앞으로 날짜별 데일리 테크 뉴스가 이 경로에 누적됩니다.</li>
-      <li>Discord 발송용 리포트와 별도로 Git 아카이브를 유지합니다.</li>
-    </ul>
-  </div>
-  <div class="item">
-    <h2>기술 섹션 초기화 완료</h2>
-    <p>GitHub 저장소에 daily tech news 아카이브를 위한 <code>tech/</code> 섹션을 생성했습니다. 이제 이 영역에 날짜별 HTML 리포트를 누적할 수 있습니다.</p>
-    <p>앞으로는 Discord용 리포트와 GitHub Pages용 리포트를 분리 운용하여, 메시지 전송 실패와 저장소 반영 실패가 서로 영향을 덜 주도록 구성하는 것이 목표입니다.</p>
-    <p><strong>왜 중요한가:</strong> 기술 브리핑의 장기 보관, 검색, 링크 공유가 쉬워집니다.</p>
-    <div class="sources">
-      <a href="https://github.com/jmkim-ntels/jmkim-ntels.github.io">GitHub Repository</a>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-04-16 (목) · 확인 가능한 공식 발표 중심으로 정리</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>개발자 도구는 이제 단일 에이전트보다, 역할 분리된 다중 에이전트 운영으로 빠르게 이동하고 있습니다.</li>
+        <li>결제와 보안 영역에서는 장기 자격증명 축소, 정책 세분화, 향후 결제 흐름 명시 같은 통제 강화가 핵심 흐름입니다.</li>
+        <li>AI 인프라 경쟁은 모델 성능 자체보다, 추론 비용과 운영 효율을 얼마나 낮추느냐로 무게중심이 옮겨가고 있습니다.</li>
+      </ul>
     </div>
+
+    <div class="news-item">
+      <h2>1. Google, Gemini CLI에 서브에이전트 기능 추가</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 Gemini CLI에 서브에이전트(subagents) 기능을 도입했다고 발표했습니다. 각 서브에이전트는 별도 컨텍스트, 별도 시스템 지침, 제한된 도구 집합을 가진 채 독립적으로 작업하고, 결과만 메인 세션으로 반환합니다. Google은 이를 통해 복잡한 작업을 병렬로 분산하고 메인 세션의 컨텍스트 오염을 줄일 수 있다고 설명했습니다. 또한 Markdown과 YAML 기반 정의 파일로 팀 또는 저장소 단위의 커스텀 에이전트를 만들 수 있도록 했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트 제품군이 커질수록 단일 대화창에 모든 실행 로그와 문맥이 쌓이는 문제가 커졌는데, 이번 기능은 그 병목을 구조적으로 줄이려는 접근입니다. 특히 코드 탐색, 테스트, 조사, 리팩터링 제안 같은 업무를 분리해 병렬 처리할 수 있어, 개발자용 CLI 경쟁에서 중요한 차별점이 될 가능성이 큽니다. 다른 AI 코딩 도구들도 유사한 멀티에이전트 오케스트레이션 압박을 더 크게 받을 것으로 보입니다.</p>
+      <p class="why">왜 중요한지: AI 도구 경쟁이 "모델 하나의 성능"에서 "여러 에이전트를 얼마나 효율적으로 조직하느냐"로 옮겨가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://developers.googleblog.com/subagents-have-arrived-in-gemini-cli/" target="_blank" rel="noopener">Google Developers Blog, Subagents have arrived in Gemini CLI</a>
+        <a href="https://geminicli.com/docs/core/subagents/" target="_blank" rel="noopener">Gemini CLI Docs, Subagents</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. Google Pay API, merchant initiated transactions 지원 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 Google Pay API에 merchant initiated transactions, 즉 가맹점 주도 후속 결제를 더 명확하게 표현할 수 있는 구조를 추가했습니다. 이번 업데이트는 반복 결제, 미래 시점 청구, 잔액 자동 충전 같은 시나리오를 위한 객체를 새로 제공하며, 향후 과금 조건을 더 세밀하게 명시할 수 있게 합니다. Google은 이를 통해 사용자 투명성을 높이고, 거래 거절을 줄이며, 토큰 갱신 이벤트를 더 안정적으로 처리할 수 있다고 설명했습니다. 구독형 서비스나 예약, 선주문, 자동 충전형 서비스 운영사에 특히 직접적인 변화입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>그동안 지갑 기반 결제는 즉시 결제 흐름에는 강했지만, 이후 발생하는 가맹점 주도 청구의 의도와 조건을 충분히 드러내기 어려운 한계가 있었습니다. 이번 변화는 결제 실패율과 사용자 분쟁 가능성을 낮추는 쪽으로 작동할 가능성이 크고, 정기 과금 사업자 입장에서는 결제 UX와 운영 통제를 동시에 개선할 여지가 생깁니다. 결제 인프라 사업자 사이에서도 미래 청구 조건의 명시성과 토큰 생애주기 관리가 더 중요해질 흐름입니다.</p>
+      <p class="why">왜 중요한지: 구독과 자동 청구 비즈니스에서는 결제 승인률과 투명성이 매출 안정성에 바로 연결됩니다.</p>
+      <div class="sources">
+        <a href="https://developers.googleblog.com/new-enhancements-for-merchant-initiated-transactions-with-the-google-pay-api/" target="_blank" rel="noopener">Google Developers Blog, MIT enhancements for the Google Pay API</a>
+        <a href="https://developers.google.com/pay/api/web/reference/request-objects" target="_blank" rel="noopener">Google Pay API Reference</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. GitHub, Copilot Cloud Agent를 조직 단위로 선별 활성화 가능하게 변경</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 Copilot Cloud Agent를 엔터프라이즈 전체 일괄 정책이 아니라, 특정 조직만 선별해 활성화할 수 있도록 정책 범위를 세분화했습니다. 관리자들은 새 REST API 엔드포인트 또는 AI Controls 페이지를 통해 조직별 허용 목록을 관리할 수 있습니다. 특히 organization custom properties를 활용해 파일럿 대상 조직을 고를 수 있게 한 점이 눈에 띕니다. GitHub는 이를 통해 선택된 팀부터 단계적으로 도입하고 확대하는 운영이 가능해졌다고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대기업은 생성형 AI 도구를 한 번에 전사 배포하기보다, 보안과 거버넌스 검토가 끝난 조직부터 제한적으로 적용하는 경우가 많습니다. 이번 변경은 기술 자체보다 도입 통제와 내부 승인 프로세스를 반영한 제품 진화로 볼 수 있습니다. Copilot 에이전트 기능이 실제 현업 도구로 확산되려면 이런 세분화된 관리 정책이 필수라서, 기업용 AI 관리 콘솔 경쟁도 더 치열해질 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 엔터프라이즈 AI 도입의 핵심은 성능보다도 "누가, 어디서, 어떤 범위로 쓸 수 있나"를 정교하게 통제하는 능력입니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-04-15-enable-copilot-cloud-agent-via-custom-properties/" target="_blank" rel="noopener">GitHub Changelog, Enable Copilot cloud agent via custom properties</a>
+        <a href="https://docs.github.com/enterprise-cloud@latest/rest/copilot/copilot-coding-agent-management?apiVersion=2026-03-10" target="_blank" rel="noopener">GitHub REST API docs</a>
+        <a href="https://docs.github.com/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-agents/manage-copilot-cloud-agent" target="_blank" rel="noopener">GitHub enterprise docs</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. GitHub, Dependabot와 코드 스캐닝에 조직 단위 OIDC 인증 지원 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 Dependabot와 code scanning이 조직 수준의 private registry 설정에서 OpenID Connect, OIDC 기반 인증을 지원한다고 발표했습니다. 이제 장기 비밀값을 저장소 시크릿으로 배포하는 대신, 클라우드 ID 제공자에서 단기 자격증명을 발급받는 방식으로 전환할 수 있습니다. 현재 AWS CodeArtifact, Azure DevOps Artifacts, JFrog Artifactory가 지원되며, Cloudsmith와 Google Artifact Registry 지원도 예고됐습니다. 이 기능은 github.com에서 일반 제공 상태이며 GitHub Enterprise Server 3.22에도 포함될 예정입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>소프트웨어 공급망 보안에서는 "시크릿을 덜 저장하는 것" 자체가 핵심 방어 전략이 되고 있습니다. GitHub Actions에서 확산된 OIDC 페더레이션 모델이 이제 의존성 관리와 보안 분석 영역까지 넓어지고 있다는 점이 중요합니다. 보안팀 입장에서는 자격증명 수명과 배포 범위를 줄일 수 있고, 플랫폼팀은 레지스트리 접근 정책을 조직 차원에서 일관되게 운영하기 쉬워집니다.</p>
+      <p class="why">왜 중요한지: 저장된 장기 비밀값을 줄이는 것은 공급망 공격면을 직접 줄이는 가장 실용적인 보안 개선 중 하나입니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-04-14-oidc-support-for-dependabot-and-code-scanning/" target="_blank" rel="noopener">GitHub Changelog, OIDC support for Dependabot and code scanning</a>
+        <a href="https://docs.github.com/code-security/how-tos/secure-your-supply-chain/manage-your-dependency-security/configuring-access-to-private-registries-for-dependabot" target="_blank" rel="noopener">Dependabot OIDC docs</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. AWS, Trainium과 vLLM 기반 speculative decoding으로 LLM 추론 비용 절감 사례 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 Trainium 기반 환경에서 speculative decoding을 적용해 decode-heavy LLM 추론을 가속하는 방법과 벤치마크를 공개했습니다. 설명에 따르면 작은 draft model이 여러 토큰을 먼저 제안하고, target model이 이를 한 번에 검증하는 방식으로 직렬 디코딩 단계를 줄일 수 있습니다. AWS는 특정 워크로드에서 토큰 생성 속도를 최대 3배까지 높이고 출력 토큰당 비용을 낮출 수 있다고 제시했습니다. 또한 Qwen3 계열 모델과 vLLM, Kubernetes, Neuron 기반 스택에서 재현 가능한 튜닝 포인트도 함께 소개했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>생성형 AI 서비스가 커질수록 입력보다 출력 토큰이 더 많은 워크로드에서 추론비가 빠르게 커지는데, 이번 글은 그 병목이 모델 자체보다 디코딩 과정에 있음을 다시 보여줍니다. 즉, 이제 인프라 경쟁은 더 큰 모델을 올리는 것만이 아니라 같은 품질을 더 낮은 비용과 더 낮은 지연으로 제공하는 쪽으로 가고 있습니다. 클라우드 사업자와 추론 엔진 업체 모두 speculative decoding 같은 시스템 최적화를 전면에 내세우게 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 서비스 사업자에게는 모델 성능 못지않게 추론 단가와 응답 지연이 수익성을 결정합니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/blogs/machine-learning/accelerating-decode-heavy-llm-inference-with-speculative-decoding-on-aws-trainium-and-vllm/" target="_blank" rel="noopener">AWS Machine Learning Blog</a>
+        <a href="https://arxiv.org/abs/2211.17192" target="_blank" rel="noopener">Speculative Decoding paper</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
   </div>
 </body>
 </html>
