@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Tech Briefing - 2026-04-03</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121933;
+      --text: #edf2ff;
+      --muted: #a8b3cf;
+      --accent: #7cc4ff;
+      --line: #243050;
+      --good: #9be7b3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #0f1730 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .hero {
+      padding: 24px;
+      background: rgba(18,25,51,.88);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.25);
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    .sub { color: var(--muted); font-size: 14px; }
+    .grid { display: grid; gap: 16px; }
+    .card {
+      background: rgba(18,25,51,.88);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    h2 { margin: 0 0 12px; font-size: 20px; color: var(--accent); }
+    p { margin: 8px 0; }
+    .why {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      color: var(--good);
+      font-weight: 600;
+    }
+    .src {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    code {
+      background: rgba(255,255,255,.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Daily Tech Briefing</h1>
+      <div class="sub">2026-04-03 06:30 KST 기준 · 전일(2026-04-02)까지 확인된 AI / OpenAI / 빅테크 핵심 이슈 4선</div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1) OpenAI, 1,220억 달러 신규 자금 조달 마감</h2>
+        <p>OpenAI는 3월 31일 기준 1,220억 달러 규모의 신규 자금 조달을 완료했고, 포스트머니 기준 기업가치는 8,520억 달러로 제시했습니다. 회사는 이 자금을 차세대 컴퓨트 인프라 확대, 글로벌 서비스 확장, 그리고 ChatGPT·Codex·엔터프라이즈 AI 수요 대응에 쓰겠다고 밝혔습니다. 발표문에서는 월 매출 20억 달러 수준까지 성장했다고도 언급하며, 소비자·기업·개발자 생태계를 동시에 키우는 전략을 강조했습니다.</p>
+        <div class="why">왜 중요한가: AI 경쟁의 핵심이 모델 자체뿐 아니라 자본·컴퓨트·배포망으로 이동하고 있음을 보여줍니다.</div>
+        <div class="src">출처: OpenAI 공식 발표(2026-03-31), Reuters AI newsletter/coverage(2026-04-01)</div>
+      </article>
+
+      <article class="card">
+        <h2>2) OpenAI, Sora 서비스 종료 일정 공식화</h2>
+        <p>OpenAI 도움말 문서에 따르면 Sora 웹·앱 경험은 2026년 4월 26일 종료되고, Sora API는 2026년 9월 24일 종료됩니다. 이용자에게는 종료 전 라이브러리 콘텐츠를 직접 다운로드하거나 Privacy Portal을 통해 데이터 내보내기를 진행하라고 안내했습니다. 즉, 생성형 비디오 제품군에서도 선택과 집중이 본격화되고 있다는 신호로 읽힙니다.</p>
+        <div class="why">왜 중요한가: AI 제품 경쟁이 ‘많이 내놓기’에서 ‘수익성과 전략 적합성 중심의 정리’ 단계로 넘어가고 있습니다.</div>
+        <div class="src">출처: OpenAI Help Center(2026-04-02 확인)</div>
+      </article>
+
+      <article class="card">
+        <h2>3) Google, 3월 AI 업데이트 묶음 공개… Gemini 전환과 일상형 AI 강화</h2>
+        <p>Google은 4월 1일 공개한 3월 AI 업데이트 요약에서 Search Live 확대, Personal Intelligence 접근성 강화, Docs·Sheets·Slides·Drive의 AI 기능 확대를 정리했습니다. 또한 다른 AI 앱에서 Gemini로 대화와 선호를 옮기기 쉽게 하는 전환 도구도 강조했습니다. 포인트는 ‘더 똑똑한 모델’ 자체보다, 사용자의 맥락을 읽고 업무·검색·지도 등 기존 제품 안에 스며드는 AI 경험을 넓히는 데 있습니다.</p>
+        <div class="why">왜 중요한가: 빅테크 승부처가 단일 챗봇보다 생산성 도구와 검색·모바일 플랫폼에 AI를 얼마나 자연스럽게 심느냐로 옮겨가고 있습니다.</div>
+        <div class="src">출처: Google Blog / The Keyword(2026-04-01)</div>
+      </article>
+
+      <article class="card">
+        <h2>4) 빅테크 4사, 2026년 AI 인프라 투자 6,500억 달러 전망</h2>
+        <p>Reuters는 2월 말 Bridgewater 분석을 인용해 Alphabet, Amazon, Meta, Microsoft가 2026년에 AI 관련 인프라 확장에 약 6,500억 달러를 공동 투자할 것으로 전망했습니다. 수요 둔화 우려가 남아 있음에도, 하이퍼스케일러들은 데이터센터·칩·전력·네트워크를 공격적으로 늘리는 쪽으로 움직이고 있습니다. 시장의 초점도 이제 모델 발표 못지않게 누가 더 오래 인프라 투자를 버틸 수 있느냐에 맞춰지고 있습니다.</p>
+        <div class="why">왜 중요한가: AI 경쟁의 진입장벽이 더 높아지면서, 자본력 있는 소수 플랫폼 중심으로 시장이 굳어질 가능성이 커집니다.</div>
+        <div class="src">출처: Reuters(2026-02-23, 전일 기준 여전히 유효한 핵심 맥락)</div>
+      </article>
+    </section>
+
+    <div class="footer">
+      메모: 이번 브리핑은 요청에 따라 3~5개 핵심 뉴스만 선별했고, 확인 가능한 공식 발표/주요 외신 기반 내용만 간단히 정리했습니다.
+    </div>
+  </div>
+</body>
+</html>
