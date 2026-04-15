@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Tech Briefing - 2026-04-04</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1020;
+      --card: #121933;
+      --text: #eef2ff;
+      --muted: #b7c0e0;
+      --accent: #7aa2ff;
+      --border: #26304f;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fc;
+        --card: #ffffff;
+        --text: #162033;
+        --muted: #5b6785;
+        --accent: #2f63ff;
+        --border: #dbe3f3;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .header {
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    .item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 0 0 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.22rem;
+    }
+    p {
+      margin: 0 0 10px;
+    }
+    .why {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-weight: 600;
+    }
+    .sources {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>Daily Tech Briefing</h1>
+      <div class="sub">2026년 4월 4일 오전 기준 · 전일(4/3)까지 확인한 핵심 테크 뉴스만 간단 정리</div>
+    </div>
+
+    <section class="item">
+      <div class="tag">OpenClaw</div>
+      <h2>OpenClaw 최근 릴리스에서 작업 흐름·플러그인 경계·안드로이드 진입점 강화</h2>
+      <p>4월 2일 공개된 OpenClaw 릴리스 노트에는 Task Flow 복원, 관리형 자식 태스크 생성, 플러그인용 taskFlow 런타임 seam 추가 등이 포함됐다. 배경 작업을 더 잘 추적하고 취소 의도를 안정적으로 반영하는 방향이 핵심이다. 동시에 xAI 검색 설정과 Firecrawl 기반 web_fetch 설정을 플러그인 소유 경계로 옮겨 구성 관리도 더 명확해졌다. 안드로이드 쪽에는 Assistant 트리거로 OpenClaw를 여는 진입점도 추가됐다.</p>
+      <div class="why">왜 중요한가: 에이전트 자동화가 “되기만 하는 것”에서 “운영·복구·감사 가능한 것”으로 이동하고 있다는 신호다.</div>
+    </section>
+
+    <section class="item">
+      <div class="tag">Big Tech / AI Infra</div>
+      <h2>마이크로소프트, 일본에 약 100억 달러 규모 AI 인프라·사이버 방어 투자 계획</h2>
+      <p>4월 3일 보도 기준으로 Microsoft는 2026~2029년 일본에 약 1.6조 엔(약 100억 달러)을 투입해 AI 인프라를 확장하고 일본 정부와의 사이버 방어 협력을 강화하겠다고 밝혔다. 단순한 클라우드 증설이 아니라 국가 차원의 디지털 회복력과 안보 협력 프레임으로 해석되고 있다. AI 인프라 투자가 이제 민간 성장 전략을 넘어 국가 전략 자산처럼 다뤄지고 있다는 점이 부각됐다.</p>
+      <div class="why">왜 중요한가: 빅테크의 AI 경쟁력이 모델 성능만이 아니라 국가 단위 인프라·안보 협력과 직결되기 시작했다.</div>
+    </section>
+
+    <section class="item">
+      <div class="tag">AI Policy</div>
+      <h2>미국에서 Anthropic과 국방부 관련 갈등이 AI 거버넌스 시험대로 부상</h2>
+      <p>AP 보도 기준으로 트럼프 행정부는 Anthropic에 대한 국방부의 제재성 조치를 막은 연방법원 판단에 항소했다. 쟁점은 AI 기업이 특정 군사용 활용에 동의하지 않을 때, 정부가 공급망 리스크 지정 등으로 사실상 압박할 수 있는지 여부다. 이 사건은 단순한 기업-정부 분쟁을 넘어, 향후 AI 조달 규칙과 국방 계약 경계선을 가르는 선례가 될 가능성이 크다.</p>
+      <div class="why">왜 중요한가: AI 기업의 자율성, 정부 조달 권한, 국가안보 요구의 경계가 어디까지인지 판가름할 수 있다.</div>
+    </section>
+
+    <section class="item">
+      <div class="tag">AI Regulation</div>
+      <h2>캘리포니아, 정부 AI 계약에 위해성 기준 반영 추진</h2>
+      <p>캘리포니아 주정부는 공공부문 AI 계약 기준에 아동 성착취물 생성, 시민권 침해, 불법 감시, 공공서비스 오남용 같은 위험 요소를 반영하라는 방향을 제시했다. 동시에 공무원용 생성형 AI 도구 접근, 워터마킹 가이드라인, 디지털 전략 업데이트도 함께 검토하도록 했다. 법안 하나보다 실제 조달 기준이 시장 행동을 더 강하게 바꿀 수 있다는 점에서 업계가 주목하고 있다.</p>
+      <div class="why">왜 중요한가: 공공 조달 규칙이 사실상 AI 안전 기준의 실전 표준이 될 가능성이 높다.</div>
+    </section>
+
+    <div class="sources">
+      <strong>참고 출처</strong><br />
+      - OpenClaw GitHub Releases / Changelog<br />
+      - OpenClaw Updates 페이지<br />
+      - Tech Startups 2026-04-03 기사 내 Reuters·AP 인용 내용 기반 정리
+    </div>
+  </div>
+</body>
+</html>
