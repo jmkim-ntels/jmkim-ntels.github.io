@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenClaw 시스템 건강 진단 리포트 (Doctor Report)</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 40px; background: #f0f2f5; }
+        .report-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .status-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
+        .severity-critical { color: #e74c3c; font-weight: bold; }
+        .severity-warn { color: #f39c12; font-weight: bold; }
+        .severity-info { color: #3498db; }
+        .finding-item { background: #fff; border-left: 5px solid #eee; padding: 20px; margin-bottom: 20px; border-radius: 0 10px 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .finding-item.critical { border-left-color: #e74c3c; background: #fdf2f2; }
+        .finding-item.warn { border-left-color: #f39c12; background: #fff9f0; }
+        .remediation { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 8px; font-family: monospace; margin-top: 10px; display: block; }
+        .footer { text-align: center; margin-top: 40px; color: #7f8c8d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="report-card">
+        <div class="status-header">
+            <h1>🛡️ OpenClaw Doctor Report</h1>
+            <div>2026-03-15 진단</div>
+        </div>
+
+        <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+            <div style="flex: 1; text-align: center; padding: 20px; background: #fdf2f2; border-radius: 15px;">
+                <h3 class="severity-critical">CRITICAL</h3>
+                <div style="font-size: 2em;">2</div>
+            </div>
+            <div style="flex: 1; text-align: center; padding: 20px; background: #fff9f0; border-radius: 15px;">
+                <h3 class="severity-warn">WARNING</h3>
+                <div style="font-size: 2em;">1</div>
+            </div>
+            <div style="flex: 1; text-align: center; padding: 20px; background: #eef7fe; border-radius: 15px;">
+                <h3 class="severity-info">INFO</h3>
+                <div style="font-size: 2em;">1</div>
+            </div>
+        </div>
+
+        <h2>🚨 주요 보안 취약점 및 개선 사항</h2>
+
+        <div class="finding-item critical">
+            <h3>1. 디스코드 그룹 보안 정책 취약 (Critical)</h3>
+            <p>현재 디스코드의 <code>groupPolicy</code>가 "open"으로 설정되어 있어, 허용되지 않은 채널에서도 에이전트가 반응할 위험이 있습니다. 특히 권한 상승 도구가 활성화된 상태에서 프롬프트 인젝션 공격에 노출될 수 있습니다.</p>
+            <strong>조치 권장:</strong>
+            <code class="remediation">openclaw configure --section channels.discord.groupPolicy="allowlist"</code>
+        </div>
+
+        <div class="finding-item critical">
+            <h3>2. 권한 상승 도구 노출 (Critical)</h3>
+            <p>공개된 그룹 세션에서 시스템 명령어를 실행할 수 있는 elevated 도구들이 활성화되어 있습니다.</p>
+            <strong>조치 권장:</strong>
+            <p>신뢰할 수 있는 사용자나 채널로만 allowlist를 엄격하게 제한하십시오.</p>
+        </div>
+
+        <div class="finding-item warn">
+            <h3>3. 상태 디렉토리 권한 설정 (Warning)</h3>
+            <p><code>/home/dx/.openclaw</code> 디렉토리가 다른 사용자에게도 읽기 권한이 부여되어 있습니다(755). 보안을 위해 소유자만 접근 가능하도록 변경이 필요합니다.</p>
+            <strong>조치 권장:</strong>
+            <code class="remediation">chmod 700 /home/dx/.openclaw</code>
+        </div>
+
+        <div class="finding-item">
+            <h3>✅ 시스템 상태 요약</h3>
+            <ul>
+                <li><strong>OS:</strong> Linux (WSL2)</li>
+                <li><strong>Gateway:</strong> Running (PID 1620536)</li>
+                <li><strong>Memory:</strong> 6개 파일 분석 완료 (Gemini Embedding 활용)</li>
+                <li><strong>Update:</strong> 최신 버전(2026.3.13) 사용 가능</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            본 리포트는 OpenClaw Healthcheck 시스템에 의해 자동 생성되었습니다.
+        </div>
+    </div>
+</body>
+</html>

@@ -3,39 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>기술 | Daily Tech News</title>
+  <title>기술 리포트 아카이브</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #222; }
+    body { font-family: Arial, sans-serif; max-width: 1100px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #222; }
     h1 { border-bottom: 3px solid #333; padding-bottom: 10px; }
     .meta { color: #666; margin-bottom: 24px; }
-    .card { background: #f8f9fb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; }
+    .guide { background: #f8f9fb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .guide code { background:#eef2ff; padding:2px 6px; border-radius:6px; }
+    .day-block { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
     ul { padding-left: 20px; }
-    li { margin: 10px 0; }
+    li { margin: 8px 0; }
     a { color: #0b57d0; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .ext { font-size: 12px; color: #666; margin-left: 6px; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
-  <h1>기술</h1>
-  <div class="meta">최근 한 달 Daily Tech News 아카이브</div>
-  <div class="card">
-    <p>매일 생성된 데일리 테크 브리핑을 날짜별로 정리합니다.</p>
-    <ul>
-      <li><a href="2026-04-15.html">2026-04-15 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-14.html">2026-04-14 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-12.html">2026-04-12 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-11.html">2026-04-11 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-10.html">2026-04-10 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-09.html">2026-04-09 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-08.html">2026-04-08 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-07.html">2026-04-07 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-04.html">2026-04-04 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-03.html">2026-04-03 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-02.html">2026-04-02 Daily Tech Briefing</a></li>
-      <li><a href="2026-04-01.html">2026-04-01 Daily Tech Briefing</a></li>
-      <li><a href="2026-03-18.html">2026-03-18 Daily Tech Briefing</a></li>
-      <li><a href="2026-03-16.html">2026-03-16 Daily Tech Briefing</a></li>
-    </ul>
+  <h1>기술 리포트 아카이브</h1>
+  <p class="meta">Daily Tech Briefing, OpenClaw 리포트, 심층 기술 문서를 날짜별로 정리한 아카이브</p>
+
+  <div class="guide">
+    <strong>운영 가이드</strong>
+    <div class="grid">
+      <div>
+        <p>이 섹션은 다른 에이전트도 참고할 수 있도록 날짜 기반 구조로 정리되어 있습니다.</p>
+        <ul>
+          <li>일일 브리핑은 가급적 <code>YYYY-MM-DD</code> 날짜를 파일명에 포함</li>
+          <li>HTML 문서는 직접 열람 가능, DOCX는 다운로드용 보관</li>
+          <li>새 글을 추가하면 <code>tech/index.html</code> 목록도 갱신</li>
+        </ul>
+      </div>
+      <div>
+        <p>권장 패턴</p>
+        <ul>
+          <li><code>tech/YYYY-MM-DD-some-report.html</code></li>
+          <li><code>tech/YYYY-MM-DD-some-report.docx</code></li>
+          <li>메인 홈에서는 각 섹션 index로 진입</li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <section class='day-block'><h2>undated</h2><ul><li><a href='undated-tech-report.html'>tech report</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-15</h2><ul><li><a href='2026-04-15-daily-tech-briefing-20260415.html'>Daily Tech Briefing 20260415</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-14</h2><ul><li><a href='2026-04-14-daily-tech-briefing-20260414.html'>Daily Tech Briefing 20260414</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-12</h2><ul><li><a href='2026-04-12-daily-tech-briefing-20260412.html'>Daily Tech Briefing 20260412</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-11</h2><ul><li><a href='2026-04-11-daily-tech-briefing-20260411.html'>Daily Tech Briefing 20260411</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-10</h2><ul><li><a href='2026-04-10-daily-tech-briefing-20260410.html'>Daily Tech Briefing 20260410</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-09</h2><ul><li><a href='2026-04-09-daily-tech-briefing-20260409.html'>Daily Tech Briefing 20260409</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-08</h2><ul><li><a href='2026-04-08-daily-tech-briefing-20260408.html'>Daily Tech Briefing 20260408</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-07</h2><ul><li><a href='2026-04-07-daily-tech-briefing-20260407.html'>Daily Tech Briefing 20260407</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-04</h2><ul><li><a href='2026-04-04-daily-tech-briefing-20260404.html'>Daily Tech Briefing 20260404</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-03</h2><ul><li><a href='2026-04-03-daily-tech-briefing-20260403.html'>Daily Tech Briefing 20260403</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-02</h2><ul><li><a href='2026-04-02-daily-tech-briefing-20260402.html'>Daily Tech Briefing 20260402</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-04-01</h2><ul><li><a href='2026-04-01-daily-tech-briefing-20260401.html'>Daily Tech Briefing 20260401</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-23</h2><ul><li><a href='2026-03-23-tech-news-report-20260323.html'>tech news report 20260323</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-22</h2><ul><li><a href='2026-03-22-daily-tech-news-20260322.html'>Daily Tech News 20260322</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-21</h2><ul><li><a href='2026-03-21-daily-briefing-20260321.html'>Daily Briefing 20260321</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-19</h2><ul><li><a href='2026-03-19-tech-news-briefing-20260319.html'>tech news briefing 20260319</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-18</h2><ul><li><a href='2026-03-18-daily-tech-briefing-2026-03-18.html'>Daily Tech Briefing 2026-03-18</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-16</h2><ul><li><a href='2026-03-16-daily-tech-briefing-20260316.html'>Daily Tech Briefing 20260316</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-15</h2><ul><li><a href='2026-03-15-tech-report-20260315.html'>tech report 20260315</a> <span class='ext'>.html</span></li><li><a href='2026-03-15-openclaw-setup-report-20260315.md'>OpenClaw Setup Report 20260315</a> <span class='ext'>.md</span></li><li><a href='2026-03-15-openclaw-final-report-20260315.docx'>OpenClaw Final Report 20260315</a> <span class='ext'>.docx</span></li><li><a href='2026-03-15-openclaw-doctor-report-20260315.html'>OpenClaw Doctor Report 20260315</a> <span class='ext'>.html</span></li><li><a href='2026-03-15-openclaw-bigupdate-report-20260315.html'>OpenClaw BigUpdate Report 20260315</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-14</h2><ul><li><a href='2026-03-14-tech-briefing-20260314.html'>tech briefing 20260314</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-13</h2><ul><li><a href='2026-03-13-deep-dive-tech-report-20260313.html'>Deep Dive Tech Report 20260313</a> <span class='ext'>.html</span></li><li><a href='2026-03-13-advanced-tech-report-20260313.html'>Advanced Tech Report 20260313</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-12</h2><ul><li><a href='2026-03-12-daily-tech-news-20260312.html'>daily tech news 20260312</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-11</h2><ul><li><a href='2026-03-11-daily-tech-news-briefing-20260311.html'>Daily Tech News Briefing 20260311</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-10</h2><ul><li><a href='2026-03-10-tech-report-20260310.html'>tech report 20260310</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-09</h2><ul><li><a href='2026-03-09-daily-briefing-2026-03-09.html'>Daily Briefing 2026-03-09</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-07</h2><ul><li><a href='2026-03-07-tech-news-briefing-20260307.html'>tech news briefing 20260307</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-06</h2><ul><li><a href='2026-03-06-daily-tech-briefing-20260306.html'>Daily Tech Briefing 20260306</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-03-05</h2><ul><li><a href='2026-03-05-tech-news-summary-20260305.html'>Tech News Summary 20260305</a> <span class='ext'>.html</span></li></ul></section><section class='day-block'><h2>2026-02-27</h2><ul><li><a href='2026-02-27-burger-comparison-report-20260227.html'>Burger Comparison Report 20260227</a> <span class='ext'>.html</span></li></ul></section>
 </body>
 </html>
