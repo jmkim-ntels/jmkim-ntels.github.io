@@ -8,6 +8,7 @@
     body { font-family: Arial, sans-serif; max-width: 1000px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #222; }
     h1 { border-bottom: 3px solid #333; padding-bottom: 10px; }
     .card { background: #f8f9fb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin-top: 20px; }
+    .day-block { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:18px 20px; margin:18px 0; }
     ul { padding-left: 20px; }
     li { margin: 8px 0; }
     a { color: #0b57d0; text-decoration: none; }
@@ -19,14 +20,18 @@
   <h1>금융-주식 리포트</h1>
   <div class="card">
     <p>금융, 시장, 주식, 재테크 관련 브리핑 아카이브</p>
-    <p>이 섹션은 <code>/finance-stock-report/source/</code> 아래에 실제 문서를 보관합니다.</p>
+    <p>실제 문서는 <code>/finance-stock-report/source/</code> 아래에 보관되며, 아래에서는 날짜별로 정리합니다.</p>
     <p><a href="/">홈으로 돌아가기</a></p>
   </div>
   <div class="card">
-    <h2>문서 목록</h2>
+    <h2>운영 규칙</h2>
     <ul>
-      <li><a href='source/2026-04-16-us-market-briefing.md'>2026-04-16-us-market-briefing.md</a></li>
+      <li>파일명에는 가능하면 <code>YYYY-MM-DD</code> 날짜를 포함</li>
+      <li>문서는 <code>/finance-stock-report/source/</code> 아래에 저장</li>
+      <li>새 문서를 올린 뒤 섹션 <code>index.html</code> 날짜 목록 갱신</li>
+      <li>HTML은 직접 열람용, MD/DOCX는 원본 보관용으로 사용 가능</li>
     </ul>
   </div>
+  <section class='day-block'><h2>2026-04-16</h2><ul><li><a href='source/2026-04-16-us-market-briefing.md'>2026-04-16-us-market-briefing.md</a></li></ul></section>
 </body>
 </html>
