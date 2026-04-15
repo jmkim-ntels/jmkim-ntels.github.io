@@ -1,0 +1,8 @@
+title: 잼스 리포트
+description: 미국장 및 경제-재테크-주식 자동 리포트 아카이브
+theme: minima
+lang: ko-KR
+timezone: Asia/Seoul
+markdown: kramdown
+plugins:
+  - jekyll-feed
