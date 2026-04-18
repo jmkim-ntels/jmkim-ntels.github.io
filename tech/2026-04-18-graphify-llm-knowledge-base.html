@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphify와 LLM 지식 베이스 구축 | 2026-04-18</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 980px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    li { margin: 8px 0; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .note { background: #fff7ed; border-left: 4px solid #f97316; padding: 12px 14px; border-radius: 8px; font-weight: 600; margin: 18px 0; }
+    .hero { margin: 28px 0; }
+    .hero img { width: 100%; height: auto; border-radius: 14px; border: 1px solid #dbe3ef; }
+    .cta { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+    .cta a { display: inline-block; margin-right: 14px; margin-top: 10px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Graphify와 LLM 지식 베이스 구축</h1>
+    <p class="meta">게시일: 2026-04-18 · 카테고리: 기술 리포트 / Graphify / LLM / NotebookLM</p>
+
+    <div class="summary">
+      <strong>한눈에 보기</strong>
+      <ul>
+        <li>이 영상은 Andrey Karpathy의 LLM 위키/로우 폴더 아이디어를 실제 도구로 구현한 <strong>Graphify</strong>를 설명합니다.</li>
+        <li>Graphify는 코드, 문서, 논문, 이미지, 영상까지 분석해 <strong>지식 그래프</strong>를 만들고, AI 코딩 어시스턴트가 더 적은 토큰으로 더 정확하게 탐색하도록 돕습니다.</li>
+        <li>핵심 기술은 <strong>AST, Tree-sitter, NetworkX, Leiden 알고리즘, BFS/DFS 탐색</strong>입니다.</li>
+      </ul>
+    </div>
+
+    <h2>원본 영상</h2>
+    <p><a href="https://youtu.be/Ma8e25AOtao?si=nBdzhF_crWqaO7zX" target="_blank" rel="noopener">https://youtu.be/Ma8e25AOtao?si=nBdzhF_crWqaO7zX</a></p>
+
+    <h2>핵심 요약</h2>
+    <ul>
+      <li><strong>왜 필요한가</strong>: 일반 LLM은 큰 폴더를 통째로 뒤지며 토큰을 많이 쓰고 부정확할 수 있는데, Graphify는 미리 구조화된 지식 그래프를 만들어 탐색 효율을 높입니다.</li>
+      <li><strong>무엇을 다루나</strong>: 코드뿐 아니라 문서, 논문, 이미지, 영상/오디오까지 하나의 그래프로 통합할 수 있습니다.</li>
+      <li><strong>어떻게 동작하나</strong>: 구조 분석은 AST/Tree-sitter 기반의 결정적 코드 경로, 의미 분석은 LLM 보조 경로를 사용합니다.</li>
+      <li><strong>왜 유용한가</strong>: 코드 온보딩, 기술 부채 분석, 연구 코퍼스 탐색, 법령 저장소 시각화 같은 작업에서 구조를 빨리 파악할 수 있습니다.</li>
+    </ul>
+
+    <div class="note">한 줄로 줄이면, Graphify는 "폴더를 지식 그래프로 바꿔서 LLM이 더 적은 토큰으로 더 정확하게 읽도록 만드는 도구"입니다.</div>
+
+    <h2>생성된 인포그래픽</h2>
+    <div class="hero">
+      <img src="assets/2026-04-18-graphify-notebooklm/youtube-Ma8e25AOtao-cli-infographic.png" alt="Graphify 인포그래픽" />
+    </div>
+
+    <h2>다운로드</h2>
+    <div class="cta">
+      <p>NotebookLM으로 생성한 결과물을 직접 내려받을 수 있습니다.</p>
+      <a href="assets/2026-04-18-graphify-notebooklm/youtube-Ma8e25AOtao-cli-slides.pptx">슬라이드 PPTX 다운로드</a>
+      <a href="assets/2026-04-18-graphify-notebooklm/youtube-Ma8e25AOtao-summary.md">요약 Markdown 다운로드</a>
+    </div>
+
+    <h2>실무적으로 중요한 포인트</h2>
+    <ul>
+      <li>Graphify는 구조 분석을 코드로 처리해 할루시네이션과 토큰 낭비를 줄입니다.</li>
+      <li>대규모 코드베이스나 법령/논문처럼 방대한 문서 집합에서도 "어디부터 볼지"를 빠르게 잡아줍니다.</li>
+      <li>LLM을 대체한다기보다, LLM이 더 정확하게 일하도록 앞단의 구조화 레이어를 제공하는 도구에 가깝습니다.</li>
+    </ul>
+
+    <footer>
+      <p>© 2026 jmkim-ntels.github.io · Graphify / NotebookLM workflow note</p>
+    </footer>
+  </div>
+</body>
+</html>
