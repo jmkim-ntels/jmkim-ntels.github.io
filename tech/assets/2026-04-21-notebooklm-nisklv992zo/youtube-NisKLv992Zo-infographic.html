@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 주간 업데이트 인포그래픽</title>
+  <style>
+    body { margin: 0; background: #f8fafc; font-family: 'Pretendard', 'Malgun Gothic', Arial, sans-serif; }
+    .canvas { width: 1400px; min-height: 2200px; margin: 0 auto; background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 18%, #ffffff 100%); color: #0f172a; padding: 48px 54px 64px; box-sizing: border-box; }
+    .eyebrow { color: #2563eb; font-size: 22px; font-weight: 700; letter-spacing: 0.02em; }
+    h1 { font-size: 56px; line-height: 1.15; margin: 16px 0 12px; }
+    .subtitle { font-size: 24px; line-height: 1.6; color: #475569; margin-bottom: 28px; }
+    .hero { background: #ffffff; border: 1px solid #dbeafe; box-shadow: 0 12px 36px rgba(37, 99, 235, 0.10); border-radius: 28px; padding: 30px 34px; margin-bottom: 28px; }
+    .hero strong { color: #1d4ed8; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 18px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 24px; padding: 26px 28px; box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05); }
+    .card h2 { margin: 0 0 16px; font-size: 30px; }
+    .card ul { margin: 0; padding-left: 22px; }
+    .card li { margin: 12px 0; font-size: 23px; line-height: 1.5; color: #334155; }
+    .accent-blue { border-top: 8px solid #2563eb; }
+    .accent-green { border-top: 8px solid #059669; }
+    .accent-orange { border-top: 8px solid #d97706; }
+    .accent-purple { border-top: 8px solid #7c3aed; }
+    .keypoints { margin-top: 28px; background: #0f172a; color: white; border-radius: 28px; padding: 28px 32px; }
+    .keypoints h2 { margin: 0 0 16px; font-size: 30px; }
+    .keypoints ol { margin: 0; padding-left: 28px; }
+    .keypoints li { margin: 12px 0; font-size: 24px; line-height: 1.5; }
+    .footer { margin-top: 28px; font-size: 18px; color: #64748b; }
+    .tag { display: inline-block; padding: 8px 14px; border-radius: 999px; background: #dbeafe; color: #1d4ed8; font-size: 18px; font-weight: 700; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="eyebrow">NOTEBOOKLM 대체 생성 인포그래픽</div>
+    <h1>AI 주간 업데이트 핵심 브리핑</h1>
+    <div class="subtitle">Claude Opus 4.7, Claude Design, GPT 이미지 품질 개선, Qwen 3.6, Video Use를 중심으로 본 이번 주 AI/IT 흐름 요약</div>
+
+    <div class="hero">
+      <div><span class="tag">핵심 메시지</span><span class="tag">기술 블로그용</span></div>
+      <p style="font-size: 30px; line-height: 1.55; margin: 20px 0 0; color: #1e293b;">
+        이번 주 흐름의 본질은 <strong>더 똑똑한 모델 경쟁</strong>이 아니라, <strong>디자인 · 개발 · 영상 제작까지 실제 업무를 끝내는 AI</strong>로 빠르게 이동하고 있다는 점입니다.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card accent-blue">
+        <h2>1. 주요 업데이트</h2>
+        <ul>
+          <li>Claude Opus 4.7은 코딩과 실무 성능 측면에서 강한 존재감을 보였습니다.</li>
+          <li>Claude Design은 디자인과 구현의 간극을 빠르게 줄이는 흐름을 보여줍니다.</li>
+          <li>GPT 이미지 계열은 한글 텍스트 렌더링 품질이 눈에 띄게 좋아졌습니다.</li>
+        </ul>
+      </div>
+      <div class="card accent-green">
+        <h2>2. 오픈소스와 로컬</h2>
+        <ul>
+          <li>Qwen 3.6은 오픈소스 진영 경쟁력을 강화하는 대표 사례로 보입니다.</li>
+          <li>한국어 친화적 로컬 모델 활용 가능성도 함께 커지고 있습니다.</li>
+          <li>비용, 보안, 제어권 측면에서 로컬 모델 선택지가 다시 중요해집니다.</li>
+        </ul>
+      </div>
+      <div class="card accent-orange">
+        <h2>3. 실무 영향</h2>
+        <ul>
+          <li>알고리즘 문제 풀이보다 AI를 활용해 결과물을 빠르게 만드는 능력이 중요해집니다.</li>
+          <li>Video Use류 자동화는 영상 후반 작업 시간을 크게 줄일 수 있습니다.</li>
+          <li>1인 창업자와 소규모 팀에게 유리한 도구 환경이 강화되고 있습니다.</li>
+        </ul>
+      </div>
+      <div class="card accent-purple">
+        <h2>4. 경쟁 구도</h2>
+        <ul>
+          <li>Anthropic, OpenAI, Google, 중국 오픈소스 진영이 각기 다른 강점으로 경쟁 중입니다.</li>
+          <li>Figma, Adobe 같은 전통 툴과 AI 네이티브 툴의 충돌이 빨라지고 있습니다.</li>
+          <li>시장의 평가는 모델 점수보다 업무 완결력으로 이동하고 있습니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="keypoints">
+      <h2>블로그용 핵심 체크포인트 5개</h2>
+      <ol>
+        <li>Claude Opus 4.7은 실무형 코딩 AI 경쟁을 더 치열하게 만들었습니다.</li>
+        <li>Claude Design은 디자인과 개발 워크플로우를 하나로 묶는 방향을 보여줍니다.</li>
+        <li>GPT 이미지 품질 개선은 한국어 시각 자료 제작 실용성을 높였습니다.</li>
+        <li>Qwen 3.6은 오픈소스 AI 경쟁이 아직 매우 강하다는 점을 보여줍니다.</li>
+        <li>이번 주의 핵심은 모델 성능이 아니라 실제 업무 자동화 범위의 확대입니다.</li>
+      </ol>
+    </div>
+
+    <div class="footer">원본 영상: https://youtu.be/NisKLv992Zo · 제작: OpenClaw 로컬 대체 경로 · NotebookLM 시각 아티팩트 실패 대체본</div>
+  </div>
+</body>
+</html>
