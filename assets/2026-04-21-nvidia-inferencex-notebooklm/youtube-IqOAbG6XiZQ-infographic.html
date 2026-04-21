@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>InferenceX infographic</title>
+<style>
+  body { margin:0; background:#eef2ff; font-family: Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+  .page { width:1200px; min-height:1800px; margin:0 auto; background:linear-gradient(180deg,#0f172a,#1e293b 18%,#f8fafc 18%,#f8fafc 100%); padding:48px; box-sizing:border-box; }
+  .hero { color:white; margin-bottom:32px; }
+  .kicker { display:inline-block; background:#2563eb; padding:8px 14px; border-radius:999px; font-size:20px; font-weight:700; }
+  h1 { font-size:54px; line-height:1.2; margin:18px 0 12px; }
+  .sub { font-size:24px; color:#cbd5e1; line-height:1.5; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:28px; }
+  .card { background:white; border-radius:24px; padding:28px; box-shadow:0 12px 30px rgba(15,23,42,.12); border:1px solid #dbeafe; }
+  .card h2 { margin:0 0 18px; color:#0f172a; font-size:30px; }
+  .card ul { margin:0; padding-left:22px; }
+  .card li { font-size:22px; line-height:1.6; margin:10px 0; color:#334155; }
+  .footer { margin-top:26px; background:#eff6ff; border:1px solid #bfdbfe; border-radius:24px; padding:24px 28px; }
+  .footer p { font-size:22px; line-height:1.7; margin:0; color:#1e3a8a; }
+  .meta { margin-top:14px; color:#64748b; font-size:18px; }
+  .quote { margin-top:12px; font-size:26px; font-weight:700; color:#0f172a; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <div class="kicker">NotebookLM source summary 기반 정리</div>
+      <h1>NVIDIA vs TPU/Trainium<br/>추론 전쟁의 핵심은 풀스택과 경제성</h1>
+      <div class="sub">영상 핵심은 단일 칩 속도 경쟁이 아니라, 비용, 소프트웨어, 오케스트레이션, 운영 구조까지 포함한 전체 스택 경쟁이라는 점입니다.</div>
+    </div>
+    <div class="grid">
+      <section class="card">
+        <h2>핵심 주장 5개</h2>
+        <ul>
+          <li>추론 경쟁의 본질은 단일 칩이 아니라 하드웨어, 소프트웨어, 네트워크를 포함한 풀스택 경쟁이라는 주장</li><li>NVIDIA는 TCO, 즉 총 소유 비용 기준에서 우위를 주장</li><li>InferenceX 같은 공개 벤치마크에서 경쟁사도 검증받아야 한다는 메시지</li><li>CUDA와 커널 최적화 같은 소프트웨어 레이어가 성능을 계속 끌어올린다는 점</li><li>최종 경쟁력은 토큰당 비용과 운영 경제성이라는 점</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>NVIDIA가 우위를 말하는 근거</h2>
+        <ul>
+          <li>범용 GPU 플랫폼으로 다양한 워크로드를 커버</li><li>AI Factory 관점의 통합 인프라와 오케스트레이션</li><li>프리필/디코드 분리와 KV 캐시 최적화 같은 시스템 레벨 최적화</li><li>소프트웨어 스택의 누적 효과로 시간이 갈수록 성능이 개선되는 구조</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>균형 잡힌 해석</h2>
+        <ul>
+          <li>TPU와 Trainium은 내부 서비스 최적화 목적의 ASIC으로 여전히 의미가 큼</li><li>벤치마크 프레임 자체가 NVIDIA에 유리할 수 있다는 점은 감안해야 함</li><li>결국 워크로드와 운영 목표에 따라 최적 선택은 달라질 수 있음</li>
+        </ul>
+      </section>
+      <section class="card">
+        <h2>실무 시사점</h2>
+        <ul>
+          <li>Peak FLOPS보다 cost per token과 latency-throughput 균형을 봐야 함</li><li>하드웨어보다 소프트웨어 역량 내재화가 더 큰 차이를 만들 수 있음</li><li>고정 워크로드는 전용 가속기, 범용 워크로드는 GPU가 유리할 수 있음</li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer">
+      <p>한 줄 요약: GPU vs TPU의 단순 승부가 아니라, 실제 서비스 환경에서 누가 더 낮은 비용으로 더 안정적으로 추론을 운영하느냐가 핵심입니다.</p>
+      <div class="meta">Source video: https://youtu.be/IqOAbG6XiZQ</div>
+      <div class="quote">"칩 경쟁이 아니라 전체 스택의 완성도로 봐야 한다"</div>
+    </div>
+  </div>
+</body>
+</html>

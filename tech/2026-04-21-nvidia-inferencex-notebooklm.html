@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NVIDIA 추론 전쟁 발언과 InferenceX 정리 | 2026-04-21</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 980px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    li { margin: 8px 0; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .note { background: #fff7ed; border-left: 4px solid #f97316; padding: 12px 14px; border-radius: 8px; font-weight: 600; margin: 18px 0; }
+    .hero { margin: 28px 0; }
+    .hero img { width: 100%; height: auto; border-radius: 14px; border: 1px solid #dbe3ef; }
+    .cta { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+    .cta a { display: inline-block; margin-right: 14px; margin-top: 10px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>NVIDIA 추론 전쟁 발언과 InferenceX 정리</h1>
+    <p class="meta">게시일: 2026-04-21 · 카테고리: 기술 리포트 / AI 인프라 / NotebookLM</p>
+
+    <div class="summary">
+      <strong>한눈에 보기</strong>
+      <ul>
+        <li>이 영상의 핵심 메시지는 GPU와 TPU의 단순 스펙 경쟁이 아니라, <strong>풀스택 완성도와 운영 경제성</strong>이 추론 경쟁의 본질이라는 점입니다.</li>
+        <li>NVIDIA는 CUDA, 커널 최적화, 오케스트레이션, 데이터센터 스택까지 포함한 <strong>통합 인프라 우위</strong>를 강조합니다.</li>
+        <li>반면 TPU와 Trainium도 특정 내부 워크로드 최적화라는 분명한 역할이 있어, <strong>무조건적인 승패 프레임</strong>으로 보는 것은 과도합니다.</li>
+      </ul>
+    </div>
+
+    <h2>원본 영상</h2>
+    <p><a href="https://youtu.be/IqOAbG6XiZQ" target="_blank" rel="noopener">https://youtu.be/IqOAbG6XiZQ</a></p>
+
+    <h2>핵심 요약</h2>
+    <ul>
+      <li><strong>풀스택 경쟁</strong>: 추론 인프라 경쟁은 단일 칩이 아니라, 하드웨어, 소프트웨어, 네트워크, 운영 구조의 결합 경쟁입니다.</li>
+      <li><strong>TCO 중심 프레임</strong>: 좋은 칩보다 중요한 것은 실제 서비스에서 얼마나 낮은 비용으로 토큰을 생산하는가입니다.</li>
+      <li><strong>InferenceX의 역할</strong>: 인터랙티비티, 스루풋, 비용, 시간 흐름까지 함께 보는 다차원 벤치마크로 해석해야 합니다.</li>
+      <li><strong>균형 잡힌 시각</strong>: TPU와 Trainium은 빅테크 내부 최적화 목적에서 여전히 유효한 전략 자산입니다.</li>
+    </ul>
+
+    <div class="note">한 줄로 줄이면, 이 영상은 "누가 더 빠른 칩을 만들었나"보다 "누가 더 낮은 비용으로 전체 추론 시스템을 운영하느냐"를 묻고 있습니다.</div>
+
+    <h2>생성된 인포그래픽</h2>
+    <div class="hero">
+      <img src="../assets/2026-04-21-nvidia-inferencex-notebooklm/youtube-IqOAbG6XiZQ-infographic.png" alt="NVIDIA InferenceX 인포그래픽" />
+    </div>
+
+    <h2>다운로드</h2>
+    <div class="cta">
+      <p>NotebookLM 소스 요약을 기반으로 정리한 결과물입니다.</p>
+      <a href="../assets/2026-04-21-nvidia-inferencex-notebooklm/youtube-IqOAbG6XiZQ-slides.pptx">슬라이드 PPTX 다운로드</a>
+      <a href="../assets/2026-04-21-nvidia-inferencex-notebooklm/youtube-IqOAbG6XiZQ-summary.md">요약 Markdown 다운로드</a>
+    </div>
+
+    <h2>실무적으로 중요한 포인트</h2>
+    <ul>
+      <li>Peak FLOPS보다 cost per token과 latency-throughput 균형을 먼저 봐야 합니다.</li>
+      <li>하드웨어 자체보다 CUDA, 런타임, 스케줄링, 메모리 최적화가 실효 성능에 더 큰 영향을 줄 수 있습니다.</li>
+      <li>범용 워크로드는 GPU, 특정 반복 워크로드는 전용 가속기처럼 업무 성격에 맞게 판단해야 합니다.</li>
+    </ul>
+
+    <footer>
+      <p>© 2026 jmkim-ntels.github.io · NotebookLM source-based technical note</p>
+    </footer>
+  </div>
+</body>
+</html>
