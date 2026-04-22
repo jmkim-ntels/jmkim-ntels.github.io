@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-04-23</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-04-23 (목) · 공식 블로그, 공식 문서, 기업 발표 중심으로 가볍게 정리한 데일리 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁의 초점이 단일 모델 성능에서 에이전트 실행력, 도구 연결, 운영 제어로 빠르게 이동하고 있습니다.</li>
+        <li>모델 공급자들은 고성능 발표와 함께 가격, 추론 예산, 배포 표준까지 함께 내세우며 실사용성을 강화하고 있습니다.</li>
+        <li>개발자 워크플로우는 이제 채팅형 보조를 넘어 코드 수정, 병렬 작업, 에이전트 간 협업 단계로 확장되고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, GPT-4.1 계열 공개로 API 중심 코딩·장문맥 경쟁 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 GPT-4.1, GPT-4.1 mini, GPT-4.1 nano를 API에 출시하며 코딩, 지시 이행, 장문맥 처리 성능 향상을 전면에 내세웠습니다. 발표에 따르면 새 모델군은 최대 100만 토큰 컨텍스트를 지원하고, GPT-4o 계열 대비 코딩과 멀티스텝 지시 수행에서 더 높은 성능을 보입니다. 특히 GPT-4.1 mini는 비용과 지연시간을 크게 낮추면서도 상당수 지표에서 GPT-4o를 따라잡거나 넘어서는 포지션으로 제시됐습니다. OpenAI는 동시에 GPT-4.5 Preview를 단계적으로 종료하겠다고 밝혀, 더 실용적인 성능 대비 비용 구조로 제품군을 재정렬하고 있음을 보여줬습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 발표는 최고 성능 경쟁만이 아니라, 다양한 가격대에서 실제 배포 가능한 모델 포트폴리오를 얼마나 촘촘하게 구성하느냐가 중요해졌다는 신호입니다. 개발팀 입장에서는 대규모 문서 처리, 에이전트 파이프라인, 코드 생성 같은 사용처에서 모델 선택 폭이 넓어집니다. 경쟁사들도 장문맥과 코딩 성능을 동시에 맞추는 압박을 더 크게 받게 됩니다.</p>
+      <p class="why">왜 중요한지: 고성능 AI는 이제 성능만이 아니라 비용, 속도, 운영 가능성을 함께 맞춰야 시장에서 이깁니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/gpt-4-1/" target="_blank" rel="noopener">OpenAI, Introducing GPT-4.1 in the API</a>
+        <a href="https://platform.openai.com/docs/models" target="_blank" rel="noopener">OpenAI Platform Docs, Models</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, Codex 연구 프리뷰로 클라우드형 소프트웨어 에이전트 본격화</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 codex-1 기반의 Codex를 공개하며, 코드 작성, 버그 수정, 코드베이스 질의응답, PR 제안까지 수행하는 클라우드형 소프트웨어 엔지니어링 에이전트를 내놨습니다. 각 작업은 분리된 샌드박스 환경에서 병렬로 실행되며, 사용자는 로그와 테스트 결과를 근거로 결과를 검토할 수 있습니다. OpenAI는 Codex가 AGENTS.md 같은 저장소 가이드를 참고해 프로젝트 규칙을 따를 수 있다고 설명했습니다. 단순 코드 추천을 넘어 실제 작업 단위를 맡기는 방향으로 제품 범위를 넓힌 셈입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>개발자용 AI 시장은 이제 자동완성보다 작업 위임 수준의 생산성을 얼마나 안정적으로 제공하느냐가 핵심 경쟁 포인트입니다. Codex 같은 모델은 IDE 내 조력자를 넘어, 백그라운드에서 병렬 작업을 처리하는 팀원형 에이전트 포지션을 노립니다. 이는 GitHub, Anthropic, Google 등 다른 사업자들의 개발자 에이전트 경쟁도 더 가속할 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 코딩 AI의 다음 승부처는 답변이 아니라 실제 작업을 끝내는 능력입니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/introducing-codex/" target="_blank" rel="noopener">OpenAI, Introducing Codex</a>
+        <a href="https://platform.openai.com/docs/codex" target="_blank" rel="noopener">OpenAI Docs, Codex</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Anthropic, Claude 3.7 Sonnet과 Claude Code로 하이브리드 추론 전략 제시</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 Claude 3.7 Sonnet을 공개하며 일반 응답과 extended thinking을 하나의 모델 안에서 제공하는 첫 하이브리드 reasoning 모델이라고 강조했습니다. API 사용자는 thinking budget을 세밀하게 조절할 수 있어 품질과 속도, 비용의 균형을 직접 설정할 수 있습니다. Anthropic은 동시에 터미널 기반 에이전트형 코딩 도구인 Claude Code도 제한적 연구 프리뷰로 공개했습니다. 모델 성능 향상과 실제 개발 워크플로우 접점을 한 번에 확장한 발표였습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 접근은 고급 추론 모델을 별도 제품으로 나누기보다 하나의 모델 안에서 사용 시나리오별로 제어하는 흐름을 강화합니다. 개발팀은 복잡한 문제에는 더 길게 생각하게 하고, 단순 작업은 빠르게 처리하도록 서비스 정책을 설계할 수 있습니다. 특히 코딩 분야에서 Anthropic이 여전히 강한 존재감을 유지하겠다는 의도가 분명히 드러났습니다.</p>
+      <p class="why">왜 중요한지: 추론 모델 경쟁은 성능뿐 아니라 얼마나 유연하게 제어할 수 있는지로도 갈리고 있습니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/claude-3-7-sonnet" target="_blank" rel="noopener">Anthropic, Claude 3.7 Sonnet and Claude Code</a>
+        <a href="https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking" target="_blank" rel="noopener">Anthropic Docs, Extended Thinking</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Google, Gemini 2.5 제품군 업데이트로 Flash-Lite와 가격 체계 정비</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 Gemini 2.5 Pro와 2.5 Flash를 정식 안정 버전으로 전환하고, 더 저렴하고 빠른 2.5 Flash-Lite를 프리뷰로 추가했습니다. 발표문에 따르면 Flash-Lite는 2.5 계열에서 가장 낮은 지연시간과 비용을 목표로 하며, thinking budget 제어도 지원합니다. Google은 동시에 2.5 Flash 가격 구조를 단순화해 입력과 출력 토큰 가격을 재조정하고, thinking 여부에 따른 복잡한 차등 가격도 없앴습니다. 성능뿐 아니라 운영 편의성과 가격 명확성을 함께 다듬은 업데이트입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 변화는 AI API 시장이 점점 클라우드 인프라 상품처럼 세분화되고 있음을 보여줍니다. 고객은 최고 지능 모델, 저지연 모델, 저비용 모델을 상황별로 섞어 쓰는 방향으로 아키텍처를 설계하게 됩니다. 공급자 입장에서도 제품 포트폴리오와 가격표의 단순성이 점점 중요한 경쟁력으로 떠오릅니다.</p>
+      <p class="why">왜 중요한지: AI 모델은 이제 단일 대표 모델보다, 목적별 라인업과 명확한 가격 구조가 더 중요해지고 있습니다.</p>
+      <div class="sources">
+        <a href="https://developers.googleblog.com/en/gemini-2-5-thinking-model-updates/" target="_blank" rel="noopener">Google Developers Blog, Gemini 2.5: Updates to our family of thinking models</a>
+        <a href="https://ai.google.dev/gemini-api/docs/models" target="_blank" rel="noopener">Google AI for Developers, Gemini API models</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Google Cloud, A2A를 Linux Foundation에 기증하며 에이전트 상호운용 표준화에 힘</h2>
+      <h3>핵심 요약</h3>
+      <p>Google Cloud는 Agent2Agent, 즉 A2A 프로토콜 명세와 SDK, 개발 도구를 Linux Foundation 산하의 독립 프로젝트로 이전한다고 발표했습니다. 발표에는 AWS, Cisco, Google, Microsoft, Salesforce, SAP, ServiceNow가 함께 참여한다고 명시됐고, 100개 이상 기업이 이 프로토콜을 지지한다고 설명했습니다. A2A는 서로 다른 AI 에이전트가 기능을 발견하고, 정보를 안전하게 교환하며, 복합 작업을 협업하도록 설계된 공개 표준입니다. 특정 벤더 기술이 아니라 중립 거버넌스로 옮긴 점이 핵심입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트 시장이 커질수록 모델 성능만큼이나 에이전트 간 통신 규약이 중요해집니다. Linux Foundation 이전은 기업 고객에게 벤더 종속성 우려를 낮추는 신호가 될 수 있고, 멀티벤더 환경에서의 채택 속도도 높일 여지가 있습니다. 향후 MCP와 A2A 같은 연결 표준이 실제 에이전트 생태계의 기반층이 될 가능성이 커지고 있습니다.</p>
+      <p class="why">왜 중요한지: 에이전트 경제가 커질수록 누가 더 똑똑한가보다 누가 더 잘 연결되는가가 중요해집니다.</p>
+      <div class="sources">
+        <a href="https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/" target="_blank" rel="noopener">Google Developers Blog, Google Cloud donates A2A to Linux Foundation</a>
+        <a href="https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents" target="_blank" rel="noopener">Linux Foundation, Agent2Agent protocol project launch</a>
+        <a href="https://a2aproject.github.io/A2A/latest/" target="_blank" rel="noopener">A2A Project Specification</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
