@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-04-29</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-04-29 (수) · 공식 블로그, 공식 발표, 제품 문서 중심으로 가볍게 정리한 핵심 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>빅테크의 AI 경쟁 축이 모델 성능에서 공공조달, 멀티클라우드, 인프라 조달 능력으로 빠르게 넓어지고 있습니다.</li>
+        <li>에이전트형 AI 확산으로 GPU뿐 아니라 CPU, 에너지 저장, 전력망 같은 주변 인프라가 동시에 전략 자산이 되고 있습니다.</li>
+        <li>이번 발표들은 “더 강한 모델”보다 “더 넓게, 더 오래, 더 안전하게 배포하는 능력”이 시장의 다음 승부처임을 보여줍니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, ChatGPT Enterprise와 API Platform의 FedRAMP Moderate 인증 확보</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 ChatGPT Enterprise와 API Platform이 FedRAMP 20x Moderate authorization을 획득했다고 발표했습니다. 이에 따라 미국 연방기관은 각 기관의 내부 승인 절차에 맞춰 OpenAI의 관리형 AI 서비스를 보다 명확한 보안·거버넌스 체계 안에서 검토할 수 있게 됐습니다. OpenAI는 연구, 공공 커뮤니케이션 작성, 번역, 공중보건 분석, 정책 문서 탐색, 소프트웨어 개발 등 공공업무 활용 사례를 제시했습니다. 또한 FedRAMP 환경에서 GPT-5.5 접근과 향후 Codex Cloud 연동 계획도 함께 언급했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>공공부문 AI 도입의 병목은 대개 모델 성능보다 인증과 통제 체계였습니다. 이번 인증은 OpenAI가 민간용 AI 회사에서 공공조달 가능한 인프라 사업자로 외연을 넓히고 있다는 신호입니다. 경쟁사들도 미국 정부 시장을 노린다면 비슷한 보안 패키지와 인증 경로를 더 서둘러 갖춰야 할 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 시장의 다음 큰 성장 구간은 “누가 더 잘 만드나”와 함께 “누가 더 안전하게 공공영역에 들어가나”가 좌우합니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/openai-available-at-fedramp-moderate/" target="_blank" rel="noopener">OpenAI, OpenAI available at FedRAMP Moderate</a>
+        <a href="https://www.fedramp.gov/marketplace/products/FR2533155773/" target="_blank" rel="noopener">FedRAMP Marketplace listing</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI와 Microsoft, 파트너십 개정으로 멀티클라우드와 라이선스 구조 재정비</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 Microsoft와 amended agreement를 체결해 양사 파트너십 구조를 단순화했다고 밝혔습니다. 핵심은 Microsoft가 여전히 OpenAI의 primary cloud partner로 남지만, OpenAI가 이제 모든 제품을 다른 클라우드 고객에게도 제공할 수 있다는 점입니다. Microsoft의 OpenAI IP 라이선스는 2032년까지 유지되되 비독점으로 전환됐고, Microsoft가 OpenAI에 내던 revenue share는 종료됩니다. 반대로 OpenAI가 Microsoft에 지급하는 revenue share는 2030년까지 유지되지만 총액 상한이 생겼습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 조정은 OpenAI가 Azure 의존도를 낮추면서도 Microsoft와의 전략 관계는 유지하려는 균형점으로 읽힙니다. 기업 고객 입장에서는 멀티클라우드 선택지가 생기고, OpenAI는 더 넓은 유통 경로를 확보합니다. 업계 전체로 보면 선도 모델 회사와 초대형 클라우드 사업자의 관계가 앞으로 더 유연한 계약 구조로 바뀔 가능성을 시사합니다.</p>
+      <p class="why">왜 중요한지: 생성형 AI 주도권은 모델 성능뿐 아니라 클라우드 유통과 계약 구조가 어떻게 재편되느냐에 크게 달려 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/next-phase-of-microsoft-partnership/" target="_blank" rel="noopener">OpenAI, The next phase of the Microsoft OpenAI partnership</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. OpenAI, GPT-5.5와 GPT-5.5 Pro를 API에도 확대 제공</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 4월 24일 업데이트를 통해 GPT-5.5와 GPT-5.5 Pro가 이제 API에서도 제공된다고 밝혔습니다. 회사는 GPT-5.5가 코딩, 컴퓨터 사용, 지식 노동, 초기 과학 연구 같은 영역에서 더 높은 성능과 효율을 동시에 지향한다고 설명했습니다. 발표문에는 Terminal-Bench 2.0, OSWorld-Verified, BrowseComp 등 여러 벤치마크에서 GPT-5.4 대비 개선된 수치가 포함됐고, 더 적은 토큰으로 작업을 끝내는 효율성도 강조됐습니다. 즉, 프리미엄 모델을 챗봇 제품 안에만 두지 않고 개발자 플랫폼까지 본격 확장한 셈입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>API 공개는 곧 외부 서비스, 사내 워크플로우, 자동화 시스템 안으로 해당 모델이 직접 들어간다는 뜻이라 파급력이 큽니다. 특히 에이전트형 코딩과 브라우징 자동화 수요가 커지는 상황에서 성능 향상과 토큰 효율 개선이 함께 나오면 운영비 계산이 달라집니다. 경쟁 모델 사업자들도 이제 단순 성능이 아니라 배포 가능성과 비용 효율을 함께 증명해야 합니다.</p>
+      <p class="why">왜 중요한지: 좋은 모델이 진짜 시장을 움직이는 순간은 데모가 아니라 API로 열릴 때입니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI, Introducing GPT-5.5</a>
+        <a href="https://openai.com/index/gpt-5-5-system-card/" target="_blank" rel="noopener">OpenAI, GPT-5.5 System Card</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Meta, AWS Graviton 대규모 도입으로 에이전트형 AI용 CPU 인프라 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>Meta는 AWS와의 계약을 통해 수천만 개 규모의 AWS Graviton 코어를 자사 컴퓨트 포트폴리오에 편입한다고 발표했습니다. Meta는 이 계약으로 자사가 세계 최대 Graviton 고객 중 하나가 된다고 설명했고, 초기 배치는 수천만 코어에서 시작해 AI 수요 증가에 맞춰 확대될 수 있다고 밝혔습니다. 발표문은 agentic AI 확산으로 실시간 추론, 계획, 실행, 데이터 처리 같은 CPU 집약적 워크로드가 늘고 있다고 짚었습니다. GPU 중심으로 보이던 AI 인프라 전략에 CPU 다변화가 본격 편입되고 있다는 점이 핵심입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>생성형 AI 인프라 논의는 주로 GPU 수급에 집중돼 왔지만 실제 서비스 단계에서는 CPU, 네트워크, 저장 구조가 함께 병목이 됩니다. Meta의 이번 결정은 에이전트형 AI가 커질수록 “추론 주변 인프라”의 가치가 더 커진다는 점을 드러냅니다. AWS 입장에서도 Graviton을 범용 클라우드 칩이 아니라 AI 인프라 핵심 부품으로 포지셔닝할 수 있게 됩니다.</p>
+      <p class="why">왜 중요한지: AI 인프라 전쟁은 이제 GPU 확보전 하나만으로 설명되지 않습니다.</p>
+      <div class="sources">
+        <a href="https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/" target="_blank" rel="noopener">Meta Newsroom, Meta Partners With AWS on Graviton Chips to Power Agentic AI</a>
+        <a href="https://www.aboutamazon.com/news/aws/meta-aws-graviton-ai-partnership" target="_blank" rel="noopener">Amazon, Meta signs agreement with AWS to power agentic AI on Amazon's Graviton chips</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Meta, 우주 태양광과 초장주기 저장 파트너십으로 AI 전력 확보에 선제 투자</h2>
+      <h3>핵심 요약</h3>
+      <p>Meta는 Overview Energy, Noon Energy와의 신규 파트너십을 발표하며 AI 인프라와 데이터센터 운영을 위한 차세대 전력원 확보에 나섰습니다. Overview Energy와는 우주에서 태양광을 수집해 지상 태양광 설비로 전송하는 방식으로 최대 1GW 용량을 예약했고, Noon Energy와는 100시간 이상 저장 가능한 장주기 에너지 저장 용량 최대 1GW/100GWh를 확보한다고 밝혔습니다. 두 기술 모두 2028년 실증을 목표로 하고, Meta는 이를 통해 기존 그리드와 재생에너지의 간헐성 한계를 보완하려는 전략을 분명히 했습니다. AI 데이터센터 확장이 전력 인프라 문제와 직결된다는 점을 정면으로 다룬 발표입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>초대형 AI 기업들은 이제 모델 발표 못지않게 전력 조달 능력이 중요해졌습니다. Meta처럼 차세대 에너지 프로젝트에 직접 선투자하는 흐름은 향후 AI 기업 경쟁력이 반도체뿐 아니라 전력 계약과 에너지 기술 포트폴리오로도 평가될 수 있음을 보여줍니다. 테크 기업과 에너지 기업의 전략적 결합이 더 빨라질 가능성도 큽니다.</p>
+      <p class="why">왜 중요한지: AI 확장의 진짜 상한선은 알고리즘보다 전력망과 저장 능력에서 먼저 나타날 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://about.fb.com/news/2026/04/powering-ai-strengthening-the-grid-space-solar-energy-and-long-duration-storage/" target="_blank" rel="noopener">Meta Newsroom, Powering AI, Strengthening the Grid</a>
+        <a href="https://www.noon.energy/post/noonenergyandmetapartnership" target="_blank" rel="noopener">Noon Energy partnership announcement</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
