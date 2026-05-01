@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-05-02</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-05-02 (토) · 공식 블로그, 공식 발표, 제품 문서 중심으로 확인 가능한 핵심만 가볍게 정리한 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 플랫폼 경쟁이 모델 성능에서 계정 보안, 클라우드 유통, 장기 컴퓨트 확보 같은 운영 역량 경쟁으로 확실히 이동하고 있습니다.</li>
+        <li>개발자 도구 시장에서는 가격 체계와 보안 대응이 제품 기능만큼 중요한 차별화 포인트가 되고 있습니다.</li>
+        <li>이번 주 발표들은 “더 똑똑한 AI”보다 “더 안전하고, 더 잘 배포되고, 더 오래 돌릴 수 있는 AI”에 초점이 맞춰졌습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, 고위험 사용자용 ‘Advanced Account Security’ 도입</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 ChatGPT 계정용 opt-in 보안 모드인 Advanced Account Security를 공개했습니다. 이 설정을 켜면 패스키나 물리 보안키 기반 로그인으로 전환되고, 이메일·SMS 기반 계정 복구는 비활성화됩니다. OpenAI는 짧은 세션 유지, 로그인 알림, 활성 세션 관리 강화도 함께 제공한다고 설명했습니다. 또한 해당 보호는 ChatGPT뿐 아니라 같은 로그인 체계를 쓰는 Codex에도 적용됩니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 계정은 이제 단순한 채팅 이력 저장소가 아니라 코드, 문서, 업무 맥락, 연결된 도구 접근권까지 담는 허브가 되고 있습니다. 그래서 계정 탈취 리스크는 메일이나 협업툴 수준으로 커졌고, 플랫폼 사업자도 보안 기능을 프리미엄 인프라처럼 다루기 시작했습니다. 특히 보안 민감 직군을 직접 겨냥한 점은 AI 서비스가 공공·정치·연구 업무까지 깊게 들어갔다는 신호입니다.</p>
+      <p class="why">왜 중요한지: AI 서비스 경쟁에서 계정 보안이 이제 부가 기능이 아니라 핵심 제품 경쟁력이 됐습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/advanced-account-security/" target="_blank" rel="noopener">OpenAI, Introducing Advanced Account Security</a>
+        <a href="https://chatgpt.com/advanced-account-security" target="_blank" rel="noopener">ChatGPT, Advanced Account Security 안내</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, AWS에서 모델·Codex·Managed Agents 제한 프리뷰 시작</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 AWS와의 전략적 파트너십 확대를 발표하며 OpenAI 모델, Codex, Amazon Bedrock Managed Agents powered by OpenAI를 제한 프리뷰로 제공한다고 밝혔습니다. 발표문에 따르면 AWS 고객은 기존 보안·컴플라이언스·조달 체계 안에서 GPT-5.5 같은 최신 모델을 쓸 수 있게 됩니다. Codex도 Bedrock API를 통해 CLI, 데스크톱 앱, VS Code 확장 등에서 연결할 수 있도록 열립니다. 핵심은 OpenAI 기능이 특정 플랫폼 밖으로 더 넓게 유통되며 기업 도입 장벽을 낮추는 데 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대기업은 좋은 모델만으로 움직이지 않고, 기존 클라우드 정책과 결제 구조 안에서 바로 붙는지를 더 중요하게 봅니다. 이번 발표는 모델 사업자와 클라우드 사업자가 경쟁하면서도 동시에 유통 파트너가 되는 구조를 더 선명하게 보여줍니다. 멀티클라우드 AI 전략이 표준이 될수록 이런 협력은 더 자주 나올 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 기업 시장에선 모델 성능 못지않게 “지금 쓰는 클라우드에 바로 얹히는가”가 승부처입니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/openai-on-aws/" target="_blank" rel="noopener">OpenAI, OpenAI models, Codex, and Managed Agents come to AWS</a>
+        <a href="https://aws.amazon.com/bedrock/managed-agents-openai/" target="_blank" rel="noopener">AWS, Amazon Bedrock Managed Agents powered by OpenAI</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Anthropic·Amazon, Claude용 신규 컴퓨트 최대 5GW 확보 계약 발표</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 Amazon과의 새 계약으로 Claude 학습·배포용 최대 5기가와트 규모의 컴퓨트 용량을 확보한다고 발표했습니다. 회사는 상반기 중 추가 Trainium2 용량이 들어오고, 2026년 말까지 Trainium2·Trainium3 기반 nearly 1GW가 가동될 예정이라고 설명했습니다. 동시에 Claude Platform on AWS를 같은 계정, 같은 통제 체계, 같은 청구 흐름 안에서 제공하는 방향도 예고했습니다. 발표문에는 Amazon이 즉시 50억 달러를 추가 투자하고, 향후 최대 200억 달러를 더 투자할 수 있다는 내용도 포함됐습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>프런티어 모델 경쟁은 이제 알고리즘뿐 아니라 전력, 칩, 장기 조달 계약을 얼마나 안정적으로 확보하느냐의 싸움이 됐습니다. 특히 커스텀 AI 칩인 Trainium 계열이 실제 대규모 상용 서비스에 얼마나 깊게 들어가는지가 중요한 신호가 되고 있습니다. 이번 발표는 클라우드와 모델 기업의 관계가 단순 고객·공급자를 넘어 장기 공동 인프라 파트너십으로 굳어지고 있음을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 차세대 AI 경쟁의 숨은 본체는 모델 발표보다 전력과 컴퓨트 공급망입니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/anthropic-amazon-compute" target="_blank" rel="noopener">Anthropic, Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute</a>
+        <a href="https://aws.amazon.com/bedrock/anthropic/" target="_blank" rel="noopener">AWS, Anthropic on Amazon Bedrock</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. GitHub, Copilot를 6월부터 usage-based billing으로 전환</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 6월 1일부터 모든 Copilot 플랜이 GitHub AI Credits 기반 과금으로 전환된다고 발표했습니다. 기존의 premium request 단위 대신 입력·출력·캐시 토큰 사용량에 따라 크레딧이 차감되는 구조입니다. 기본 월 구독료는 유지되지만, 포함 사용량을 넘기면 추가 소비를 직접 통제하거나 더 구매하는 방식으로 바뀝니다. GitHub는 에이전트형 장시간 코딩 세션이 늘어나면서 기존 과금 모델이 지속 가능하지 않았다고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 코딩 도구가 짧은 자동완성에서 장시간 자율 작업으로 이동할수록, 정액제는 공급자에게 불리해지고 헤비 유저 제한이 늘어날 수밖에 없습니다. GitHub의 이번 전환은 다른 AI 개발 도구 기업에도 가격 재설계 압박을 줄 가능성이 큽니다. 동시에 기업 고객 입장에서는 예산 통제와 비용 가시성이 더 중요해질 전망입니다.</p>
+      <p class="why">왜 중요한지: AI 코딩 도구 시장이 이제 기능 경쟁을 넘어 수익 모델 재편 단계로 들어갔습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank" rel="noopener">GitHub Blog, GitHub Copilot is moving to usage-based billing</a>
+        <a href="https://docs.github.com/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises" target="_blank" rel="noopener">GitHub Docs, Usage-based billing for organizations and enterprises</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. GitHub, 치명적 git push 원격 코드 실행 취약점 대응 경과 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 자사 git push 처리 파이프라인에서 발견된 치명적 원격 코드 실행 취약점 대응 과정을 상세히 공개했습니다. 발표에 따르면 연구자 제보를 받은 뒤 40분 안에 재현과 심각도 확인을 마쳤고, 2시간이 채 안 돼 github.com에 수정 배포와 포렌식 조사를 시작했습니다. 취약점은 user-supplied push option 값이 내부 메타데이터에 충분히 sanitize되지 않아 신뢰된 내부 필드처럼 해석될 수 있었던 문제였습니다. GitHub는 조사 결과 연구자의 테스트 외 악용 흔적은 없었고, GHES 고객에게는 관련 패치 버전으로 즉시 업그레이드할 것을 권고했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>개발자 플랫폼은 소스코드 저장소이면서 동시에 소프트웨어 공급망의 핵심 인프라라, 이런 취약점은 영향 범위가 매우 넓을 수 있습니다. 이번 사례는 입력 검증 같은 기본 보안 원칙과 함께, 원래 없어야 할 코드 경로를 배포 이미지에서 제거하는 방어 심층화의 중요성을 다시 보여줬습니다. AI 도구 확산과 별개로 개발 인프라 보안 자체가 계속 큰 이슈로 남아 있다는 뜻입니다.</p>
+      <p class="why">왜 중요한지: 코드 협업 플랫폼의 취약점은 곧 전체 소프트웨어 공급망 리스크로 번질 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/" target="_blank" rel="noopener">GitHub Blog, Securing the git push pipeline</a>
+        <a href="https://www.cve.org/cverecord?id=CVE-2026-3854" target="_blank" rel="noopener">CVE-2026-3854</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
