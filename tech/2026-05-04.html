@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-05-04</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-05-04 (월) · 공식 블로그와 기업 발표를 우선으로, 오늘 확인하기 좋은 핵심만 가볍게 추린 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁의 무게중심이 모델 스펙에서 보안·과금·가용성·클라우드 배치 같은 운영 역량으로 빠르게 이동하고 있습니다.</li>
+        <li>대형 플랫폼들은 “더 강한 모델” 못지않게 “기업이 바로 쓸 수 있는 통제 가능한 환경”을 전면에 내세우고 있습니다.</li>
+        <li>크리에이티브 툴, 개발자 플랫폼, 클라우드 인프라가 모두 에이전트형 워크플로를 기준으로 다시 설계되는 흐름이 선명합니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, 고위험 사용자용 Advanced Account Security 도입</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 4월 30일 ChatGPT 계정용 opt-in 보안 모드인 Advanced Account Security를 공개했습니다. 이 모드를 켜면 비밀번호 기반 로그인이 비활성화되고 패스키 또는 물리 보안키 기반 로그인으로 전환됩니다. 계정 복구 역시 이메일·SMS 대신 백업 패스키, 보안키, 복구키 같은 강한 수단만 허용됩니다. OpenAI는 로그인 알림, 더 짧은 세션, 활성 세션 관리 강화와 함께 해당 보호가 Codex까지 확장된다고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이제 AI 계정에는 단순 대화 기록을 넘어 코드, 문서, 연결 앱, 업무 맥락이 쌓이기 때문에 계정 탈취의 피해 범위가 크게 커졌습니다. OpenAI가 언론인, 연구자, 공직자 같은 고위험군을 직접 언급한 점은 생성형 AI가 민감 업무 인프라로 깊게 들어왔다는 의미입니다. 앞으로 주요 AI 서비스에서 피싱 저항형 인증이 사실상 기본 기대치가 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 서비스의 신뢰 경쟁은 모델 성능만이 아니라 계정 보안 수준까지 포함하는 단계로 넘어갔습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/advanced-account-security/" target="_blank" rel="noopener">OpenAI, Introducing Advanced Account Security</a>
+        <a href="https://chatgpt.com/advanced-account-security" target="_blank" rel="noopener">ChatGPT, Advanced Account Security 안내</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. Google Cloud Next ’26, “에이전트 운영 플랫폼”과 8세대 TPU 전면화</h2>
+      <h3>핵심 요약</h3>
+      <p>구글은 Cloud Next ’26에서 Gemini Enterprise Agent Platform과 8세대 TPU 전략을 핵심 축으로 제시했습니다. Sundar Pichai는 고객 직접 API 사용량이 분당 160억 토큰을 넘었고, 기업의 관심이 “에이전트를 만들 수 있나”에서 “수천 개 에이전트를 어떻게 관리하나”로 이동했다고 설명했습니다. 이에 맞춰 구글은 보안·거버넌스·확장을 함께 묶은 에이전트 운영 계층을 강조했습니다. 인프라 측면에선 학습용 TPU 8t와 추론용 TPU 8i를 분리한 듀얼 칩 접근을 발표하며 대규모 에이전트 워크로드 대응을 전면에 세웠습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기업 AI 시장은 이제 단일 모델 도입보다, 많은 에이전트를 운영 가능한 형태로 배치하고 감시하는 문제로 옮겨가고 있습니다. 구글 발표는 모델·보안·칩·운영도구를 한 번에 묶어 제공하려는 하이퍼스케일러 경쟁이 더 치열해졌다는 신호입니다. 특히 추론 전용 TPU를 별도로 내세운 점은 에이전트 시대에 inference economics가 핵심이라는 판단을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 앞으로 기업 AI 승부는 “좋은 모델 1개”보다 “대규모 에이전트 시스템을 굴리는 전체 스택”에서 갈릴 가능성이 큽니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/" target="_blank" rel="noopener">Google, Cloud Next ‘26: Momentum and innovation at Google scale</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Anthropic, Claude를 크리에이티브 툴체인 안으로 직접 연결</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 4월 28일 Claude for Creative Work를 발표하며 여러 크리에이티브 툴용 커넥터를 공개했습니다. 발표에 따르면 Adobe Creative Cloud, Ableton, Autodesk Fusion, Blender, SketchUp, Splice 등과 연결해 Claude가 문서 기반 튜터, 반복 작업 자동화, 툴 간 파이프라인 연결, 스크립트 작성 역할을 수행할 수 있습니다. Anthropic은 특히 Blender용 MCP 커넥터를 공식 제공하며 자연어로 Python API를 활용하도록 지원한다고 설명했습니다. 또한 Claude Design 결과물을 다른 툴로 넘기는 흐름도 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>생성형 AI가 범용 채팅에서 실제 업계 소프트웨어 안으로 들어가는 전형적인 사례입니다. 크리에이티브 업계는 결과물 품질뿐 아니라 기존 툴체인과의 호환성이 중요한데, Anthropic은 그 지점을 정면으로 공략했습니다. AI가 사람을 완전히 대체하기보다는 기존 전문가의 생산성을 넓히는 방향으로 자리 잡고 있다는 점도 다시 확인됩니다.</p>
+      <p class="why">왜 중요한지: AI의 실사용 가치는 독립형 챗봇보다 현업 도구 속 워크플로에 얼마나 자연스럽게 녹아드느냐에서 커집니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/claude-for-creative-work" target="_blank" rel="noopener">Anthropic, Claude for Creative Work</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. GitHub Copilot, 6월부터 usage-based billing으로 전환</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 6월 1일부터 모든 Copilot 플랜을 GitHub AI Credits 기반 usage-based billing으로 전환한다고 밝혔습니다. 기존 premium request 방식 대신 입력·출력·캐시 토큰 사용량에 따라 크레딧이 차감되며, 기본 구독료는 유지됩니다. GitHub는 5월 초부터 예상 비용을 미리 볼 수 있는 청구 미리보기 경험도 제공한다고 설명했습니다. 배경으로는 장시간 에이전트형 코딩 세션 증가로 기존 정액성 구조가 지속 가능하지 않았다는 점을 분명히 들었습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 코딩 도구가 단문 추천에서 장시간 자율 작업으로 이동할수록 공급자 비용 구조는 급격히 무거워집니다. GitHub의 전환은 다른 개발자 AI 업체에도 가격 재설계 압박을 줄 가능성이 큽니다. 기업 입장에서는 기능 비교뿐 아니라 팀별 예산 통제와 모델 사용량 가시성이 더 중요한 관리 항목이 될 것입니다.</p>
+      <p class="why">왜 중요한지: 에이전트형 코딩 시대에는 기능 경쟁만큼 과금 모델과 비용 통제가 제품 경쟁력의 일부가 됩니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank" rel="noopener">GitHub Blog, GitHub Copilot is moving to usage-based billing</a>
+        <a href="https://docs.github.com/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises" target="_blank" rel="noopener">GitHub Docs, Usage-based billing for organizations and enterprises</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. GitHub, 최근 장애 이후 가용성 우선 전략과 30배 스케일 계획 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub CTO Vlad Fedorov는 최근 두 차례 장애 이후 가용성 개선 계획을 공개했습니다. 회사는 2025년 10월부터 10배 용량 확대 계획을 실행해왔지만, 2026년 2월에는 이미 현재 대비 30배 규모를 염두에 둔 설계가 필요하다고 판단했다고 밝혔습니다. 배경에는 agentic development 확산으로 저장소 생성, PR 활동, API 사용, 자동화, 대형 저장소 부하가 급증한 점이 있습니다. GitHub는 중요 서비스 격리, 캐시 및 인증 경로 개선, Go 이전 가속, 장기적으로 멀티클라우드 방향을 추진 중이라고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>개발 플랫폼도 이제 인간 개발자만을 위한 트래픽이 아니라 에이전트와 자동화가 대량 생성하는 워크로드를 견뎌야 합니다. GitHub의 이번 설명은 AI 시대 인프라 운영의 핵심 문제가 기능 추가보다 시스템 분리, 장애 반경 축소, 검색·큐·캐시 병목 제거에 있음을 잘 보여줍니다. 개발 도구 업계 전반에서도 안정성과 확장성 투자가 더 앞자리에 설 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 에이전트가 개발 플랫폼의 주된 사용자로 떠오르면서, 플랫폼 설계 자체가 새 스케일 전제에 맞춰 재편되고 있습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/news-insights/company-news/an-update-on-github-availability/" target="_blank" rel="noopener">GitHub Blog, An update on GitHub availability</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
