@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-05-05</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-05-05 (화) · 공식 블로그, 제품 문서, 기업 발표를 우선으로 확인 가능한 핵심만 가볍게 추린 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>프런티어 AI 경쟁은 모델 성능 발표를 넘어 보안, 클라우드 유통, 과금, 컴퓨트 확보 같은 운영 전쟁으로 이동하고 있습니다.</li>
+        <li>대형 플랫폼들은 “좋은 모델”보다 “기업이 바로 배포하고 통제할 수 있는 전체 스택”을 앞세우기 시작했습니다.</li>
+        <li>개발자·크리에이터·엔터프라이즈 사용자 모두에게 AI가 별도 도구가 아니라 기존 워크플로 안으로 들어가는 흐름이 더 선명해졌습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, 고위험 사용자용 Advanced Account Security 도입</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 4월 30일 ChatGPT 계정용 opt-in 보안 모드인 Advanced Account Security를 공개했습니다. 이 모드를 켜면 비밀번호 기반 로그인이 꺼지고 패스키 또는 물리 보안키 중심으로 전환됩니다. 계정 복구에서도 이메일·SMS 기반 복구를 막고 백업 패스키, 보안키, 복구키 같은 더 강한 수단만 허용합니다. OpenAI는 짧아진 세션, 로그인 알림, 활성 세션 관리 강화, 자동 학습 제외도 함께 제공하며 같은 로그인 체계를 쓰는 Codex에도 적용된다고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 계정에는 이제 대화 이력뿐 아니라 코드, 문서, 연결 앱, 업무 맥락이 함께 쌓여 있어 계정 탈취 피해가 훨씬 커졌습니다. OpenAI가 언론인, 공직자, 연구자 등 고위험군을 직접 언급한 점은 생성형 AI가 민감한 업무 인프라로 깊게 들어왔다는 뜻입니다. 앞으로 주요 AI 서비스에서 피싱 저항형 인증이 사실상 기본 기대치가 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 신뢰 경쟁은 모델 성능만이 아니라 계정 보안 수준까지 포함하는 단계로 넘어갔습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/advanced-account-security/" target="_blank" rel="noopener">OpenAI, Introducing Advanced Account Security</a>
+        <a href="https://chatgpt.com/advanced-account-security" target="_blank" rel="noopener">ChatGPT, Advanced Account Security 안내</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, AWS에서 모델·Codex·Managed Agents 제한 프리뷰 시작</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 AWS와 전략적 파트너십 확대를 발표하며 OpenAI 모델, Codex, Amazon Bedrock Managed Agents powered by OpenAI를 제한 프리뷰로 제공한다고 밝혔습니다. GPT-5.5를 포함한 OpenAI 모델을 Amazon Bedrock에서 사용할 수 있고, Codex는 CLI·데스크톱 앱·VS Code 확장에서 Bedrock API를 통해 연결됩니다. Bedrock Managed Agents는 OpenAI 하네스를 기반으로 장기 실행 에이전트를 AWS 보안·거버넌스 체계 안에서 배포하도록 설계됐습니다. 핵심은 OpenAI 기능이 독립 서비스가 아니라 기존 AWS 운영 환경 속으로 직접 들어온다는 점입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대기업 고객은 좋은 모델 자체보다 기존 클라우드 정책, 보안 통제, 조달 체계 안에서 바로 쓸 수 있는지를 더 중요하게 봅니다. 이번 발표는 모델 사업자와 클라우드 사업자가 경쟁하면서도 동시에 유통 파트너가 되는 현재 AI 시장 구조를 잘 보여줍니다. 멀티클라우드 전략이 일반화될수록 이런 식의 결합은 더 늘어날 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 기업 AI 시장에선 “최고 모델인가” 못지않게 “지금 쓰는 클라우드 안에 자연스럽게 들어오는가”가 승부처입니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/openai-on-aws/" target="_blank" rel="noopener">OpenAI, OpenAI models, Codex, and Managed Agents come to AWS</a>
+        <a href="https://aws.amazon.com/bedrock/managed-agents-openai/" target="_blank" rel="noopener">AWS, Amazon Bedrock Managed Agents powered by OpenAI</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Anthropic·Amazon, Claude용 신규 컴퓨트 최대 5GW 확보</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 Amazon과의 새 계약으로 Claude 학습·배포용 최대 5기가와트 규모의 컴퓨트 용량을 확보한다고 발표했습니다. 회사는 올해 상반기 중 추가 Trainium2 용량이 들어오고, 2026년 말까지 Trainium2·Trainium3 기반 nearly 1GW가 가동될 예정이라고 설명했습니다. 동시에 Claude Platform을 AWS 내부에서 같은 계정, 같은 통제, 같은 청구 구조로 제공하는 방향도 예고했습니다. Amazon은 즉시 50억 달러를 투자하고 향후 최대 200억 달러 추가 투자 가능성도 열어뒀습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>프런티어 모델 경쟁은 이제 알고리즘뿐 아니라 전력, 칩, 장기 공급계약을 얼마나 안정적으로 확보하느냐의 싸움이 됐습니다. 특히 Trainium 같은 커스텀 AI 칩이 실제 상용 서비스 대규모 운영에 얼마나 깊게 채택되는지가 중요한 업계 신호가 되고 있습니다. 이번 발표는 클라우드와 모델 기업의 관계가 단순 공급을 넘어 장기 인프라 공동체제로 굳어지고 있음을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 차세대 AI 경쟁의 실질 본체는 모델 출시보다 전력·칩·컴퓨트 공급망일 가능성이 큽니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/anthropic-amazon-compute" target="_blank" rel="noopener">Anthropic, Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute</a>
+        <a href="https://aws.amazon.com/bedrock/anthropic/" target="_blank" rel="noopener">AWS, Anthropic on Amazon Bedrock</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Google Cloud Next ’26, 에이전트 운영 플랫폼과 8세대 TPU 전면화</h2>
+      <h3>핵심 요약</h3>
+      <p>구글은 Cloud Next ’26에서 Gemini Enterprise Agent Platform과 8세대 TPU 전략을 핵심 축으로 제시했습니다. Sundar Pichai는 고객 직접 API 사용량이 분당 160억 토큰을 넘었고, 기업의 관심이 “에이전트를 만들 수 있나”에서 “수천 개를 어떻게 관리하나”로 이동했다고 설명했습니다. 이에 맞춰 구글은 보안·거버넌스·확장을 묶은 에이전트 운영 계층을 강조했습니다. 인프라 측면에서는 학습용 TPU 8t와 추론용 TPU 8i를 분리한 듀얼 칩 접근을 내세우며 수백만 개 에이전트 동시 실행을 겨냥했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기업 AI 시장은 단일 모델 도입보다, 많은 에이전트를 운영 가능한 형태로 배치하고 감시하는 문제로 빠르게 옮겨가고 있습니다. 구글 발표는 모델·보안·칩·운영도구를 한 번에 묶어 제공하려는 하이퍼스케일러 경쟁이 더 치열해졌다는 신호입니다. 특히 추론 전용 TPU를 별도로 강조한 점은 에이전트 시대에 inference economics가 핵심이라는 판단을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 앞으로 기업 AI 승부는 “좋은 모델 1개”보다 “대규모 에이전트 시스템을 굴리는 전체 스택”에서 갈릴 가능성이 큽니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/" target="_blank" rel="noopener">Google, Cloud Next ‘26: Momentum and innovation at Google scale</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Anthropic, Claude를 크리에이티브 툴체인 안으로 직접 연결</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 4월 28일 Claude for Creative Work를 발표하며 여러 크리에이티브 툴용 커넥터를 공개했습니다. Adobe Creative Cloud, Ableton, Autodesk Fusion, Blender, SketchUp, Splice 등과 연결해 Claude가 문서 기반 튜터, 반복 작업 자동화, 툴 간 파이프라인 연결, 스크립트 작성 역할을 하도록 설계됐습니다. Anthropic은 특히 Blender용 MCP 커넥터를 공식 제공하며 자연어로 Python API를 활용할 수 있다고 설명했습니다. 또한 Claude Design 결과물을 다른 툴로 넘기는 흐름도 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>생성형 AI가 범용 채팅에서 실제 업계 소프트웨어 안으로 들어가는 전형적인 사례입니다. 크리에이티브 업계는 결과물 품질만큼 기존 툴체인과의 호환성이 중요한데, Anthropic은 그 지점을 정면으로 공략했습니다. AI가 사람을 완전히 대체하기보다 기존 전문가의 생산성을 넓히는 방향으로 자리 잡고 있다는 점도 다시 확인됩니다.</p>
+      <p class="why">왜 중요한지: AI의 실사용 가치는 독립형 챗봇보다 현업 도구 속 워크플로에 얼마나 자연스럽게 녹아드느냐에서 커집니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/claude-for-creative-work" target="_blank" rel="noopener">Anthropic, Claude for Creative Work</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>6. GitHub Copilot, 6월부터 usage-based billing으로 전환</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 6월 1일부터 모든 Copilot 플랜을 GitHub AI Credits 기반 usage-based billing으로 전환한다고 밝혔습니다. 기존 premium request 방식 대신 입력·출력·캐시 토큰 사용량에 따라 크레딧이 차감되며, 기본 구독료는 유지됩니다. 5월 초부터는 예상 비용을 먼저 볼 수 있는 billing preview도 제공됩니다. GitHub는 장시간 에이전트형 코딩 세션 증가로 기존 과금 구조가 지속 가능하지 않았다고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 코딩 도구가 짧은 자동완성에서 장시간 자율 작업으로 이동할수록 공급자 비용 구조는 급격히 무거워집니다. GitHub의 전환은 다른 개발자 AI 업체에도 가격 재설계 압박을 줄 가능성이 큽니다. 기업 입장에서는 기능 비교뿐 아니라 예산 통제, 팀별 비용 가시성, 모델별 사용량 관리가 더 중요한 운영 항목이 될 것입니다.</p>
+      <p class="why">왜 중요한지: 에이전트형 코딩 시대에는 기능 경쟁만큼 과금 모델과 비용 통제가 제품 경쟁력의 일부가 됩니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank" rel="noopener">GitHub Blog, GitHub Copilot is moving to usage-based billing</a>
+        <a href="https://docs.github.com/copilot/concepts/billing/usage-based-billing-for-organizations-and-enterprises" target="_blank" rel="noopener">GitHub Docs, Usage-based billing for organizations and enterprises</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
