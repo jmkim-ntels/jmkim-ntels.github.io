@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-05-17</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-05-17 (일) · 공식 블로그·공식 발표 자료를 우선 확인한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁의 초점이 모델 단품에서 실제 업무를 굴리는 에이전트 플랫폼, 배포 환경, 운영 통제로 더 분명히 이동하고 있습니다.</li>
+        <li>음성·메신저·코딩·클라우드 전반에서 “AI가 어디에 붙느냐”보다 “얼마나 자연스럽게 일을 끝내느냐”가 핵심 차별점이 되고 있습니다.</li>
+        <li>동시에 프라이버시, 로그, 멀티클라우드 유연성, 컴퓨트 확보 같은 신뢰 인프라가 채택의 필수 조건으로 올라왔습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. Meta, WhatsApp에 완전 비공개형 ‘Incognito Chat with Meta AI’ 도입</h2>
+      <h3>핵심 요약</h3>
+      <p>Meta는 5월 13일 WhatsApp과 Meta AI 앱에 ‘Incognito Chat with Meta AI’를 도입한다고 발표했습니다. 이 기능은 WhatsApp의 Private Processing 기술 위에서 동작하며, Meta조차 대화 내용을 볼 수 없는 구조를 목표로 한다고 설명했습니다. 대화는 임시 세션처럼 처리되고 기본적으로 저장되지 않으며, 메시지는 사라지는 방식으로 설계됐습니다. Meta는 건강, 대출, 커리어처럼 민감한 질문도 더 안심하고 물어볼 수 있게 하려는 취지라고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>메신저 AI는 답변 품질만으로 차별화하기 어려워지면서 데이터 처리 구조 자체가 경쟁 포인트가 되고 있습니다. 이번 발표는 메타가 AI 기능 확장만이 아니라 개인정보 보호 구조를 제품 가치의 전면으로 끌어올리고 있음을 보여줍니다. 다른 메신저·소셜 플랫폼도 AI 대화의 저장 정책과 열람 범위를 더 명확히 설명해야 할 압박을 받을 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 메신저 AI의 승부처가 성능뿐 아니라 “얼마나 안심하고 쓸 수 있느냐”로 옮겨가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/" target="_blank" rel="noopener">Meta Newsroom, Introducing a Completely Private Way to Chat With AI</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. Anthropic, Claude 사용 한도를 올리고 SpaceX와 대규모 컴퓨트 계약 체결</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 5월 6일 Claude Code와 Claude API 사용 한도를 상향하고, SpaceX와 신규 컴퓨트 파트너십을 체결했다고 발표했습니다. 회사는 Pro·Max·Team·좌석형 Enterprise 플랜의 Claude Code 5시간 기준 한도를 두 배로 늘리고, Pro·Max의 피크 시간 제한 축소도 없앤다고 설명했습니다. 또 SpaceX의 Colossus 1 데이터센터 전체 용량을 활용하는 계약으로 300메가와트 이상, 22만 개가 넘는 NVIDIA GPU 규모의 신규 용량에 접근하게 된다고 밝혔습니다. Anthropic은 이 추가 용량이 Claude Pro·Max 구독자 체감 성능 개선으로 이어질 것이라고 덧붙였습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>프런티어 AI 경쟁은 이제 모델 성능 발표만으로 끝나지 않고, 실제 사용량을 버틸 수 있는 컴퓨트 조달 능력까지 공개 경쟁이 되고 있습니다. 특히 코딩 에이전트와 장기 실행형 워크플로가 늘수록 사용 한도와 안정적 처리량이 제품 선택에 직접 영향을 줍니다. 앞으로는 모델 랭킹 못지않게 어느 회사가 더 빠르게 전력·GPU·데이터센터를 확보하느냐가 중요한 변수로 남을 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 좋은 모델도 충분한 컴퓨트가 없으면 실제 업무 도구로 자리잡기 어렵습니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">Anthropic, Higher usage limits for Claude and a compute deal with SpaceX</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. OpenAI, 실시간 음성용 신규 API 모델 3종 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 5월 7일 API용 신규 오디오 모델로 GPT‑Realtime‑2, GPT‑Realtime‑Translate, GPT‑Realtime‑Whisper를 발표했습니다. GPT‑Realtime‑2는 GPT‑5급 추론을 실시간 음성 대화에 접목해 더 복잡한 요청 처리와 맥락 유지, 도구 호출을 강화한 것이 핵심입니다. 번역 모델은 70개 이상 입력 언어와 13개 출력 언어를 지원하고, Whisper 기반 스트리밍 전사는 발화와 동시에 텍스트를 뽑아내는 사용처를 겨냥합니다. OpenAI는 이번 조합으로 실시간 음성이 단순 질의응답이 아니라 실제 작업을 수행하는 인터페이스가 되도록 한다고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>음성 AI는 이제 보조 입력 수단이 아니라 고객지원, 여행, 현장 업무, 회의 기록 같은 흐름을 직접 바꾸는 업무 인터페이스로 올라오고 있습니다. 특히 번역·전사·추론·도구 호출이 한 스택 안에서 정리되면 음성형 에이전트 제품의 구현 난도가 크게 낮아집니다. 경쟁사들도 정확도뿐 아니라 지연시간, 행동 가능성, 운영 편의성까지 묶어 비교받게 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 실시간 음성 AI가 똑똑해질수록 화면 중심 소프트웨어의 경계가 빠르게 옅어집니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener">OpenAI, Advancing voice intelligence with new models in the API</a>
+        <a href="https://developers.openai.com/api/docs/guides/realtime" target="_blank" rel="noopener">OpenAI API Docs, Realtime and audio</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Google Cloud, ‘Gemini Enterprise Agent Platform’으로 Vertex AI를 에이전트 운영 중심으로 확장</h2>
+      <h3>핵심 요약</h3>
+      <p>Google Cloud는 4월 23일 Gemini Enterprise Agent Platform을 공개하며 Vertex AI를 에이전트 구축·확장·거버넌스·최적화 중심 플랫폼으로 재정의했습니다. 회사는 기존 Vertex AI의 모델 선택, 모델 개발, 에이전트 개발 기능에 더해 통합, DevOps, 오케스트레이션, 보안 기능을 묶어 제공한다고 설명했습니다. 발표문은 여러 시스템을 넘나드는 에이전트를 신뢰 가능한 방식으로 운영하려면 더 강한 보안과 거버넌스 기반이 필요하다고 강조했습니다. 즉 Google Cloud의 AI 메시지가 모델 제공에서 기업용 에이전트 운영체계로 이동하고 있다는 선언에 가깝습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기업 고객은 이제 “어느 모델이 더 똑똑한가”보다 “에이전트를 얼마나 안전하게 배포·감시·관리할 수 있는가”를 더 중요하게 보기 시작했습니다. Google은 이 지점을 노려 에이전트 통합과 운영 레이어를 하나의 제품 메시지로 묶었습니다. 경쟁 클라우드도 비슷하게 관찰 가능성, 보안, 배포 체계를 전면에 내세우는 흐름이 더 강해질 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 기업 AI의 실전 경쟁은 모델이 아니라 에이전트를 굴리는 운영 스택 전체에서 벌어집니다.</p>
+      <div class="sources">
+        <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform" target="_blank" rel="noopener">Google Cloud Blog, Introducing Gemini Enterprise Agent Platform</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Microsoft와 OpenAI, 개정 계약으로 멀티클라우드·비독점 구조를 명확화</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 4월 27일 OpenAI와의 개정 계약을 발표하며 양사 파트너십의 다음 단계를 공개했습니다. 핵심은 Microsoft가 여전히 OpenAI의 주된 클라우드 파트너이지만, OpenAI가 이제 모든 제품을 다양한 클라우드 제공자 고객에게도 제공할 수 있게 됐다는 점입니다. 또 Microsoft의 OpenAI IP 라이선스는 2032년까지 유지되되 비독점으로 전환됐고, Microsoft가 OpenAI에 지불하던 매출 배분은 종료된다고 설명했습니다. 반면 OpenAI의 Microsoft 대상 수익배분은 2030년까지 계속된다고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 변화는 초거대 AI 기업 간 관계가 단순한 독점 동맹보다 유연한 상호의존 구조로 재편되고 있음을 보여줍니다. OpenAI는 유통과 인프라 선택권을 넓히고, Microsoft는 Azure 우선권과 장기 라이선스를 유지하는 식으로 균형점을 다시 잡은 셈입니다. 다른 클라우드·모델 기업 계약도 비독점과 멀티클라우드 친화 방향으로 움직일 가능성이 높습니다.</p>
+      <p class="why">왜 중요한지: AI 시장의 판도는 기술력뿐 아니라 어떤 계약 구조가 속도와 유연성을 함께 주느냐에 크게 좌우됩니다.</p>
+      <div class="sources">
+        <a href="https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/" target="_blank" rel="noopener">Microsoft, The next phase of the Microsoft-OpenAI partnership</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>6. AWS, Amazon Bedrock에 OpenAI 모델·Codex·Managed Agents 제한적 프리뷰 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 4월 28일 Amazon Bedrock에서 최신 OpenAI 모델, Codex, 그리고 OpenAI 기반 Managed Agents를 제한적 프리뷰로 제공한다고 발표했습니다. AWS는 고객이 기존 Bedrock API, IAM, PrivateLink, 암호화, CloudTrail 로깅 같은 엔터프라이즈 제어 체계를 유지한 채 OpenAI 모델을 사용할 수 있다고 설명했습니다. Codex는 AWS 자격 증명으로 인증하고 Bedrock을 통해 추론하며, CLI·데스크톱 앱·VS Code 확장으로 접근할 수 있게 설계됐습니다. Managed Agents는 각 에이전트의 고유 ID와 작업 로그를 남기며 고객 환경 안에서 실행된다는 점을 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AWS는 자체 모델 중심 경쟁보다 다양한 프런티어 모델을 자사 운영 체계 안에서 안전하게 쓰게 하는 전략을 더 선명하게 밀고 있습니다. 이는 클라우드 사업자 평가 기준이 “누구 모델이냐”보다 “원하는 모델을 우리 보안·거버넌스 안에서 쓸 수 있느냐”로 바뀌고 있음을 보여줍니다. 특히 코딩 에이전트와 장기 실행형 에이전트를 클라우드 네이티브 방식으로 배치하려는 기업 수요가 더 커질 가능성이 있습니다.</p>
+      <p class="why">왜 중요한지: 멀티모델 시대의 클라우드 경쟁력은 모델 보유보다 운영 신뢰와 연결 유연성에서 갈립니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/" target="_blank" rel="noopener">AWS What's New, Amazon Bedrock now offers OpenAI models, Codex, and Managed Agents</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
