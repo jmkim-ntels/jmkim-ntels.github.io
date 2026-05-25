@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-05-26</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-05-26 (화) · 공식 블로그·공식 발표를 우선 반영한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>개발자 AI 경쟁은 모델 성능만이 아니라 오픈소스화, IDE 통합, 세션 운영 같은 실행 레이어로 빠르게 옮겨가고 있습니다.</li>
+        <li>OpenAI와 Anthropic은 각각 음성 API·온프레미스 배치·SDK/MCP 연결성 강화로 “실제 업무에 붙는 AI” 기반을 넓히고 있습니다.</li>
+        <li>AI의 상용화 무대가 대기업 내부 시스템을 넘어 소상공인 메신저 응대까지 확장되며 수익화 접점이 더 생활밀착형으로 바뀌고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. GitHub, Copilot for Eclipse를 오픈소스로 전환</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 5월 21일 GitHub Copilot for Eclipse 플러그인을 MIT 라이선스로 오픈소스 공개했습니다. 공식 설명에 따르면 공개 저장소에서는 채팅, 코드 완성, 에이전트 워크플로, 스킬 및 프롬프트 파일 로딩 방식, MCP 통합, BYOK(Bring Your Own Key) 관련 구현까지 직접 확인할 수 있습니다. GitHub는 이를 Eclipse 생태계에서의 투명성과 커뮤니티 주도 혁신을 위한 조치라고 설명했습니다. 단순히 플러그인을 배포하는 수준을 넘어, AI 개발 도구의 내부 작동 방식을 공개 검증 가능한 영역으로 옮긴 셈입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>그동안 코딩 AI는 대체로 폐쇄형 제품 경험으로 제공돼 내부 동작을 확인하기 어려웠습니다. GitHub가 Eclipse 버전을 공개함으로써 기업·개발자 커뮤니티는 보안 검토와 커스터마이징, 기여를 동시에 추진할 수 있게 됐습니다. 다른 AI 코딩 도구들에도 “어느 수준까지 투명성을 제공할 것인가”라는 압박이 커질 가능성이 있습니다.</p>
+      <p class="why">왜 중요한지: AI 개발도구 시장에서도 이제 성능만큼 신뢰성과 검증 가능성이 경쟁 포인트가 되고 있습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-05-21-github-copilot-for-eclipse-is-open-source/" target="_blank" rel="noopener">GitHub Changelog, GitHub Copilot for Eclipse is open source</a>
+        <a href="https://github.com/microsoft/copilot-for-eclipse" target="_blank" rel="noopener">GitHub Repository, microsoft/copilot-for-eclipse</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, 실시간 추론·번역·전사를 위한 새 음성 API 모델 3종 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 5월 7일 API용 새 오디오 모델 3종인 GPT-Realtime-2, GPT-Realtime-Translate, GPT-Realtime-Whisper를 발표했습니다. 회사 설명에 따르면 GPT-Realtime-2는 GPT-5급 추론을 바탕으로 더 복잡한 음성 요청을 처리하고, Translate는 70개 이상 입력 언어를 13개 출력 언어로 실시간 번역하며, Whisper는 발화 중인 음성을 스트리밍 전사합니다. OpenAI는 이를 통해 단순한 음성 질의응답을 넘어, 듣고·이해하고·도구를 쓰고·즉시 행동하는 음성 에이전트 구축을 겨냥한다고 밝혔습니다. 음성 인터페이스를 부가 기능이 아니라 실제 업무 인터페이스로 끌어올리려는 포석입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>음성 AI는 이제 자연스러운 말투보다도 문맥 유지, 다국어 처리, 실시간 액션 연결이 더 중요해지고 있습니다. 개발자 입장에서는 콜센터, 여행, 현장 업무, 모바일 서비스 같은 영역에서 음성을 직접 업무 자동화 입구로 설계할 여지가 커졌습니다. 경쟁사들도 음성 모델을 별도 기능이 아니라 에이전트 플랫폼의 핵심 레이어로 묶어 내놓을 가능성이 높습니다.</p>
+      <p class="why">왜 중요한지: 진짜 쓸 만한 음성 AI는 “말을 알아듣는 것”이 아니라 “대화를 처리하며 일을 끝내는 것”으로 기준이 바뀌고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank" rel="noopener">OpenAI, Advancing voice intelligence with new models in the API</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. OpenAI와 Dell, Codex를 하이브리드·온프레미스 기업 환경으로 확장</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 5월 18일 Dell Technologies와 협력해 Codex를 하이브리드 및 온프레미스 환경으로 확장한다고 발표했습니다. 발표문에 따르면 현재 주당 400만 명 이상의 개발자가 Codex를 사용하고 있으며, 코드 리뷰와 테스트 커버리지뿐 아니라 보고서 작성, 피드백 분류, 후속 조치 작성 같은 지식 업무로도 적용 범위를 넓히고 있습니다. 이번 협력으로 Codex는 Dell AI Data Platform 및 Dell AI Factory와 연결돼 기업 내부 데이터, 코드베이스, 문서, 운영 지식과 더 가깝게 작동할 수 있게 됩니다. 핵심은 AI 에이전트를 기업 데이터가 이미 존재하는 자리로 들여오는 실무형 배치 경로를 만드는 데 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대기업의 AI 도입 병목은 여전히 보안, 데이터 거버넌스, 시스템 통합입니다. 퍼블릭 클라우드 위주 전략만으로는 민감 데이터 환경의 수요를 흡수하기 어렵기 때문에, 인프라 기업과 모델 기업의 협업은 더 늘어날 가능성이 큽니다. 엔터프라이즈 AI 시장의 승부는 점점 모델 품질보다 배치 가능성과 운영 통제력으로 이동하고 있습니다.</p>
+      <p class="why">왜 중요한지: 기업용 AI의 확산 속도는 얼마나 똑똑하냐보다 얼마나 안전하게 사내 시스템 안에 들어오느냐에 달려 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/dell-codex-enterprise-partnership/" target="_blank" rel="noopener">OpenAI, OpenAI and Dell Technologies partner to bring Codex to hybrid and on-premises enterprise environments</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Anthropic, SDK·MCP 툴링 업체 Stainless를 인수</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 5월 18일 SDK와 MCP 서버 툴링 업체 Stainless 인수를 발표했습니다. Anthropic은 Stainless가 초창기부터 자사 공식 SDK 생성을 맡아 왔고, TypeScript·Python·Go·Java 등 여러 언어용 SDK와 CLI, MCP 서버 생성에 널리 쓰여 왔다고 설명했습니다. 회사는 “에이전트는 연결할 수 있는 시스템만큼만 유용하다”는 표현으로 이번 인수의 초점을 연결성과 개발자 경험에 뒀습니다. 모델 자체보다 API 접점과 커넥터 층을 직접 통제하려는 전략이 더 선명해진 셈입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트 시대에는 모델 성능만큼 외부 도구·데이터·서비스와의 연결 품질이 중요합니다. Anthropic의 인수는 MCP 생태계와 SDK 자동 생성 툴링이 더 이상 주변부가 아니라 핵심 플랫폼 자산이라는 신호로 읽힙니다. 다른 AI 플랫폼도 커넥터, 프로토콜, 개발도구 레이어를 더 공격적으로 내재화할 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 에이전트의 실전 경쟁력은 결국 얼마나 많은 시스템에 안정적으로 붙을 수 있느냐에서 갈립니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">Anthropic, Anthropic acquires Stainless</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Meta, 인도에서 WhatsApp Business용 Business AI 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>Meta는 5월 14일 인도에서 WhatsApp Business 앱용 Business AI를 출시했다고 발표했습니다. 이 기능은 고객 문의 24시간 응답, 상품 추천, 리드 수집, 예약 접수, 판매 전환 지원을 목표로 하며, 인도 현지 언어 전반을 지원하고 별도 코딩이나 서드파티 도구 없이 설정할 수 있다고 합니다. Meta는 곧 UPI 기반 채팅 내 결제 기능도 붙일 예정이며, 복잡한 문의는 사업주가 직접 대화를 이어받을 수 있게 설계했다고 설명했습니다. AI를 별도 SaaS가 아니라 이미 쓰고 있는 메신저 안에 바로 심는 접근입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>소상공인에게 메신저는 사실상 고객센터이자 간이 CRM 역할을 해왔습니다. Meta는 이 접점에 AI를 얹어 응대 자동화와 결제까지 묶으면서, AI 수익화 범위를 중소 사업자의 일상 운영으로 확대하려 하고 있습니다. 앞으로 메신저 플랫폼 간 경쟁도 단순 대화 도구가 아니라 상거래·응대 자동화 패키지 경쟁으로 움직일 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 대중화는 새로운 툴을 배우게 하는 방식보다 사람들이 매일 여는 앱 안으로 들어갈 때 훨씬 빨라집니다.</p>
+      <div class="sources">
+        <a href="https://about.fb.com/news/2026/05/introducing-business-ai-on-whatsapp-for-small-businesses-in-india/" target="_blank" rel="noopener">Meta Newsroom, Introducing Business AI on WhatsApp for Small Businesses in India</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
