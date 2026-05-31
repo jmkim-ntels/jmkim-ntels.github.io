@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-01</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-01 (월) · 2026년 6월 1일 기준 최근 공식 발표와 릴리즈 노트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁의 중심이 모델 성능 비교에서 원격 실행, 관리형 에이전트, 실제 업무 배치 같은 운영 계층으로 빠르게 이동하고 있습니다.</li>
+        <li>Anthropic의 초대형 투자와 Samsung의 HBM4E 출하는 AI 경쟁이 여전히 자본과 메모리 인프라 위에서 굴러간다는 점을 다시 보여줍니다.</li>
+        <li>OpenAI, Google, Microsoft는 모두 "더 똑똑한 모델"보다 "업무에 바로 붙는 실행 체계"를 전면에 내세우고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, Codex에 Windows 원격 컴퓨터 사용과 프로필 기능 추가</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 5월 29일자 ChatGPT 릴리즈 노트에서 Codex가 Windows 환경의 Computer Use를 지원한다고 공개했습니다. 사용자는 Windows 애플리케이션 안에서 보고, 클릭하고, 입력하는 작업을 Codex에 맡길 수 있게 됐습니다. 같은 업데이트에는 Codex Profiles도 포함돼 사용 이력과 프로필 정보, 활동량을 더 잘 확인할 수 있게 됐습니다. 단순한 채팅 보조가 아니라 실제 데스크톱 작업을 이어받는 에이전트 방향이 더 분명해졌습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기업 현장에서는 웹 데모보다 기존 PC 환경과 내부 앱을 다루는 능력이 훨씬 중요합니다. 이런 흐름은 AI 도구 경쟁이 모델 답변 품질만이 아니라 운영체제와 업무 화면까지 얼마나 깊게 들어가느냐로 옮겨가고 있음을 보여줍니다. 앞으로 원격 제어와 감사 가능성, 사용 통계 같은 운영 기능도 제품 경쟁력의 핵심이 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 에이전트가 브라우저 밖 실제 데스크톱 작업까지 맡기 시작했다는 점이 핵심 변화입니다.</p>
+      <div class="sources">
+        <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">OpenAI Help Center, ChatGPT Release Notes</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. Google I/O 2026, Gemini 3.5 Flash와 Managed Agents로 에이전트 플랫폼 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 I/O 2026에서 Gemini 3.5 Flash를 발표하고, 이를 Google Antigravity와 Gemini API 전반에 연결했습니다. 개발자 하이라이트 발표에 따르면 Google은 새 모델을 빠른 agentic workflow용 엔진으로 포지셔닝했습니다. 동시에 Managed Agents를 도입해 단일 API 호출로 원격 Linux 환경에서 계획, 도구 호출, 코드 실행, 파일 관리, 웹 탐색까지 처리할 수 있게 했습니다. 발표의 초점은 모델 공개 자체보다 에이전트를 실제 실행 단위로 쓰게 하는 플랫폼 정비에 있었습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이제 개발자 도구 시장은 모델 API만 제공해서는 차별화가 어렵습니다. Google은 관리형 에이전트와 데스크톱 앱, CLI, SDK를 함께 묶어 실행 환경 전체를 잡으려 하고 있습니다. 이는 앞으로 개발자들이 특정 모델보다 어떤 실행 스택을 선택하느냐를 더 중요하게 보게 될 가능성을 키웁니다.</p>
+      <p class="why">왜 중요한지: AI 플랫폼 경쟁의 초점이 "좋은 모델"에서 "바로 돌릴 수 있는 에이전트 시스템"으로 이동하고 있습니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/" target="_blank" rel="noopener">Google Blog, Building the agentic future: Developer highlights from I/O 2026</a>
+        <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener">Google Blog, 100 things we announced at Google I/O 2026</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Anthropic, 650억 달러 규모 Series H 투자 유치 발표</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 2026년 5월 28일 Series H에서 650억 달러를 조달했고, post-money valuation은 9,650억 달러라고 발표했습니다. 회사는 글로벌 기업 고객 채택이 계속 늘고 있으며, run-rate revenue가 이달 초 470억 달러를 넘었다고도 밝혔습니다. 이번 자금은 안전성·해석가능성 연구 확대와 Claude 수요를 뒷받침할 컴퓨트 확장, 제품 및 파트너십 확장에 쓰일 예정입니다. 생성형 AI 선두권 경쟁이 여전히 초대형 자금 조달 능력과 연결돼 있음을 보여주는 발표입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대형 모델 기업은 연구뿐 아니라 추론 인프라, 메모리 공급, 엔터프라이즈 영업 모두에 막대한 자본이 필요합니다. Anthropic의 이번 발표는 AI 경쟁이 소프트웨어 경쟁인 동시에 대규모 설비 경쟁이라는 점을 다시 상기시킵니다. 투자 규모 자체가 다음 세대 모델과 공급망 협상력의 선행지표로 읽힐 수 있습니다.</p>
+      <p class="why">왜 중요한지: AI 시장의 속도는 모델 품질만이 아니라 누가 더 큰 자본과 컴퓨트를 확보하느냐에도 크게 좌우됩니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/series-h" target="_blank" rel="noopener">Anthropic, Anthropic raises $65B in Series H funding at $965B post-money valuation</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Samsung, 업계 최초 12단 HBM4E 샘플 출하 시작</h2>
+      <h3>핵심 요약</h3>
+      <p>Samsung Electronics는 2026년 5월 29일 업계 최초의 12단 HBM4E 샘플 출하를 시작했다고 발표했습니다. 회사는 최대 16Gbps 속도, 스택당 최대 3.6TB/s 대역폭, 전 세대 대비 16% 향상된 에너지 효율과 14% 이상 개선된 열 특성을 강조했습니다. 이번 제품은 대규모 AI 워크로드와 하이퍼스케일 인프라 수요를 겨냥하고 있으며, 고객 일정에 맞춰 양산을 추진할 계획이라고 밝혔습니다. AI 인프라 병목이 모델보다 메모리와 패키징으로 내려오고 있다는 점을 잘 보여주는 뉴스입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>HBM은 GPU 경쟁력과 데이터센터 확장 속도를 좌우하는 핵심 부품이 됐습니다. 따라서 메모리 기업의 샘플 출하와 양산 일정은 클라우드 사업자와 모델 기업의 실제 확장 속도에 직접 영향을 줍니다. AI 산업에서 반도체 공급망 이슈가 계속 상위 뉴스로 남는 이유이기도 합니다.</p>
+      <p class="why">왜 중요한지: 생성형 AI 전쟁의 병목은 여전히 GPU만이 아니라 HBM 공급과 열·전력 효율에도 걸려 있습니다.</p>
+      <div class="sources">
+        <a href="https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples" target="_blank" rel="noopener">Samsung Global Newsroom, Samsung Electronics Begins Shipment of Industry-First HBM4E Samples</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Microsoft와 EY, 5년간 10억 달러 이상 투입하는 기업 AI 전환 이니셔티브 발표</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft와 EY는 2026년 5월 21일 5년에 걸쳐 10억 달러 이상을 공동 투자하는 새 이니셔티브를 발표했습니다. 양사는 EY 실무진과 Microsoft의 Forward Deployed Engineers를 결합해 핵심 업무 기능에 AI를 대규모 배치하는 모델을 제공하겠다고 밝혔습니다. 발표에는 EY가 40만 명 이상 조직에 Copilot을 확장 중이라는 내용도 포함됐습니다. 시장 메시지는 명확합니다. 이제 기업용 AI는 파일럿보다 전사 실행 조직이 더 중요한 단계에 들어섰습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>많은 기업이 AI 실험은 했지만 운영 단계에서 속도를 내지 못하고 있습니다. 그래서 최근 빅테크와 컨설팅사의 결합은 모델 판매보다 도입 완수 능력을 상품화하려는 흐름으로 볼 수 있습니다. 향후 엔터프라이즈 AI 경쟁은 라이선스만이 아니라 변화관리, 통합, 현장 배치 능력에서 더 크게 갈릴 수 있습니다.</p>
+      <p class="why">왜 중요한지: 기업 AI의 다음 승부처는 모델 선택보다 실제 현장에 끝까지 배치해 주는 실행 역량입니다.</p>
+      <div class="sources">
+        <a href="https://news.microsoft.com/source/2026/05/21/ey-and-microsoft-announce-global-initiative-to-help-clients-scale-ai-enterprisewide-value-creation-and-move-beyond-experimentation/" target="_blank" rel="noopener">Microsoft Source, EY and Microsoft announce global initiative to help clients scale AI enterprisewide value creation</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
