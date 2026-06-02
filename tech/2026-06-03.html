@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-03</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-03 (수) · 2026년 6월 3일 아침 기준 최근 공식 발표와 릴리즈 노트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁은 모델 성능 비교를 넘어 관리형 에이전트, 엔터프라이즈 배포, 보안 운영까지 포함하는 실행 스택 경쟁으로 이동하고 있습니다.</li>
+        <li>Anthropic과 AWS의 최근 발표는 "강한 모델"보다 "어디서 어떻게 돌리고 얼마나 안전하게 운영하느냐"가 더 중요해지고 있음을 보여줍니다.</li>
+        <li>반도체와 메모리 공급망, 특히 HBM 진전은 생성형 AI 서비스 확장 속도를 좌우하는 핵심 병목으로 계속 남아 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. AWS, Amazon Bedrock에서 OpenAI GPT-5.5·GPT-5.4·Codex 정식 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 2026년 6월 1일 Amazon Bedrock에서 OpenAI의 GPT-5.5, GPT-5.4, 그리고 Codex를 정식으로 사용할 수 있다고 발표했습니다. 이번 발표의 핵심은 단순 모델 추가가 아니라, 기존 AWS 보안·거버넌스·운영 체계 안에서 OpenAI 모델과 코딩 에이전트를 바로 생산 환경에 넣을 수 있게 했다는 점입니다. AWS는 가격이 OpenAI 1st-party 요율과 동일하며, 사용량이 기존 AWS 약정에도 반영된다고 설명했습니다. 기업 입장에서는 별도 벤더 경로보다 익숙한 클라우드 통제면 안에서 최신 모델을 쓰는 선택지가 커졌습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 발표는 모델 제공 경쟁이 클라우드 플랫폼 경쟁과 점점 더 결합되고 있음을 보여줍니다. 기업은 이제 모델 성능뿐 아니라 IAM, 로깅, 네트워크 경계, 비용 약정 같은 운영 조건을 함께 따지게 됩니다. OpenAI와 AWS의 결합은 엔터프라이즈 AI 도입에서 "최신 모델을 누가 더 쉽게 통제 가능한 형태로 주느냐"가 중요해졌다는 신호입니다.</p>
+      <p class="why">왜 중요한지: 최신 모델 도입의 장벽은 성능보다 엔터프라이즈 운영 통합이었는데, 그 장벽이 더 낮아졌습니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-openai-models-codex-generally-available/" target="_blank" rel="noopener">AWS, GPT-5.5, GPT-5.4, and Codex from OpenAI are now generally available on Amazon Bedrock</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. Anthropic, Project Glasswing를 150개 안팎 조직으로 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 2026년 6월 2일 Project Glasswing 확대를 발표하며, 참여 대상을 약 150개 신규 조직까지 넓힌다고 밝혔습니다. 회사 설명에 따르면 초기 파트너들은 Claude Mythos Preview를 활용해 이미 1만 건이 넘는 high- 또는 critical-severity 취약점을 찾아냈습니다. 새 참여 조직은 보안 요구사항을 충족해야 접근할 수 있으며, 대상 국가는 15개국 이상으로 확장됩니다. AI가 공격 도구가 되기 전에 방어 측이 먼저 취약점을 찾는 구조를 만들겠다는 메시지가 분명합니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>보안 업계에서는 이제 AI를 단순 보조 도구가 아니라 취약점 탐색 속도를 바꾸는 체계로 보기 시작했습니다. 동시에 이런 고성능 보안 모델을 누구에게, 어떤 조건으로 제공할지에 대한 통제도 핵심 정책 이슈가 됩니다. 소프트웨어 공급망 보안이 AI 경쟁의 주변부가 아니라 중심 의제가 되고 있다는 점이 중요합니다.</p>
+      <p class="why">왜 중요한지: AI 보안 경쟁은 "더 잘 막는 모델"과 "누가 먼저 안전하게 배포하느냐"의 싸움으로 가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener">Anthropic, Expanding Project Glasswing</a>
+        <a href="https://www.anthropic.com/research/glasswing-initial-update" target="_blank" rel="noopener">Anthropic Research, Project Glasswing: An initial update</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Anthropic, Claude Opus 4.8 공개와 함께 장시간 에이전트 작업 기능 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 2026년 5월 28일 Claude Opus 4.8을 발표했습니다. 회사는 코딩, 에이전트형 작업, 전문 지식 업무 전반에서 성능을 끌어올렸고, 같은 가격에 제공한다고 설명했습니다. 함께 공개된 기능으로는 claude.ai의 effort 조절 옵션, Claude Code의 dynamic workflows, 그리고 더 저렴해진 fast mode가 포함됩니다. 핵심은 단일 질의 성능보다 긴 작업을 끊기지 않고 수행하는 협업 도구로의 진화입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>최근 경쟁은 모델 벤치마크 숫자 자체보다 실제 업무 플로우에서 얼마나 오래 안정적으로 일하느냐로 옮겨가고 있습니다. 장시간 작업 제어와 속도·비용 옵션 조정은 개발자 도구와 기업용 워크플로우에서 실질적 차이를 만드는 요소입니다. 에이전트 시대에는 "더 똑똑한 한 번의 답"보다 "지속 가능한 여러 단계의 수행"이 더 중요해집니다.</p>
+      <p class="why">왜 중요한지: 에이전트 제품의 경쟁력은 이제 모델 성능과 함께 작업 지속성, 속도, 비용 제어 능력에서 갈립니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Anthropic, Introducing Claude Opus 4.8</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Google I/O 2026, Gemini 3.5 Flash와 Managed Agents로 개발자용 실행 스택 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 I/O 2026 개발자 하이라이트에서 Gemini 3.5 Flash와 Managed Agents를 전면에 내세웠습니다. 발표에 따르면 Managed Agents는 Antigravity agent harness 기반으로, Interactions API와 Google AI Studio에서 제공됩니다. Google은 이를 통해 계획 수립, 도구 사용, 코드 실행, 파일 처리 같은 에이전트형 작업을 관리형 방식으로 제공하려는 방향을 분명히 했습니다. 단순 모델 호출보다 실행 환경과 오케스트레이션을 패키지로 제공하는 전략이 강화됐습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 흐름은 개발자들이 더 이상 모델 API만 사는 것이 아니라, 에이전트를 어디서 얼마나 쉽게 운영할 수 있는지까지 함께 평가한다는 뜻입니다. Google은 AI Studio, Gemini API, Managed Agents를 하나의 도구 체인으로 묶어 개발자 락인을 강화하려 하고 있습니다. AI 플랫폼 경쟁의 무게중심이 인프라와 오케스트레이션 쪽으로 옮겨가고 있다는 좋은 사례입니다.</p>
+      <p class="why">왜 중요한지: 앞으로는 "어떤 모델을 쓰느냐"보다 "어떤 실행 스택에 올리느냐"가 개발 생산성을 더 크게 좌우할 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/" target="_blank" rel="noopener">Google Blog, Building the agentic future: Developer highlights from I/O 2026</a>
+        <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener">Google Blog, 100 things we announced at Google I/O 2026</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. 삼성전자, 세계 최초 12단 HBM4E 샘플 출하 시작</h2>
+      <h3>핵심 요약</h3>
+      <p>삼성전자는 2026년 5월 29일 세계 최초로 12단 HBM4E 샘플 출하를 시작했다고 발표했습니다. 회사는 최대 16Gbps 속도, 스택당 최대 3.6TB/s 대역폭, 그리고 이전 세대 대비 개선된 전력 효율과 열 특성을 강조했습니다. 이번 샘플은 글로벌 주요 고객에게 공급되며, 고객 일정에 맞춰 양산으로 이어질 예정입니다. AI 인프라 경쟁이 결국 메모리 공급망과 패키징 역량에 묶여 있다는 점을 다시 보여주는 뉴스입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>HBM은 GPU 성능을 실제 서비스 처리량으로 연결하는 핵심 부품이라서, 샘플 출하와 양산 일정이 곧 AI 서버 증설 속도와 연결됩니다. 메모리 업체의 기술 로드맵은 클라우드 사업자, 칩 설계사, 모델 기업 모두의 사업 일정에 영향을 줍니다. AI 산업에서 반도체 뉴스가 계속 1면을 차지하는 이유가 여기에 있습니다.</p>
+      <p class="why">왜 중요한지: 생성형 AI의 다음 병목은 모델이 아니라 메모리 공급과 전력·열 효율일 가능성이 큽니다.</p>
+      <div class="sources">
+        <a href="https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples" target="_blank" rel="noopener">Samsung Global Newsroom, Samsung Electronics Begins Shipment of Industry-First HBM4E Samples</a>
+        <a href="https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%84%B8%EA%B3%84-%EC%B5%9C%EC%B4%88-hbm4e-12%EB%8B%A8-%EC%83%98%ED%94%8C-%EC%B6%9C%ED%95%98" target="_blank" rel="noopener">Samsung Newsroom Korea, 삼성전자, 세계 최초 HBM4E 12단 샘플 출하</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
