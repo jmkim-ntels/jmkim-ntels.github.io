@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-04</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-04 (목) · 2026년 6월 4일 아침 기준 최근 공식 발표와 릴리즈 노트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>이번 주 기술 뉴스의 중심축은 "더 좋은 모델" 자체보다, 에이전트를 실제 업무와 클라우드 환경에 어떻게 얹을지에 맞춰져 있습니다.</li>
+        <li>GitHub, Microsoft, OpenAI, Anthropic 모두 성능 숫자보다 운영 통제, 보안, 장시간 작업 지속성, 배포 흐름을 강화하는 방향으로 움직이고 있습니다.</li>
+        <li>개발자 도구 시장은 IDE 보조를 넘어 비용 관리, 보안 통제, 멀티세션 오케스트레이션까지 포함하는 실행 스택 경쟁으로 빠르게 재편되고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. GitHub, Copilot 사용량 기반 과금과 예산 통제를 전면 적용</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 6월 1일부터 모든 Copilot 플랜에 usage-based billing을 적용한다고 공식 발표했습니다. 각 플랜에는 월별 포함 사용량이 있고, 이를 넘기면 AI Credits 추가 사용분에 대해 과금되는 구조입니다. 동시에 조직과 엔터프라이즈 고객을 위한 user-level budget controls가 일반 제공되며, 관리자는 사용자별 예산을 세밀하게 조정할 수 있게 됐습니다. Copilot code review는 이제 AI Credits뿐 아니라 GitHub Actions minutes도 함께 소모합니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이는 AI 코딩 도구가 실험용 부가 기능이 아니라, 비용 회계와 운영 정책이 필요한 정식 소프트웨어 예산 항목으로 넘어갔다는 뜻입니다. 특히 조직 고객은 모델 품질 못지않게 사용 상한, 예산 경보, 러너 설정 같은 통제 기능을 요구해 왔는데, GitHub가 그 요구에 맞춘 셈입니다. 앞으로 Copilot 경쟁은 "더 똑똑한 제안"만이 아니라 "얼마나 예측 가능하게 운영되느냐"로도 평가될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 개발 도구는 이제 기능 경쟁만이 아니라 비용 통제와 운영 거버넌스 경쟁 단계에 들어갔습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/" target="_blank" rel="noopener">GitHub Changelog, Updates to GitHub Copilot billing and plans</a>
+        <a href="https://docs.github.com/en/copilot/concepts/billing/copilot-requests" target="_blank" rel="noopener">GitHub Docs, About requests in GitHub Copilot</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. GitHub Copilot CLI, 새 터미널 UI와 rubber duck·음성 입력 기능 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 6월 2일 Copilot CLI 대규모 업데이트를 공개했습니다. 이번 업데이트에는 이슈·PR·Gist 탭을 포함한 실험적 새 터미널 인터페이스, 비판적 검토용 내장 에이전트인 rubber duck, 세션 내부 스케줄링용 `/every`와 `/after`, 그리고 로컬 음성 입력 기능이 포함됩니다. GitHub 설명대로 rubber duck과 voice input은 바로 사용 가능하고, 새 UI와 prompt scheduling은 `/experimental`에서 시험할 수 있습니다. 터미널이 단순 프롬프트 창이 아니라 장시간 작업을 관리하는 워크스페이스로 바뀌고 있다는 점이 핵심입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>CLI 기반 AI 도구는 개발자 생산성의 주 무대로 다시 올라오고 있습니다. 여기에 스케줄링, 다중 뷰, 자기검토 에이전트를 넣는 흐름은 에이전트형 개발이 "한 번 묻고 답받는" 방식에서 "세션을 운영하는" 방식으로 이동하고 있음을 보여줍니다. 특히 터미널을 벗어나지 않고 이슈와 PR 문맥까지 다루려는 시도는 IDE와 CLI 경계를 더 흐리게 만들 수 있습니다.</p>
+      <p class="why">왜 중요한지: 앞으로 코딩 에이전트의 경쟁력은 답변 품질뿐 아니라 세션 운영, 자기검토, 작업 지속성에서 갈릴 가능성이 큽니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/" target="_blank" rel="noopener">GitHub Changelog, Copilot CLI: Improved UI, rubber duck, prompt scheduling, and voice input</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. OpenAI, ChatGPT에 Active Sessions 도입하며 계정 보안 가시성 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 2일 ChatGPT 릴리즈 노트에서 Active sessions 기능 도입을 발표했습니다. 사용자는 Settings의 Security 영역에서 자신의 OpenAI 세션을 확인하고, 낯선 세션을 개별 종료하거나 전체 로그아웃할 수 있습니다. 표시 정보에는 기기, 앱, 대략적 위치, 로그인 시간, 현재 세션 여부 등이 포함됩니다. 같은 릴리즈 노트에는 5월 28일 기준 GPT-5.5 Instant의 응답 품질 업데이트와 ChatGPT 내 OpenAI o3, GPT-4.5 은퇴 일정도 함께 공지돼 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 제품이 업무 인프라로 자리잡을수록 계정 보안과 세션 통제는 필수 기능이 됩니다. 특히 ChatGPT, Codex, API Platform처럼 여러 표면이 연결된 환경에서는 "누가 어디서 로그인 중인지"를 사용자에게 보여주는 것 자체가 신뢰 확보의 핵심입니다. 동시에 모델 은퇴 공지는 제품 진화 속도가 빨라지는 만큼, 기업이 모델 의존성을 더 체계적으로 관리해야 함을 시사합니다.</p>
+      <p class="why">왜 중요한지: 생성형 AI 서비스는 이제 편의 기능 못지않게 세션 보안과 모델 수명주기 관리가 중요한 제품이 됐습니다.</p>
+      <div class="sources">
+        <a href="https://help.openai.com/en/articles/6825453-custom-instructions-for-chatgpt" target="_blank" rel="noopener">OpenAI Help Center, ChatGPT Release Notes</a>
+        <a href="https://openai.com/index/retiring-gpt-4o-and-older-models/" target="_blank" rel="noopener">OpenAI, Retiring GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini in ChatGPT</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Anthropic, Claude Opus 4.8 공개로 장시간 에이전트 작업 신뢰성 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 2026년 5월 28일 Claude Opus 4.8을 발표하며, 코딩과 agentic tasks, 전문 지식 업무 전반의 성능 개선을 강조했습니다. 회사는 같은 가격으로 제공하면서 claude.ai의 effort 조절, Claude Code의 dynamic workflows, 그리고 2.5배 빠른 fast mode의 비용 인하를 함께 내놨습니다. 발표문에서 핵심 메시지는 단발성 답변 품질보다 "더 큰 문제를 더 오래, 더 안정적으로 처리하는 협업 모델"로의 진화입니다. 실사용 평가 인용도 상당수가 장시간 워크플로우와 도구 호출 안정성 개선에 초점을 맞추고 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트형 제품에서는 최상위 벤치마크 점수보다 끝까지 과업을 수행하는 지속성이 실제 가치를 더 크게 좌우합니다. Anthropic이 dynamic workflows와 비용 조정 옵션을 함께 밀고 있는 것은, 기업 고객이 모델 성능뿐 아니라 속도와 가격, 작업 신뢰성을 묶어서 본다는 판단으로 읽힙니다. 코딩 에이전트 시장이 본격적으로 "실행 품질" 중심으로 재편되는 흐름과 맞물립니다.</p>
+      <p class="why">왜 중요한지: AI 에이전트의 실전 경쟁은 한 번의 똑똑한 답보다 끝까지 안정적으로 일하는 능력으로 옮겨가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/claude-opus-4-8" target="_blank" rel="noopener">Anthropic, Introducing Claude Opus 4.8</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Microsoft Build 2026, Microsoft IQ와 새 에이전트 플랫폼으로 엔터프라이즈 컨텍스트 경쟁 본격화</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 2026년 6월 2일 Build 2026 발표에서 Microsoft IQ를 GitHub Copilot, Microsoft Foundry, Copilot Studio 전반의 새 컨텍스트 계층으로 소개했습니다. 발표에 따르면 Work IQ API는 6월 16일 일반 제공되며, 조직 내 사람, 이메일, 문서, 회의 등 업무 문맥을 에이전트가 활용할 수 있게 합니다. 동시에 Web IQ, Microsoft Scout, MAI-Thinking-1, Agent 365 같은 요소를 함께 내세우며 모델, 검색, 보안, 운영을 묶은 플랫폼 전략을 분명히 했습니다. 핵심은 모델 자체보다 기업 고유 문맥을 얼마나 잘 엮어내느냐입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대형 플랫폼 사업자들은 이제 단순 모델 호스팅이 아니라, 기업 데이터와 업무 흐름을 묶는 "컨텍스트 운영체제"를 두고 경쟁하고 있습니다. Microsoft의 이번 발표는 에이전트 경쟁에서 우위의 기준이 모델 성능 단일 지표가 아니라, 문서와 메일, 일정, 검색, 보안 정책을 한 체계로 엮는 통합 능력임을 보여줍니다. 기존 SaaS와 생산성 도구를 이미 장악한 사업자에게 유리한 전장이 더 커지고 있습니다.</p>
+      <p class="why">왜 중요한지: 다음 AI 플랫폼 승부는 최고 성능 모델보다, 기업의 실제 업무 문맥을 누가 더 깊게 장악하느냐에 달릴 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/" target="_blank" rel="noopener">Microsoft Blog, Microsoft Build 2026: Be yourself at work</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
