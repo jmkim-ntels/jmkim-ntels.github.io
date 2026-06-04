@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-05</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-05 (금) · 2026년 6월 5일 아침 기준 최근 공식 발표와 릴리즈 노트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>이번 주 기술 뉴스는 새 모델 경쟁보다, AI를 실제 제품과 업무 환경에 안전하게 붙이는 배포·보안·운영 계층 강화에 집중돼 있습니다.</li>
+        <li>OpenAI, AWS, GitHub, Microsoft, Anthropic 모두 "에이전트를 어디서 어떻게 돌릴 것인가"를 구체화하며 상용화 문턱을 낮추고 있습니다.</li>
+        <li>메모리, 온디바이스 실행, 보안 스캐닝, 클라우드 거버넌스가 함께 움직이면서 AI 시장의 경쟁축이 모델 성능 단독 비교에서 운영 체계 경쟁으로 옮겨가고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, ChatGPT 메모리 시스템을 "Dreaming" 기반으로 대폭 고도화</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 4일 ChatGPT의 메모리 합성 시스템을 개선한 "Dreaming: Better memory for a more helpful ChatGPT"를 공개했습니다. 이번 업데이트는 기억의 최신성, 연속성, 관련성을 높이기 위해 더 확장 가능하고 계산 효율적인 메모리 아키텍처를 도입한 것이 핵심입니다. 사용자는 memory summary 페이지에서 ChatGPT가 자신에 대해 무엇을 알고 있는지 요약 형태로 검토하고, 직접 수정하거나 보강할 수 있습니다. 미국의 Plus와 Pro 사용자부터 먼저 적용되며, 이후 다른 국가와 Free, Go 사용자로 확대될 예정입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>개인화는 이제 단순 편의 기능이 아니라 AI 제품의 장기 사용성을 좌우하는 핵심 기능이 되고 있습니다. 특히 장기 프로젝트, 반복 업무, 선호도 반영 같은 영역에서는 "한 번의 답변 품질"보다 대화 맥락을 얼마나 오래 안정적으로 유지하느냐가 더 중요해집니다. 이번 발표는 AI 경쟁이 모델 지능뿐 아니라 기억 구조와 사용자 통제 경험으로도 확장되고 있음을 보여줍니다.</p>
+      <p class="why">왜 중요한지: AI 비서는 이제 잘 답하는 것만으로 부족하고, 오래 쓸수록 더 유용해지는 방향으로 진화하고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/chatgpt-memory-dreaming/" target="_blank" rel="noopener">OpenAI, Dreaming: Better memory for a more helpful ChatGPT</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI 모델과 Codex, AWS에서 정식 가용 단계로 진입</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 1일 자사 프런티어 모델과 Codex가 AWS에서 일반 제공된다고 발표했습니다. AWS 고객은 기존 보안, 컴플라이언스, 조달, 과금, 거버넌스 흐름 안에서 OpenAI 기능을 프로덕션에 올릴 수 있게 됩니다. AWS도 같은 날 Amazon Bedrock에서 GPT-5.5, GPT-5.4, Codex가 일반 제공된다고 별도 공지했고, Codex 사용량이 기존 AWS 커밋에 반영된다고 설명했습니다. 즉, AI 도입의 가장 큰 장애물 중 하나였던 기업 내부 운영 체계와의 접합 비용을 줄이는 데 초점이 맞춰진 발표입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기업 시장에서는 최고 성능 모델보다도 기존 인프라에 무리 없이 들어가는지가 더 빠른 구매 결정으로 이어집니다. Bedrock 위 일반 제공은 OpenAI가 직접 서비스하는 경로 외에도, 대기업이 익숙한 AWS 통제면에서 채택할 수 있는 길이 넓어졌다는 의미가 있습니다. 이는 AI 모델 경쟁이 클라우드 유통과 엔터프라이즈 운영체계 경쟁으로 깊게 결합되고 있다는 신호이기도 합니다.</p>
+      <p class="why">왜 중요한지: 좋은 모델을 쓰는 문제에서, 조직이 이미 신뢰하는 클라우드 절차 안에 AI를 넣는 문제가 더 중요해지고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/" target="_blank" rel="noopener">OpenAI, OpenAI frontier models and Codex are now available on AWS</a>
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-openai-models-codex-generally-available/" target="_blank" rel="noopener">AWS, GPT-5.5, GPT-5.4, and Codex from OpenAI are now generally available on Amazon Bedrock</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. NVIDIA와 Microsoft, 온디바이스 개인 AI 에이전트용 Windows PC 플랫폼 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>NVIDIA는 2026년 6월 1일 Microsoft와 협력해 개인용 AI 에이전트 시대를 위한 Windows PC 플랫폼을 발표했습니다. 핵심 하드웨어인 RTX Spark는 최대 1 petaflop의 AI 연산 성능과 128GB 통합 메모리를 제공하며, 에이전트 실행을 위한 성능 기반을 강조했습니다. 발표문에 따르면 양사는 새로운 Windows 보안 프리미티브와 NVIDIA OpenShell 런타임을 통해 로컬 에이전트를 보다 안전하고 사용자 통제 하에 실행하는 구조를 제시했습니다. 이는 클라우드형 AI뿐 아니라 PC 자체가 에이전트 실행 환경으로 올라서는 흐름을 노린 행보입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>개인용 에이전트가 실제로 보급되려면 단순한 추론 성능뿐 아니라 프라이버시, 로컬 파일 접근 통제, 앱 간 작업 격리 같은 운영 문제가 풀려야 합니다. 이번 발표는 GPU 경쟁이 데이터센터를 넘어 에이전트 친화형 클라이언트 플랫폼 경쟁으로 번지고 있음을 보여줍니다. 장기적으로는 AI PC 시장이 단순 NPU 마케팅이 아니라, 에이전트 실행을 위한 OS와 런타임 통합 수준으로 평가받게 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 에이전트가 진짜 개인 컴퓨팅 인터페이스가 되려면, 클라우드보다 먼저 PC 자체가 안전한 실행 무대가 되어야 합니다.</p>
+      <div class="sources">
+        <a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Microsoft-Reinvent-Windows-PCs-for-the-Age-of-Personal-AI/default.aspx" target="_blank" rel="noopener">NVIDIA, NVIDIA and Microsoft Reinvent Windows PCs for the Age of Personal AI</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Microsoft, Majorana 2와 Discovery 일반 제공으로 AI+과학 연구 플랫폼 전략 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 2026년 6월 2일 차세대 토폴로지 양자 칩 Majorana 2와 함께 Microsoft Discovery의 일반 제공을 발표했습니다. 회사 설명에 따르면 Majorana 2는 이전 세대 대비 1,000배 높은 신뢰성을 보이며, 평균 큐비트 수명 20초와 최대 1분 수준 사례를 제시했습니다. 동시에 Microsoft는 확장 가능한 양자 컴퓨터 달성 예상 시점을 2029년으로 제시했고, 인간 전문가의 감독 아래 AI 에이전트 팀을 운용하는 연구개발 플랫폼 Discovery를 본격 상용화했습니다. 즉, 이번 발표는 칩 하나의 뉴스라기보다 AI를 과학 연구 생산성 플랫폼에 직접 연결하려는 전략으로 읽힙니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>빅테크의 AI 경쟁은 이제 문서 작성이나 코딩 보조를 넘어 소재, 신약, 공정 최적화 같은 산업 연구개발로 빠르게 넓어지고 있습니다. Microsoft는 Discovery를 통해 자사 AI 에이전트 역량을 과학 워크플로우에 직접 결합하려 하고 있고, 이는 고부가가치 산업 시장을 겨냥한 차별화 포인트가 될 수 있습니다. AI 플랫폼 사업자들이 연구실과 산업 설계 영역까지 본격적으로 들어가고 있다는 점이 중요합니다.</p>
+      <p class="why">왜 중요한지: 차세대 AI 플랫폼 경쟁은 오피스 생산성을 넘어 과학·산업 연구개발 생산성으로 확장되고 있습니다.</p>
+      <div class="sources">
+        <a href="https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai/" target="_blank" rel="noopener">Microsoft, Majorana 2, made more reliable with Microsoft Discovery agentic AI</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Anthropic, Project Glasswing 확대하며 AI 기반 사이버 방어 상용화 속도전</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 2026년 6월 2일 Project Glasswing를 약 150개 신규 기관으로 확대한다고 발표했습니다. 회사에 따르면 초기 약 50개 파트너는 Claude Mythos Preview를 활용해 지금까지 10,000건이 넘는 고위험 또는 치명적 보안 취약점을 찾아냈습니다. Anthropic은 또한 Claude Security와 관련 도구를 통해 더 넓은 보안팀이 코드베이스 스캔과 패치 제안을 활용할 수 있도록 지원하겠다고 밝혔습니다. 메시지는 분명합니다. 강력한 사이버 능력을 가진 AI가 곧 흔해질 것이므로, 방어 측도 지금부터 대규모 적응을 시작해야 한다는 것입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 보안 논의가 추상적 위험 담론에서 실제 취약점 발굴과 패치 운영 단계로 이동하고 있습니다. 공격자도 같은 수준의 모델을 곧 얻게 될 것이라는 전제 아래, 선제적으로 방어 자동화를 확산시키려는 전략이 더 강해질 가능성이 큽니다. 향후 보안팀은 사람 중심 검토만으로는 속도를 맞추기 어렵고, AI 기반 탐지와 수정 제안을 일상 운영에 넣는 쪽으로 재편될 수 있습니다.</p>
+      <p class="why">왜 중요한지: AI 시대 보안 경쟁은 "써도 될까"를 넘어서 "누가 더 빨리 운영에 넣느냐"의 문제로 바뀌고 있습니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener">Anthropic, Expanding Project Glasswing</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
