@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-09</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-09 (화) · 2026년 6월 9일 아침 기준 최근 공식 발표와 릴리즈 노트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>에이전트 경쟁의 중심이 성능 과시에서 보안, 격리, 세션 관리 같은 운영 통제로 이동하고 있습니다.</li>
+        <li>클라우드 사업자는 모델 자체보다 호환 API와 배포 마찰 제거로 개발자 락인 경쟁을 벌이고 있습니다.</li>
+        <li>동시에 로컬 멀티모달 모델과 AI 보안 자동화가 실제 배치 범위를 넓히는 두 축으로 부상하고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, ChatGPT에 Active Sessions와 Lockdown Mode를 전면 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 2일 ChatGPT에 Active sessions 기능을 도입해 사용자가 계정에 연결된 OpenAI 세션을 직접 확인하고, 수상한 세션을 개별 또는 전체 로그아웃할 수 있게 했습니다. 이 목록에는 ChatGPT, Codex, API Platform 세션이 포함되며, 기기와 앱, 대략적 위치, 로그인 시점 같은 정보도 함께 확인할 수 있습니다. 이어 6월 4일에는 Lockdown Mode를 모든 로그인 사용자와 워크스페이스로 확대해, 라이브 웹 브라우징, 딥 리서치, 에이전트 모드, 파일 다운로드 같은 네트워크 기반 기능을 제한할 수 있게 했습니다. 제품 확장의 방향이 편의성만이 아니라 세션 가시성과 데이터 유출 방지까지 포함한 운영 보안으로 넓어지고 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트가 더 많은 도구와 외부 연결을 다룰수록 "무엇을 할 수 있나"보다 "언제 끌 수 있나"가 더 중요해집니다. OpenAI가 세션 관리와 고강도 보안 모드를 함께 밀고 있다는 점은, AI 제품이 일반 소비자용 앱을 넘어 기업 보안 기준에 맞춰 재설계되고 있음을 보여줍니다. 앞으로는 모델 성능 못지않게 계정 보안, 세션 추적, 외부 연결 제어가 기본 경쟁 요소가 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 강한 에이전트일수록 기능 확장보다 통제 장치가 먼저 갖춰져야 실제 업무에 들어갈 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">OpenAI Help Center, ChatGPT Release Notes</a>
+        <a href="https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes" target="_blank" rel="noopener">OpenAI Help Center, ChatGPT Enterprise &amp; Edu Release Notes</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. AWS, Amazon Bedrock 콘솔을 OpenAI·Anthropic 호환 API 중심으로 재설계</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 2026년 6월 4일 Amazon Bedrock의 새 콘솔 경험을 공개하며 OpenAI Responses API, OpenAI Chat Completions API, Anthropic Messages API와 호환되는 흐름을 전면에 배치했습니다. 새 경험은 모델 카탈로그 비교, 프로젝트 단위 평가, 사용량 검토, 자동으로 채워지는 SDK 예제를 하나의 빌드 흐름으로 묶습니다. AWS 설명대로라면 개발자는 기존 OpenAI나 Anthropic 클라이언트 패턴을 크게 바꾸지 않고 Bedrock 경로로 이동할 수 있습니다. 핵심은 새 모델을 더 많이 붙이는 것보다 기존 개발 습관을 건드리지 않고 생산 환경으로 옮기는 마찰을 줄이는 데 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이제 클라우드 플랫폼 경쟁은 누가 더 많은 모델을 호스팅하느냐보다, 누가 가장 낮은 전환 비용을 제공하느냐에 가깝습니다. AWS는 자체 생태계 문법을 강요하기보다 사실상 업계 표준처럼 굳어가는 OpenAI식 인터페이스를 흡수하고 있습니다. 이는 멀티모델 시대에 클라우드 사업자가 호환성을 무기로 삼기 시작했다는 신호입니다.</p>
+      <p class="why">왜 중요한지: 기업은 최고 성능 모델보다 기존 코드와 운영 절차를 덜 바꾸는 플랫폼을 먼저 선택하는 경우가 많습니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-redesigned-console-optimized-openai-anthropic-compatible-apis/" target="_blank" rel="noopener">AWS, Amazon Bedrock launches a redesigned console optimized for OpenAI- and Anthropic-compatible APIs</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. GitHub, Copilot에 클라우드·로컬 샌드박스와 앱 중심 에이전트 워크플로를 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 6월 2일 Copilot이 로컬과 클라우드의 격리된 샌드박스 안에서 실행될 수 있다고 발표했습니다. 로컬에서는 `/sandbox enable`로 제한된 파일시스템·네트워크·시스템 권한 아래서 명령을 실행할 수 있고, 클라우드에서는 `copilot --cloud`로 GitHub 호스팅 임시 Linux 샌드박스를 띄울 수 있습니다. 같은 날 GitHub는 Copilot 앱 기술 프리뷰도 기존 Pro, Pro+, Business, Enterprise 고객 전체로 넓히며, 캔버스, 클라우드 세션, 클라우드 자동화, 에이전트형 브라우징 같은 기능을 전면에 내세웠습니다. 요지는 "코딩 보조"에서 "격리된 실행 환경을 갖춘 데스크톱 에이전트 워크스테이션"으로 제품 성격을 옮기고 있다는 점입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트가 실제로 명령을 실행하고 파일을 바꾸기 시작하면, IDE 안의 답변 품질보다 실행 격리와 감사 가능성이 훨씬 중요해집니다. GitHub는 앱, 샌드박스, 클라우드 세션, 자동화를 하나로 묶어 개발자용 에이전트 운영면을 만들고 있습니다. 앞으로 코딩 도구 시장은 모델 선택보다 어떤 실행 경계와 협업 표면을 제공하느냐로 더 크게 갈릴 수 있습니다.</p>
+      <p class="why">왜 중요한지: 에이전트 코딩의 핵심 인프라는 모델이 아니라 안전하게 실행하고 검토할 수 있는 격리 환경입니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-06-02-cloud-and-local-sandboxes-for-github-copilot-now-in-public-preview/" target="_blank" rel="noopener">GitHub Changelog, Cloud and local sandboxes for GitHub Copilot now in public preview</a>
+        <a href="https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/" target="_blank" rel="noopener">GitHub Changelog, Expanded technical preview availability for the GitHub Copilot app</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Google, Gemma 4 12B로 노트북급 로컬 멀티모달 에이전트 범위를 넓힘</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 2026년 6월 3일 Gemma 4 12B를 공개하며, 노트북에서 직접 돌릴 수 있는 중간 크기 멀티모달 모델을 추가했습니다. 이 모델은 비전과 오디오 입력을 별도 멀티모달 인코더 없이 LLM 백본에 직접 통합하는 encoder-free 구조를 채택했습니다. Google은 16GB 수준의 VRAM 또는 통합 메모리로도 로컬 실행이 가능하고, Apache 2.0 라이선스로 배포된다고 설명했습니다. 대형 클라우드 모델의 일부 능력을 훨씬 작은 하드웨어 풋프린트로 옮기려는 전략이 분명합니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>멀티모달 AI의 실제 확산은 최고 벤치마크보다, 보통 개발자 장비나 사내 단말에서 얼마나 쉽게 돌릴 수 있느냐에 달려 있습니다. 로컬 실행이 가능하면 프라이버시, 지연시간, 비용 측면에서 기업과 개인 개발자 모두 선택지가 넓어집니다. 오픈 계열 모델 경쟁도 이제 성능 숫자보다 메모리 효율과 배포 용이성에서 더 자주 승부가 날 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 충분히 강한 멀티모달 모델을 로컬 장비에 올릴 수 있어야 에이전트가 더 넓은 환경으로 퍼집니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/" target="_blank" rel="noopener">Google, Introducing Gemma 4 12B</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Anthropic, Project Glasswing를 약 150개 신규 조직으로 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>Anthropic은 2026년 6월 2일 Project Glasswing를 약 150개 신규 조직으로 확대한다고 발표했습니다. 회사 설명에 따르면 초기 파트너들은 Claude Mythos Preview를 이용해 이미 1만 건이 넘는 high 또는 critical 급 취약점을 찾아냈습니다. 새 참여 조직은 15개 이상 국가에 걸쳐 있으며, 전력, 수도, 헬스케어, 통신, 하드웨어 등 초기 코호트보다 더 넓은 핵심 인프라 영역을 포함합니다. Anthropic은 단순 탐지보다 패치 작성과 방어 워크플로 확장까지 염두에 둔 보안 자동화를 밀고 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 보안 논의가 이론적 위험 평가에서 실제 취약점 탐지와 수정 자동화로 빠르게 이동하고 있다는 점이 중요합니다. 특히 핵심 인프라 운영자가 이런 모델을 방어 실무에 붙이기 시작하면, 프런티어 모델 기업은 생산성 도구 업체이자 보안 인프라 공급자로도 읽히게 됩니다. 향후 기업 고객은 범용 모델 성능뿐 아니라 보안 적용 사례의 깊이도 함께 평가할 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 보안 분야에서 AI의 가치는 조언보다 실제 취약점을 얼마나 빨리 찾고 고치느냐에서 드러납니다.</p>
+      <div class="sources">
+        <a href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank" rel="noopener">Anthropic, Expanding Project Glasswing</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
