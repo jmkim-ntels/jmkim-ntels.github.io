@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-18</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-18 (목) · 2026년 6월 18일 아침 기준 최근 공식 발표와 제품 업데이트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>에이전트 경쟁의 초점이 모델 자체에서 검색, 컨텍스트, 권한 통제 같은 운영 레이어로 빠르게 이동하고 있습니다.</li>
+        <li>빅테크는 소비자 기능보다 기업 배포, 파트너 생태계, 주권형 인프라처럼 실제 도입 장벽을 낮추는 발표를 잇달아 내놓고 있습니다.</li>
+        <li>이번 주 흐름은 "더 똑똑한 AI"보다 "더 안전하고 더 연결되며 더 현업에 바로 붙는 AI"가 핵심이라는 점을 보여줍니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. AWS, Bedrock AgentCore에 실시간 웹 검색 기능을 정식 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 2026년 6월 17일 Amazon Bedrock AgentCore용 Web Search를 정식 출시했다고 발표했습니다. 이 기능은 에이전트가 자연어 질의를 보내면 관련 스니펫, 제목, 출처 URL, 발행일을 함께 돌려주며 최신 웹 정보에 근거한 응답을 만들 수 있게 합니다. AWS는 이 기능이 Bedrock AgentCore Gateway의 내장 커넥터 타깃으로 제공되며, 외부 검색 API를 별도로 연결하지 않아도 된다고 설명했습니다. 또 Amazon의 자체 검색 인덱스와 지식 그래프를 함께 활용해 일반 검색 결과보다 더 검증된 사실 기반 응답을 노린다고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트가 실무에 투입되려면 최신 정보 접근과 거버넌스가 동시에 필요합니다. AWS는 웹 검색을 외부 도구가 아니라 관리형 인프라 안으로 끌어들여, 기업이 검색 품질과 데이터 반출 통제를 한 번에 해결하도록 유도하고 있습니다. 이는 클라우드 사업자들이 모델 호스팅을 넘어 에이전트 운영 스택 전체를 장악하려는 흐름과 맞닿아 있습니다.</p>
+      <p class="why">왜 중요한지: 에이전트의 경쟁력은 이제 모델 성능만이 아니라 최신 정보 접근을 얼마나 안전하게 붙이느냐에서 갈립니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/blogs/aws/announcing-web-search-on-amazon-bedrock-agentcore-ground-your-ai-agents-in-current-accurate-web-knowledge/" target="_blank" rel="noopener">AWS News Blog, Announcing Web Search on Amazon Bedrock AgentCore</a>
+        <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-connectors-web-search.html" target="_blank" rel="noopener">AWS Documentation, Web Search connector for Bedrock AgentCore</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, 배포 전 모델 위험을 가늠하는 `Deployment Simulation` 연구 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 16일 실제 배포와 유사한 대화 맥락을 재생해 신모델의 행동을 미리 점검하는 `Deployment Simulation` 방법을 공개했습니다. 회사 설명에 따르면 과거 실제 대화에서 이전 모델 응답만 제거한 뒤 후보 모델로 다시 생성해, 현실적인 사용 환경에서 어떤 바람직하지 않은 행동이 얼마나 자주 나오는지 예측합니다. OpenAI는 이 방식이 기존 합성 평가보다 더 넓은 맥락을 다루고, 모델이 "지금 시험받고 있다"는 신호를 덜 감지하게 만들어 배포 후 행동을 더 가깝게 추정한다고 주장했습니다. 내부 에이전트 코딩 트래픽 12만 건을 활용한 실험까지 포함해, 툴 사용이 많은 에이전트 환경에도 적용 가능하다고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>프런티어 모델이 강해질수록 벤치마크 점수보다 실제 운영 중 어떤 이상 행동을 보일지가 더 중요해집니다. 이 연구는 안전 평가가 정적인 테스트셋 중심에서 실제 배포 시뮬레이션 중심으로 이동할 수 있음을 보여줍니다. 다른 모델 기업과 외부 감시 기관에도 배포형 평가 체계를 압박하는 기준점이 될 가능성이 있습니다.</p>
+      <p class="why">왜 중요한지: 강한 모델을 내놓는 것보다, 배포 후 어떤 식으로 빗나갈지를 먼저 읽는 능력이 더 중요해지고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/deployment-simulation/" target="_blank" rel="noopener">OpenAI, Predicting model behavior before release by simulating deployment</a>
+        <a href="https://cdn.openai.com/pdf/Deployment_Simulation_Paper.pdf" target="_blank" rel="noopener">OpenAI, Deployment Simulation paper</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. OpenAI, 글로벌 SI·컨설팅사를 묶는 `Partner Network` 출범</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 14일 OpenAI Partner Network를 발표하며 기업 AI 도입을 위한 파트너 프로그램을 공식화했습니다. OpenAI는 모델 성능 자체보다, 적합한 사용 사례 선정과 워크플로 재설계, 기존 시스템 통합, 변화관리의 반복 가능성이 이제 더 큰 병목이라고 진단했습니다. 이를 위해 1억5000만 달러를 투입하고, 시스템 통합과 컨설팅, 기술·데이터 분야의 글로벌 파트너들과 출발하며 2026년 말까지 30만 명의 인증 컨설턴트 양성을 목표로 제시했습니다. 프로그램은 Select, Advanced, Elite의 3단계 구조와 Codex·사이버보안·에이전트 같은 전문화 트랙까지 예고했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>생성형 AI 경쟁이 이제 API 판매만으로는 끝나지 않는다는 점을 보여주는 발표입니다. OpenAI는 대형 컨설팅사와 SI를 통해 현장 침투 속도를 높이고, 자사 기술을 기업 표준으로 굳히려는 전략을 분명히 했습니다. 이는 Microsoft, Google, AWS가 벌여 온 엔터프라이즈 채널 경쟁이 OpenAI 쪽에서도 본격화됐다는 뜻이기도 합니다.</p>
+      <p class="why">왜 중요한지: 기업 AI 시장의 승부는 모델 데모가 아니라 누가 더 빨리 조직 안에 심고 운영하게 만드느냐에서 납니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/introducing-openai-partner-network/" target="_blank" rel="noopener">OpenAI, Introducing the OpenAI Partner Network</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Meta, Facebook에 AI Mode와 생성형 편집 도구를 본격 탑재</h2>
+      <h3>핵심 요약</h3>
+      <p>Meta는 2026년 6월 15일 Facebook용 신규 AI 기능을 발표하며 AI Mode 검색 탭과 생성형 편집 기능을 도입한다고 밝혔습니다. AI Mode는 그룹과 릴스 등 앱 전반의 공개 콘텐츠를 바탕으로, 링크 나열 대신 사람들의 실제 의견과 경험을 기반으로 한 답변을 제공하는 방식입니다. 동시에 카메라 롤 공유 제안, 콜라주 컷아웃 템플릿, 스타일화된 비디오 전환 효과, 의상·헤어·액세서리 변경용 AI 프리셋도 추가됐습니다. Meta는 해당 공유 제안 기능이 옵트인 방식이며 언제든 끌 수 있다고 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>Meta는 검색과 제작, 피드 경험 전부에 AI를 스며들게 하면서 자체 소셜 그래프를 AI의 차별적 데이터 자산으로 활용하려 하고 있습니다. 특히 "사람들이 공개적으로 남긴 경험"을 검색 답변 원천으로 내세운 점은 전통 검색엔진과 다른 방향의 경쟁 포인트입니다. 소비자용 AI가 단독 챗봇이 아니라 기존 앱 기능 전반으로 해체·흡수되는 흐름도 더 뚜렷해졌습니다.</p>
+      <p class="why">왜 중요한지: 소셜 플랫폼이 보유한 인간 대화 데이터가 AI 검색 경쟁의 독자 무기가 되기 시작했습니다.</p>
+      <div class="sources">
+        <a href="https://about.fb.com/news/2026/06/new-ai-tools-to-help-you-make-things-happen-on-facebook/" target="_blank" rel="noopener">Meta Newsroom, New AI Tools to Help You Make Things Happen on Facebook</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Google Cloud, 영국에서 주권형 AI 인프라와 HSBC 협업을 전면에 내세움</h2>
+      <h3>핵심 요약</h3>
+      <p>Google Cloud는 2026년 6월 17일 런던 서밋 발표에서 영국 시장을 "agentic enterprise" 전환의 핵심 거점으로 규정했습니다. 회사는 HSBC와의 다년 계약을 발표하며 자산관리, 금융범죄 리스크 관리, 고객 응대 보조에 Gemini와 Gemini Enterprise Agent Platform을 적용하겠다고 밝혔습니다. 또 영국 내 민감한 사용 사례를 위해 Gemini 3.5 Flash의 인국가 처리(in-country processing)를 6월 말까지 제공하겠다고 예고했습니다. Deloitte 런던 AI Studio 확대와 영국 내 데이터센터 투자도 함께 언급하며, 모델뿐 아니라 지역 인프라와 파트너십을 묶은 공급 전략을 부각했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>주권형 AI와 지역 데이터 거버넌스는 유럽과 공공·금융권에서 빠르게 핵심 구매 조건이 되고 있습니다. Google Cloud는 단순한 모델 경쟁보다 "현지 규제를 만족하는 에이전트 플랫폼"을 전면에 세워 AWS·Microsoft와의 차별화를 시도하는 모습입니다. 대형 은행 사례를 선점하면 이후 규제 산업 확산에도 유리한 레퍼런스를 확보하게 됩니다.</p>
+      <p class="why">왜 중요한지: AI 도입의 다음 병목은 성능이 아니라 규제와 데이터 주권이며, 클라우드 경쟁도 그 축으로 이동 중입니다.</p>
+      <div class="sources">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/london-summit-2026-uk-leads-agentic-enterprise-ai-infrastructure-data-cloud" target="_blank" rel="noopener">Google Cloud Blog, From AI potential to agentic reality</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
