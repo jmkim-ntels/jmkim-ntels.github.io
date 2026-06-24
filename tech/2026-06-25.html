@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-25</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-25 (목) · 2026년 6월 25일 오전 6:40 KST 기준, 최근 1주 내 공식 발표와 검증 가능한 제품·인프라 업데이트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁의 초점이 모델 데모를 넘어 반도체, 데이터센터, 배포, 인증, 웹 접지 같은 실행 인프라로 빠르게 이동하고 있습니다.</li>
+        <li>빅테크는 검색, 소셜, 개발자 플랫폼, 업무 도구 전반에 AI를 기본 인터페이스로 심어 사용자의 실제 행동 흐름을 선점하려는 중입니다.</li>
+        <li>기업 시장에서는 더 똑똑한 모델보다 더 안전하게 연결되고, 더 싸게 운영되고, 더 빨리 배포되는 AI가 차별화 포인트가 되고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI와 Broadcom, LLM 추론 전용 칩 'Jalapeño' 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 24일 Broadcom과 함께 자사 첫 전용 추론 칩인 Jalapeño를 공개했습니다. 회사는 이 칩이 범용 가속기를 변형한 것이 아니라 현대 LLM 추론을 위해 처음부터 설계된 아키텍처라고 설명했습니다. OpenAI에 따르면 Jalapeño는 초기 설계부터 테이프아웃까지 9개월 만에 진행됐고, ChatGPT, Codex, API, 향후 에이전트 제품에서 관찰된 실제 워크로드 패턴을 반영했습니다. Broadcom은 이 협력이 2026년부터 Microsoft 등과 함께 기가와트급 데이터센터 배치로 이어질 멀티세대 로드맵의 시작이라고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>프런티어 AI 기업이 모델뿐 아니라 칩 설계까지 직접 관여하는 흐름이 더 분명해졌습니다. 이는 추론 비용과 공급망 병목을 줄이기 위해 소프트웨어 회사들이 하드웨어 스택까지 수직 통합하고 있다는 뜻입니다. 장기적으로는 엔비디아 중심 구조를 완화하려는 업계 전반의 움직임에도 영향을 줄 수 있습니다.</p>
+      <p class="why">왜 중요한지: AI 경쟁력이 모델 성능만이 아니라 추론 단가와 인프라 자립도에서 갈리는 단계로 들어가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">OpenAI, OpenAI and Broadcom unveil LLM-optimized inference chip</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, GPT-5.5 Instant를 ChatGPT 기본 모델로 전환</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 24일 ChatGPT 릴리즈 노트를 통해 GPT-5.5 Instant를 모든 사용자 대상 기본 모델로 롤아웃한다고 밝혔습니다. 새 기본 모델은 GPT-5.3 Instant를 대체하며 정확도, 명확성, 간결성, 이미지 이해, STEM 질문 대응, 웹 검색 판단 품질을 개선했다고 설명했습니다. Plus와 Pro 사용자는 웹에서 과거 대화, 파일, 연결된 Gmail 문맥을 더 효과적으로 활용할 수 있게 됩니다. 동시에 응답 스타일도 더 읽기 쉽고 덜 과장되며, 실용적인 도움에 맞게 다듬었다고 안내했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기본 모델 교체는 단순한 버전 업데이트보다 훨씬 큰 의미가 있습니다. 가장 많은 사용자가 접하는 기본 경험이 곧 제품 인상과 만족도를 좌우하기 때문입니다. OpenAI는 대형 신기능보다 일상 사용 품질과 문맥 활용 능력을 높여 대중 시장 점유를 강화하려는 모습입니다.</p>
+      <p class="why">왜 중요한지: 기본 모델 업그레이드는 수많은 사용자의 일상적인 AI 경험을 한 번에 바꾸는 가장 직접적인 제품 변화입니다.</p>
+      <div class="sources">
+        <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">OpenAI Help Center, ChatGPT Release Notes</a>
+        <a href="https://help.openai.com/articles/11909943" target="_blank" rel="noopener">OpenAI Help Center, GPT-5.5 in ChatGPT</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Cloudflare, 모든 고객에게 self-managed OAuth 개방</h2>
+      <h3>핵심 요약</h3>
+      <p>Cloudflare는 2026년 6월 24일 self-managed OAuth를 모든 고객에게 공개했다고 발표했습니다. 이제 개발자는 직접 OAuth 애플리케이션을 만들고, 사용자가 범위가 지정된 접근 권한을 위임하는 표준 OAuth 흐름을 Cloudflare 위에서 구현할 수 있습니다. 회사는 기존에 일부 수동 온보딩 파트너에게만 허용되던 구조를 확장하기 위해 동의 화면, 권한 철회, 소유권 표시, 내부 OAuth 엔진 업그레이드를 진행했다고 설명했습니다. 특히 에이전트형 툴과 SaaS 통합 수요가 커지면서 토큰 기반 연결보다 더 안전하고 관리 가능한 위임 모델이 필요해졌다고 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 에이전트와 자동화 툴이 늘수록 서비스 간 권한 위임은 핵심 인프라가 됩니다. Cloudflare는 네트워크와 서버리스 플랫폼 위에 앱 생태계까지 키우기 위해 OAuth를 개방형 기반 기능으로 밀어붙이고 있습니다. 이는 개발 플랫폼 경쟁이 코드 실행 환경에서 끝나지 않고 권한과 연결 표준까지 확장되고 있음을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 에이전트 시대에는 API 키보다 안전한 위임과 철회가 쉬운 OAuth가 플랫폼 경쟁력의 일부가 됩니다.</p>
+      <div class="sources">
+        <a href="https://blog.cloudflare.com/oauth-for-all/" target="_blank" rel="noopener">Cloudflare, Unlocking the Cloudflare app ecosystem with OAuth for all</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Meta, EssilorLuxottica와 손잡고 Meta Glasses 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>Meta는 2026년 6월 24일 EssilorLuxottica와 협력해 Meta Glasses를 출시한다고 발표했습니다. 새 제품군은 도수 렌즈를 지원하고 26개 스타일로 출시되며, 시작 가격은 299달러입니다. Meta는 이것이 자사 최초로 출시 첫날부터 Meta AI를 탑재한 안경 제품군이라고 밝혔고, Muse Spark 기반 AI 기능을 통해 손쉬운 상시형 보조 경험을 제공한다고 설명했습니다. 회사는 안경이 사용자의 시점을 이해하는 종일형 AI 비서에 가장 적합한 하드웨어 카테고리라고 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 하드웨어 경쟁은 스마트폰 보조 앱 수준을 넘어 항상 착용 가능한 폼팩터로 확장되고 있습니다. Meta는 소셜 플랫폼과 생성형 AI에 더해 웨어러블 인터페이스까지 장악하려는 전략을 분명히 하고 있습니다. 안경 시장에서 패션성과 AI 기능을 함께 밀어붙인다는 점은 범용 소비자 AI 기기의 대중화 실험으로 볼 수 있습니다.</p>
+      <p class="why">왜 중요한지: 화면이 아닌 착용형 인터페이스가 차세대 AI 진입점이 될 수 있다는 가설에 Meta가 본격 베팅하고 있습니다.</p>
+      <div class="sources">
+        <a href="https://about.fb.com/news/2026/06/meta-essilorluxottica-partner-launch-meta-glasses/" target="_blank" rel="noopener">Meta, We're Partnering With EssilorLuxottica to Launch Meta Glasses</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Microsoft, 텍사스 Pecos에 약 2GW 규모 신규 데이터센터 캠퍼스 투자</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 2026년 6월 22일 텍사스 Pecos에 신규 데이터센터 캠퍼스를 건설해 전 세계 용량을 약 2기가와트 늘리겠다고 발표했습니다. 회사는 이를 자사 역사상 가장 큰 단일 용량 추가 중 하나로 설명했고, 향후 5~7년에 걸친 멀티빌리언달러 투자라고 밝혔습니다. 피크 시점에는 6,000개 이상의 건설 일자리와 수백 개의 상시 운영 일자리를 지원할 것으로 예상했습니다. 초기 전력은 현장 전용 설비로 공급하고, 필요한 발전 및 지원 인프라는 Microsoft가 직접 부담한다고 했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 수요가 커질수록 경쟁의 핵심 자원은 모델이 아니라 전력, 냉각, 부지, 송전 연결로 이동합니다. Microsoft의 발표는 클라우드 업체가 사실상 에너지 집약적 인프라 기업으로 바뀌고 있음을 잘 보여줍니다. 앞으로는 누가 더 좋은 모델을 갖고 있느냐만큼 누가 더 빨리 용량을 확보하느냐가 중요해질 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 시대의 진짜 희소 자원은 GPU뿐 아니라 그것을 돌릴 수 있는 데이터센터와 전력입니다.</p>
+      <div class="sources">
+        <a href="https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/" target="_blank" rel="noopener">Microsoft, Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>6. AWS, Bedrock AgentCore용 관리형 Web Search를 정식 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 2026년 6월 17일 Amazon Bedrock AgentCore용 Web Search의 일반 제공을 발표했습니다. 이 기능은 에이전트가 현재 시점의 웹 정보를 인용과 함께 가져와 응답을 grounding할 수 있게 해주며, AWS는 고객의 보안된 환경 밖으로 데이터가 나가지 않는다고 설명했습니다. Web Search는 Bedrock AgentCore Gateway의 내장 커넥터 타깃으로 제공되고, 관련 스니펫, URL, 제목, 발행일 메타데이터를 함께 반환합니다. AWS는 자사 웹 인덱스와 지식 그래프를 결합해 전통적 외부 검색 API 없이 최신 정보 검색을 지원한다고 강조했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>기업용 에이전트는 최신 정보 접근이 필요하지만, 보안과 규정 때문에 외부 검색 API 사용을 꺼리는 경우가 많습니다. AWS는 이 문제를 클라우드 기본 기능 안으로 흡수해 최신성과 거버넌스를 동시에 제공하려고 합니다. 이는 에이전트 플랫폼 경쟁이 모델 호스팅을 넘어 안전한 검색과 도구 실행 환경 경쟁으로 넓어지고 있음을 뜻합니다.</p>
+      <p class="why">왜 중요한지: 최신 웹 정보에 안전하게 접속할 수 있어야 기업용 에이전트가 실제 업무 흐름에 들어갈 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/blogs/aws/announcing-web-search-on-amazon-bedrock-agentcore-ground-your-ai-agents-in-current-accurate-web-knowledge/" target="_blank" rel="noopener">AWS, Announcing Web Search on Amazon Bedrock AgentCore</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
