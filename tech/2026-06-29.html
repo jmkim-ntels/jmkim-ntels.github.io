@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-06-29</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-06-29 (월) · 2026년 6월 29일 오전 6:40 KST 기준, 최근 1주 내 확인 가능한 공식 발표와 주요 제품 업데이트를 중심으로 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>AI 경쟁의 무게중심이 "대화형 챗봇"에서 실제 업무를 대신 수행하는 에이전트와 장시간 실행 플랫폼으로 이동하고 있습니다.</li>
+        <li>동시에 모델 선택권, 전용 칩, 사용량 기반 과금이 함께 부각되며 성능뿐 아니라 운영비와 통제권이 제품 경쟁력의 핵심이 되고 있습니다.</li>
+        <li>이번 주 업데이트들은 개발자 도구, 엔터프라이즈 생산성, 인프라까지 AI 스택 전반이 빠르게 재구성되고 있음을 보여줍니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, 에이전트가 실제 업무를 어떻게 바꾸는지 연구 결과 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 25일 "How agents are transforming work"를 공개하며, 에이전트형 AI가 단발성 질의응답에서 장기 작업 위임으로 업무 단위를 바꾸고 있다고 설명했습니다. 공개문에 따르면 OpenAI 내부에서도 Codex 사용 비중이 빠르게 높아졌고, 법무나 채용 같은 비개발 부서까지 주요 업무 도구로 확산됐습니다. 또한 99백분위 사용자는 하루 60시간이 넘는 Codex 에이전트 런타임을 병렬로 사용하는 사례가 나타났다고 밝혔습니다. 회사는 이를 통해 에이전트 도구가 지식노동 전반에서 생산성의 새로운 기준이 되고 있다고 주장했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 발표는 AI 경쟁의 초점이 더 똑똑한 답변 생성에서 실제로 끝까지 일을 처리하는 실행 능력으로 이동하고 있음을 보여줍니다. 기업 입장에서는 이제 모델 성능뿐 아니라 장시간 작업 지속성, 병렬 실행, 검증 루프 같은 운영 특성을 함께 평가해야 합니다. 향후 에이전트 도입이 늘수록 업무 프로세스 설계와 사람-에이전트 역할 분담이 더 중요한 이슈가 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 활용의 기준이 "잘 답하는가"에서 "실제로 일을 끝내는가"로 옮겨가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/how-agents-are-transforming-work/" target="_blank" rel="noopener">OpenAI, How agents are transforming work</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI와 Broadcom, LLM 추론 전용 칩 Jalapeño 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 6월 24일 Broadcom과 함께 첫 자체 Intelligence Processor인 Jalapeño를 공개했습니다. 회사는 이 칩이 LLM 추론에 최적화된 가속기이며, 현 세대 최고 수준 대비 더 나은 성능 대비 전력 효율을 목표로 설계됐다고 설명했습니다. 또한 9개월 만의 테이프아웃, 다세대 플랫폼 전략, 2026년 말 초기 배치와 이후 기가와트 규모 확장을 함께 제시했습니다. Broadcom과 Celestica가 칩 구현, 네트워킹, 보드·랙 통합과 생산 시스템을 맡는 구조도 공개했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 소식은 주요 AI 기업들이 모델과 제품을 넘어 칩과 데이터센터까지 직접 설계하는 수직 통합 경쟁으로 더 깊이 들어가고 있음을 보여줍니다. 추론 비용이 서비스 확장의 핵심 병목이 되면서, 전용 칩 확보는 단순 기술 과시가 아니라 가격과 공급 안정성의 문제로 바뀌고 있습니다. 장기적으로는 GPU 의존도를 줄이려는 빅테크 움직임이 더 빨라질 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 서비스 경쟁력은 모델 품질만이 아니라 얼마나 싸고 안정적으로 추론을 돌릴 수 있는지에 달려 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">OpenAI, OpenAI and Broadcom unveil LLM-optimized inference chip</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Google, Gemini 3.5 Flash에 컴퓨터 사용 기능 통합</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 2026년 6월 24일 Gemini 3.5 Flash에 컴퓨터 사용 기능을 기본 내장했다고 발표했습니다. 기존에는 별도 모델로 제공되던 기능을 메인 Flash 모델 안에 통합해 브라우저, 모바일, 데스크톱 환경을 넘나드는 에이전트 구축을 지원한다는 설명입니다. Google은 이를 통해 장기 실행형 자동화 작업, 소프트웨어 테스트, 전문 업무 자동화 성능이 개선된다고 밝혔습니다. 아울러 민감하거나 되돌리기 어려운 작업에 대한 사용자 확인과 간접 프롬프트 인젝션 감지 중단 기능도 함께 제시했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 발표는 모델이 단순 텍스트 생성기가 아니라 실제 소프트웨어와 UI를 다루는 실행 계층으로 진화하고 있음을 상징합니다. 특히 안전장치를 기능 출시와 함께 내세운 점은 엔터프라이즈 도입에서 보안 통제가 기본 요구 조건이 됐다는 뜻이기도 합니다. 경쟁사들도 브라우저 제어, 컴퓨터 사용, 도구 오케스트레이션을 핵심 차별점으로 더 강하게 밀 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 에이전트 경쟁의 본질은 모델 지능뿐 아니라 실제 화면과 도구를 안전하게 다룰 수 있느냐에 있습니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/" target="_blank" rel="noopener">Google, Introducing computer use in Gemini 3.5 Flash</a>
+        <a href="https://ai.google.dev/" target="_blank" rel="noopener">Google AI for Developers, Gemini API</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. GitHub, Copilot Business·Enterprise에 MAI-Code-1-Flash 정식 제공</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 6월 26일 MAI-Code-1-Flash를 Copilot Business와 Copilot Enterprise에 정식 출시했습니다. GitHub는 이 모델을 Microsoft AI의 사내 코딩 모델로 소개하며, 빠른 응답과 낮은 지연 시간을 바탕으로 대량의 반복형 에이전트 코딩 워크플로에 적합하다고 설명했습니다. 또한 usage-based billing 기준으로 과금되며, 조직 사용자는 관리자 설정에서 관련 정책을 먼저 활성화해야 접근할 수 있다고 안내했습니다. 이는 최근 Copilot 전반에 걸친 다중 모델 전략 확장의 연장선으로 보입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>개발자 AI 시장은 이제 "가장 강한 범용 모델 하나"에서 벗어나, 목적별 모델을 선택하는 운영 전략으로 이동하고 있습니다. GitHub가 엔터프라이즈 티어에서 속도 중심 모델을 따로 강조한 것은 실제 업무에서는 최고 성능보다 지연 시간과 비용 효율이 더 중요할 수 있음을 보여줍니다. 앞으로 기업들은 코드 생성 품질뿐 아니라 팀 정책 제어와 예산 관리까지 함께 모델 선택의 기준으로 볼 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 코딩 AI도 성능 경쟁만이 아니라 속도, 비용, 관리자 통제까지 묶어 평가하는 단계에 들어섰습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-06-26-mai-code-1-flash-for-copilot-business-and-copilot-enterprise/" target="_blank" rel="noopener">GitHub Changelog, MAI-Code-1-Flash for Copilot Business and Copilot Enterprise</a>
+        <a href="https://docs.github.com/en/copilot/concepts/about-ai-models-in-github-copilot" target="_blank" rel="noopener">GitHub Docs, About AI models in GitHub Copilot</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Microsoft, Copilot Cowork를 전 세계 정식 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 2026년 6월 16일 Copilot Cowork의 정식 출시를 발표했습니다. 발표에 따르면 Cowork는 복잡하고 장시간 실행되는 멀티툴 작업을 클라우드에서 끝까지 수행하는 에이전트형 기능이며, 미리보기 3개월 만에 포춘 500의 절반 이상이 사용했다고 합니다. Microsoft는 Work IQ 기반 조직 맥락, 다중 모델 설계, 사용량 기반 Copilot Credits 과금, 플러그인 확장, 강한 보안·컴플라이언스 통제를 핵심 차별점으로 제시했습니다. 또한 초기 GA 시점에는 Anthropic Opus 4.8과 Sonnet 4.6을 사용하고, 자체 모델 Cowork 1도 곧 추가한다고 밝혔습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이 발표는 대기업용 AI가 단순 문서 보조에서 실제 작업을 맡는 운영 레이어로 넘어가고 있음을 잘 보여줍니다. 동시에 사용량 기반 과금과 세밀한 예산 통제가 함께 강조된 것은, 엔터프라이즈 AI 도입이 이제 ROI와 거버넌스 검증 단계에 들어섰다는 신호이기도 합니다. 협업툴 사업자들은 앞으로 에이전트 실행 환경과 비용 관리 기능을 더 정교하게 경쟁할 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 엔터프라이즈 AI의 다음 승부처는 챗봇 도입이 아니라 조직 맥락을 읽고 실제 업무를 수행하는 에이전트 운영 플랫폼입니다.</p>
+      <div class="sources">
+        <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/" target="_blank" rel="noopener">Microsoft 365 Blog, Copilot Cowork is now generally available</a>
+        <a href="https://blogs.microsoft.com/blog/2026/06/16/achieving-success-with-ai/" target="_blank" rel="noopener">Microsoft Blog, Achieving success with AI</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
