@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-07-14</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-07-14 (화) · 2026년 7월 14일 오전 10:24 KST 기준, 최근 약 2주 안에 공개된 공식 발표와 검증 가능한 핵심 업데이트만 가볍게 추린 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>이번 주 AI 업계의 초점은 "더 큰 모델" 자체보다 음성 인터페이스, 에이전트 운영, 배포 통제, 과금 구조처럼 제품화 레이어로 이동하고 있습니다.</li>
+        <li>OpenAI는 모델과 음성 인터페이스를 함께 밀고 있고, Microsoft와 Google은 조직과 플랫폼 전반에 AI를 깊게 심는 방향을 분명히 하고 있습니다.</li>
+        <li>GitHub와 Cloudflare의 발표는 개발자 도구와 웹 인프라 쪽에서도 AI 시대의 기본 규칙이 빠르게 다시 짜이고 있음을 보여줍니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, `GPT-5.6` 정식 공개로 고성능 모델 경쟁 재점화</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 7월 9일 `GPT-5.6`을 공개하며 `Sol`, `Terra`, `Luna`로 구성된 새 모델군을 소개했습니다. 공식 발표에 따르면 `GPT-5.6 Sol`은 코딩, 지식노동, 사이버보안, 과학 영역에서 더 강한 성능과 높은 효율을 동시에 겨냥합니다. OpenAI는 특히 성능당 비용과 처리 시간 개선을 강조하면서, 더 적은 토큰과 더 낮은 추정 비용으로 경쟁 모델 대비 우위를 주장했습니다. 동시에 가장 강한 보호장치와 광범위한 사전 평가를 거쳐 일반 가용성 전에 안전성 검증을 강화했다고 설명했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>프런티어 모델 시장은 이제 절대 성능만이 아니라 "얼마나 싸고 빠르게 실무를 끝내는가"가 핵심 비교축이 되고 있습니다. OpenAI가 대형 모델뿐 아니라 더 작은 계층까지 함께 내놓은 점은, 기업들이 업무별로 모델을 세분 배치하는 흐름과도 맞닿아 있습니다. 앞으로는 최고성능 단일 모델보다 포트폴리오형 모델 전략이 더 일반화될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 경쟁의 기준이 벤치마크 점수에서 실제 작업 완료 효율과 운영 가능성으로 옮겨가고 있습니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">OpenAI, GPT-5.6: Frontier intelligence that scales with your ambition</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. OpenAI, `GPT-Live`로 음성 AI를 "실시간 대화형" 경험으로 끌어올림</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 7월 8일 `GPT-Live`를 공개하며 ChatGPT Voice를 구동하는 새로운 음성 모델 세대를 소개했습니다. 이 모델은 full-duplex 구조를 써서 듣기와 말하기를 동시에 처리하고, 대화 중 짧은 반응이나 침묵까지 자연스럽게 유지하도록 설계됐습니다. 또 단순 음성 응답을 넘어서, 더 복잡한 질의는 배경에서 최신 프런티어 모델에 위임한 뒤 결과를 다시 대화 흐름 속으로 가져오는 방식을 채택했습니다. OpenAI는 우선 `GPT-Live-1`과 `GPT-Live-1 mini`를 ChatGPT 사용자에게 글로벌 롤아웃하고, 이후 API 제공도 예고했습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>음성 AI 경쟁은 이제 텍스트 모델을 읽어주는 수준에서 벗어나, 대화 리듬과 지연시간, 백그라운드 추론을 어떻게 묶느냐로 넘어가고 있습니다. 이는 스마트폰, 웨어러블, 차량, 고객지원 등 손이 아닌 목소리로 AI를 쓰는 접점 확대와도 직결됩니다. 음성 인터페이스가 성숙할수록 "앱을 여는 행위" 자체가 줄어드는 방향으로 사용자 경험이 바뀔 수 있습니다.</p>
+      <p class="why">왜 중요한지: 음성은 AI를 더 자주, 더 길게 쓰게 만드는 핵심 인터페이스가 될 가능성이 큽니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">OpenAI, Introducing GPT-Live</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Microsoft, `Microsoft Frontier Company`로 엔터프라이즈 AI 실행 조직을 대형화</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 2026년 7월 2일 `Microsoft Frontier Company`를 출범시켰다고 발표했습니다. 공식 설명에 따르면 이 조직은 산업별 지식, 변화관리, 지속 개선, 엔터프라이즈급 AI 엔지니어링을 묶어 고객의 AI 전환을 직접 수행하는 운영 사업입니다. 회사는 여기에 25억 달러를 투자하고 6,000명의 산업·엔지니어링 전문가를 고객 현장에 배치하겠다고 밝혔습니다. 요지는 소프트웨어 판매만이 아니라 "도입부터 현장 정착까지"를 묶어주는 실행 조직을 크게 키우겠다는 것입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>많은 기업이 이제 PoC를 넘어서 실제 매출, 생산성, 보안, 조직 변화까지 연결되는 AI 도입을 요구하고 있습니다. Microsoft는 이 병목을 컨설팅 보조가 아니라 자체적인 대규모 배포 조직으로 풀려는 쪽에 베팅했습니다. 다른 클라우드와 대형 SI, 컨설팅 업체들도 유사한 현장형 AI 실행 조직 확대 압박을 받을 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 엔터프라이즈 AI의 승부처는 모델 구매보다 조직 안착과 운영 실행력에 더 가까워지고 있습니다.</p>
+      <div class="sources">
+        <a href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/" target="_blank" rel="noopener">Microsoft Blog, Microsoft Frontier Company: AI engineering that amplifies and protects your intelligence</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Google, 6월 AI 업데이트를 묶어 공개하며 Gemini 중심 플랫폼 전략을 재강조</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 2026년 7월 1일 6월 한 달간의 주요 AI 발표를 정리한 공식 라운드업을 게시했습니다. 여기에 따르면 핵심 축은 `Gemini 3.5 Live Translate`, `Android 17`의 AI 기능, 그리고 Gemini 기반의 새 `Google Home Speaker`였습니다. 같은 글은 Gemini 3.5 Flash의 computer use와 NotebookLM 강화 같은 개발자·생산성 업데이트도 함께 묶어 보여줍니다. 개별 발표를 흩어 놓기보다 검색, 모바일, 가정, 개발 환경을 Gemini 중심 경험으로 엮겠다는 메시지가 분명합니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>Google은 AI를 별도 앱이 아니라 OS, 디바이스, 생산성 도구, 개발 플랫폼 전반에 깔리는 기본 레이어로 밀고 있습니다. 이런 전략은 사용자가 특정 모델명을 기억하기보다, 여러 접점에서 일관된 AI 도움을 받는 경험을 중시하게 만든다는 점에서 중요합니다. 플랫폼 사업자 간 경쟁도 이제 단일 모델보다 생태계 통합 완성도로 이동하고 있습니다.</p>
+      <p class="why">왜 중요한지: 소비자 AI의 승부는 개별 앱보다 검색, 폰, 집, 업무도구가 얼마나 자연스럽게 연결되는지에서 갈릴 수 있습니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/" target="_blank" rel="noopener">Google Blog, The latest AI news we announced in June 2026</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. GitHub, `GitHub Models` 7월 30일 완전 종료 공지</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 7월 1일 `GitHub Models`를 7월 30일부로 완전히 종료한다고 공지했습니다. 공지에 따르면 playground, model catalog, inference API, BYOK 엔드포인트와 관련 UI가 모두 사라지며, 이 조치는 기존 사용 고객까지 포함해 전면 적용됩니다. 또 7월 16일과 23일에는 사전 점검을 위한 짧은 브라운아웃도 예고했습니다. GitHub는 대안으로 Microsoft Foundry와 GitHub Copilot을 안내하고 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>이는 GitHub가 범용 모델 카탈로그보다는 실제 개발 흐름에 더 밀착된 Copilot 중심 전략으로 무게를 옮기고 있음을 보여줍니다. 개발팀 입장에서는 모델 실험과 추론 API를 어디에서 운영할지 다시 정리해야 할 수 있습니다. 동시에 AI 플랫폼 시장이 실험용 도구에서 핵심 워크플로 중심 제품으로 재편되는 신호로도 읽힙니다.</p>
+      <p class="why">왜 중요한지: 개발자 AI 도구도 "많은 모델을 보여주는가"보다 "실제 개발 과정에 얼마나 깊게 들어가는가"가 생존 기준이 되고 있습니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/" target="_blank" rel="noopener">GitHub Changelog, GitHub Models is being fully retired on July 30, 2026</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>6. Cloudflare, AI 크롤링 통제와 `Monetization Gateway`로 웹 수익 규칙 재설계 시도</h2>
+      <h3>핵심 요약</h3>
+      <p>Cloudflare는 2026년 7월 1일 웹사이트 운영자가 AI 트래픽을 `Search`, `Agent`, `Training` 세 범주로 나눠 관리할 수 있는 새 정책 옵션을 발표했습니다. 같은 날 `Monetization Gateway` 대기자 명단도 공개하면서, 웹페이지, 데이터셋, API, MCP 도구 뒤에 사용량 기반 과금을 붙일 수 있는 구조를 제시했습니다. 회사 설명에 따르면 결제는 x402 기반으로 처리되며, 별도 결제 스택 없이 엣지에서 정책과 검증을 수행하는 방향입니다. 단순 차단을 넘어서 "어떤 자동화는 허용하고 어떤 자동화는 과금할지"를 웹 인프라 차원에서 다루려는 시도입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 에이전트가 웹의 주요 방문자가 되면 광고와 구독 중심의 기존 수익모델은 압박을 받을 수밖에 없습니다. Cloudflare는 이 문제를 봇 차단 기능이 아니라 정책, 식별, 결제, 접근권 통제의 묶음으로 재정의하고 있습니다. 이런 흐름이 확산되면 앞으로는 검색 노출, 에이전트 호출, 학습 수집이 서로 다른 가격표와 허용 규칙을 갖게 될 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 시대 웹의 핵심은 방문자 수보다 자동화 접근을 어떻게 통제하고 수익화하느냐로 바뀌고 있습니다.</p>
+      <div class="sources">
+        <a href="https://blog.cloudflare.com/content-independence-day-ai-options/" target="_blank" rel="noopener">Cloudflare Blog, Your site, your rules: new AI traffic options for all customers</a>
+        <a href="https://blog.cloudflare.com/monetization-gateway/" target="_blank" rel="noopener">Cloudflare Blog, Announcing the Monetization Gateway: charge for any resource behind Cloudflare via x402</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
