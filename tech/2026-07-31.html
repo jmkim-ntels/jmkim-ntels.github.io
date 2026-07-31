@@ -29,69 +29,81 @@
     <div class="summary">
       <strong>오늘의 핵심 포인트</strong>
       <ul>
-        <li>이번 주 AI 경쟁의 핵심은 모델 자체보다 에이전트를 얼마나 싸고 안정적으로 굴릴 수 있느냐로 옮겨가고 있습니다.</li>
-        <li>OpenAI, Google, Anthropic, Meta는 모두 "실행형 AI"를 강조하고 있고, 비용 통제와 운영 가드레일이 제품 차별점으로 부상했습니다.</li>
-        <li>동시에 Microsoft 같은 인프라 사업자는 이런 에이전트 수요를 받치기 위해 추론·데이터·칩 설계용 컴퓨팅 스택을 더 세분화하고 있습니다.</li>
+        <li>이번 주 테크 뉴스의 중심은 더 강한 모델 경쟁보다 에이전트를 실제 서비스로 돌리기 위한 자본, 런타임, 통제 장치에 모였습니다.</li>
+        <li>OpenAI와 Anthropic은 각각 대규모 자금 조달과 신규 모델 출시로 확장 속도를 높이고, Google과 Meta는 실행형 AI 경험을 전면에 내세우고 있습니다.</li>
+        <li>동시에 GitHub처럼 중간 플랫폼을 정리하는 움직임도 나타나면서, 개발자 도구 스택은 몇 개의 큰 런타임과 생태계로 재편되는 흐름이 뚜렷해지고 있습니다.</li>
       </ul>
     </div>
 
     <div class="news-item">
-      <h2>1. OpenAI, GPT-5.6 Terra·Luna 가격 추가 인하</h2>
+      <h2>1. OpenAI, 1,220억 달러 신규 자금 조달 완료 발표</h2>
       <h3>핵심 요약</h3>
-      <p>OpenAI는 GPT-5.6 발표 페이지에 2026년 7월 30일 업데이트를 추가해 GPT-5.6 Luna 가격을 80%, Terra 가격을 20% 인하했다고 밝혔습니다. GPT-5.6 제품군은 Sol, Terra, Luna로 나뉘며, OpenAI는 처음부터 최고 성능뿐 아니라 성능 대비 비용을 핵심 메시지로 밀고 있었습니다. 공식 설명에 따르면 Sol은 코딩, 지식 작업, 사이버보안, 과학 분야에서 더 적은 토큰으로 높은 성능을 내는 데 초점이 맞춰져 있습니다. 이번 가격 조정은 고성능 모델 못지않게 중간급·저가형 모델의 보급 속도를 끌어올리려는 신호로 읽힙니다.</p>
+      <p>OpenAI는 2026년 7월 31일 자사 공식 발표를 통해 1,220억 달러의 신규 자금 조달을 마감했다고 밝혔습니다. 발표문은 사후 기업가치를 8,520억 달러로 제시하며, 이번 자금을 차세대 AI 개발 가속에 투입하겠다고 설명했습니다. 최근 대형 모델 개발 경쟁이 막대한 컴퓨팅 투자와 장기 인프라 확보 경쟁으로 이어지고 있는 만큼, 이번 발표는 단순한 재무 뉴스 이상의 의미를 가집니다. 특히 자본 조달 능력 자체가 모델 개발 속도와 서비스 확장력의 핵심 변수라는 점을 다시 확인시켰습니다.</p>
       <h3>배경·업계 영향</h3>
-      <p>기업 입장에서는 벤치마크 1등보다 월 예산 안에서 몇 건의 자동화 작업을 안정적으로 돌릴 수 있는지가 더 중요합니다. 그래서 Terra와 Luna 같은 모델의 가격 변화는 단순 할인보다 "에이전트 대량 운영 단가"를 건드리는 뉴스에 가깝습니다. 업계 전반적으로도 프런티어 모델 경쟁이 점점 가격-성능 곡선 경쟁으로 바뀌고 있다는 점을 다시 확인시켜 줍니다.</p>
-      <p class="why">왜 중요한지: AI 도입의 실제 병목은 종종 성능이 아니라 운영 단가이기 때문입니다.</p>
+      <p>프런티어 AI 경쟁은 이제 연구 인재만이 아니라 전력, 데이터센터, 장기 GPU 공급 계약을 얼마나 안정적으로 확보하느냐의 싸움이 됐습니다. OpenAI의 대형 조달은 경쟁사에도 추가 투자 압박을 주고, 빅테크와 클라우드 사업자의 AI 인프라 투자 속도도 더 자극할 가능성이 큽니다. 동시에 고객 입장에서는 상위 사업자 중심으로 생태계 집중도가 더 높아질 수 있습니다.</p>
+      <p class="why">왜 중요한지: AI 경쟁의 승부처가 모델 성능만이 아니라 자본력과 인프라 집행력으로 이동하고 있기 때문입니다.</p>
       <div class="sources">
-        <a href="https://openai.com/index/gpt-5-6/" target="_blank" rel="noopener">OpenAI, GPT-5.6: Frontier intelligence that scales with your ambition</a>
+        <a href="https://openai.com/index/accelerating-the-next-phase-ai/" target="_blank" rel="noopener">OpenAI, OpenAI raises $122 billion to accelerate the next phase of AI</a>
       </div>
     </div>
 
     <div class="news-item">
-      <h2>2. Google, Gemini API Managed Agents에 훅·예산 통제·스케줄 실행 추가</h2>
+      <h2>2. OpenAI, GPT-Live 음성에 SynthID 워터마킹과 검증 API 추가</h2>
       <h3>핵심 요약</h3>
-      <p>Google은 2026년 7월 28일 Managed Agents in Gemini API 업데이트를 발표했습니다. 기본 모델을 Gemini 3.6 Flash로 전환하고, 에이전트가 샌드박스 안에서 도구를 호출할 때 전후로 스크립트를 실행하는 환경 훅을 지원합니다. 공식 블로그는 이를 통해 특정 도구 호출을 차단하거나, 자동 린트·감사·검증 파이프라인을 삽입할 수 있다고 설명합니다. 여기에 `max_total_tokens` 예산 제한, 예약 실행 트리거, 무료 티어 접근까지 더해 실험용이 아닌 운영형 에이전트 런타임에 가까운 모습을 갖췄습니다.</p>
+      <p>OpenAI는 GPT-Live 소개 페이지를 2026년 7월 31일 업데이트하며, ChatGPT Voice와 API를 통해 생성된 지원 오디오에 SynthID 워터마킹을 적용한다고 밝혔습니다. 동시에 공식 검증 도구가 OpenAI 오디오의 출처 신호를 감지할 수 있게 됐고, 이를 외부 서비스에 붙일 수 있는 검증 API도 함께 제공한다고 설명했습니다. GPT-Live 자체는 실시간 양방향 대화를 지향하는 음성 모델이지만, 이번 업데이트의 핵심은 기능 추가보다 신뢰성 계층 강화에 있습니다. 즉, 생성형 음성이 더 자연스러워질수록 출처 검증도 제품 기본 기능이 되어야 한다는 메시지입니다.</p>
       <h3>배경·업계 영향</h3>
-      <p>에이전트가 실제로 파일을 쓰고 코드를 실행하는 환경에서는 성능보다 통제가 먼저 필요합니다. Google은 이번 업데이트로 "좋은 모델"보다 "감사 가능하고 폭주를 막을 수 있는 실행 환경"을 더 전면에 내세웠습니다. 이는 앞으로 에이전트 플랫폼 경쟁이 모델 성능과 런타임 거버넌스의 결합으로 진행될 가능성을 보여줍니다.</p>
-      <p class="why">왜 중요한지: 기업이 에이전트를 실서비스에 올리려면 성능보다 먼저 통제와 비용 상한이 필요합니다.</p>
+      <p>생성형 음성은 고객센터, 비서, 미디어 자동화처럼 실제 사용처가 빠르게 늘고 있지만, 동시에 사칭과 위조 위험도 커지고 있습니다. OpenAI가 워터마킹과 검증 API를 함께 내놓은 것은 모델 품질 경쟁과 별개로 provenance 인프라를 먼저 깔겠다는 신호로 읽힙니다. 다른 음성 AI 사업자도 유사한 검증 체계를 더 강하게 요구받을 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 음성 AI가 대중화될수록 '잘 말하는 것'만큼 '누가 만든 음성인지 증명하는 것'이 중요해집니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">OpenAI, Introducing GPT-Live</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Google, Gemini API Managed Agents에 훅·예산 통제·예약 실행 추가</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 2026년 7월 28일 Managed Agents in Gemini API 업데이트를 발표했습니다. 기본 모델을 Gemini 3.6 Flash로 전환하고, 샌드박스 내부 도구 호출 전후에 스크립트를 실행할 수 있는 environment hooks를 도입했습니다. 여기에 총 토큰 예산 제한, scheduled triggers, 무료 티어 접근을 더해 운영형 에이전트에 가까운 기능 구성을 제시했습니다. 공식 설명은 개발자가 특정 도구 실행을 차단하거나, 린트·감사·검증 로직을 삽입할 수 있다는 점을 강조합니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트 플랫폼 경쟁은 이제 모델 품질만이 아니라 폭주 방지, 비용 상한, 감사 가능성 같은 운영 제어 능력으로 넘어가고 있습니다. Google의 이번 업데이트는 "에이전트를 잘 실행시키는 방법"보다 "에이전트를 안전하게 통제하는 방법"을 전면에 둔 사례입니다. 기업 고객 입장에서는 이런 제어 기능이 도입 장벽을 낮추는 실질적 요소가 될 수 있습니다.</p>
+      <p class="why">왜 중요한지: 기업이 에이전트를 실서비스에 붙이려면 지능보다 먼저 예산 통제와 실행 가드레일이 필요합니다.</p>
       <div class="sources">
         <a href="https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/" target="_blank" rel="noopener">Google Blog, Gemini API Managed Agents: 3.6 Flash, hooks, and more</a>
       </div>
     </div>
 
     <div class="news-item">
-      <h2>3. Anthropic, Claude Opus 5 공개</h2>
+      <h2>4. Anthropic, Claude Opus 5 공개로 상위 모델 가격-성능 경쟁 강화</h2>
       <h3>핵심 요약</h3>
-      <p>Anthropic은 2026년 7월 24일 Claude Opus 5를 발표했습니다. 공식 설명에 따르면 Opus 5는 전작 Opus 4.8과 같은 가격을 유지하면서도 소프트웨어 엔지니어링, 자동화, 컴퓨터 사용, 과학 연구 성능을 크게 높였습니다. 특히 Frontier-Bench, CursorBench, Zapier AutomationBench, OSWorld 2.0 같은 지표에서 더 강한 성능이나 더 나은 비용 효율을 강조했습니다. Anthropic은 Opus 5를 장기 실행형 에이전트와 전문 업무를 위한 상위 Opus 라인의 실질적 도약으로 포지셔닝하고 있습니다.</p>
+      <p>Anthropic은 2026년 7월 24일 Claude Opus 5를 발표했습니다. 공식 발표에 따르면 Opus 5는 Claude Fable 5에 가까운 최전선 지능을 절반 수준의 가격으로 제공하는 것이 핵심 포지셔닝입니다. 회사는 코딩과 지식 작업 평가에서 최고 수준 성능을 강조했고, 전작 Opus 4.8과 같은 가격으로 더 높은 성능과 효율을 제공한다고 설명했습니다. 또한 장기 실행형 에이전트 작업과 일상적인 전문 업무에 적합한 상위 모델로 자리매김시키고 있습니다.</p>
       <h3>배경·업계 영향</h3>
-      <p>Anthropic의 메시지는 "최고급 모델을 더 비싸게"가 아니라 "프리미엄급 성능을 더 현실적인 비용으로"에 가깝습니다. 이는 에이전트 코딩, 분석, 자동화 시장에서 OpenAI와 Google을 상대로 가격 방어력과 대체 가능성을 높이는 전략입니다. 사용자 입장에서는 특정 벤더 고정이 아니라 작업 유형별 모델 혼합 운용이 더 쉬워질 수 있습니다.</p>
-      <p class="why">왜 중요한지: 상위권 모델의 가격-성능 간격이 줄어들수록 멀티모델 전략이 훨씬 현실적이 됩니다.</p>
+      <p>상위권 모델 경쟁은 이제 "최고 성능"보다 "업무형 성능을 얼마의 비용으로 내느냐"가 더 중요해지고 있습니다. Anthropic의 메시지는 프리미엄 모델도 실사용 단가를 낮춰야 시장 점유를 늘릴 수 있다는 점을 보여줍니다. 이는 OpenAI, Google과의 멀티모델 운용 전략을 검토하는 기업들에게 선택지를 넓혀주는 신호입니다.</p>
+      <p class="why">왜 중요한지: 상위 모델의 가격 장벽이 낮아질수록 고난도 에이전트 작업이 더 넓은 조직으로 확산될 수 있습니다.</p>
       <div class="sources">
         <a href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener">Anthropic, Introducing Claude Opus 5</a>
       </div>
     </div>
 
     <div class="news-item">
-      <h2>4. Meta, 메일·캘린더·슬라이드까지 다루는 행동형 Meta AI 발표</h2>
+      <h2>5. Meta, 메일·캘린더·슬라이드까지 다루는 행동형 Meta AI 발표</h2>
       <h3>핵심 요약</h3>
-      <p>Meta는 2026년 7월 24일 "Meta AI Doesn’t Just Think, It Acts"를 발표했습니다. Muse Spark 1.1 기반 Meta AI는 이제 계획 수립, 이메일과 캘린더 연결, 슬라이드 생성, 반복 작업 수행까지 처리할 수 있다고 설명했습니다. 예시로는 생일 저녁 식사 일정 조율, 주간 러닝 플랜 생성, 매일 브리핑 제공, 웹 조사 후 시각 자료 생성 등이 제시됐습니다. 핵심 메시지는 대화형 AI에서 한 단계 더 나아가 사용자를 대신해 후속 조치까지 수행하는 개인 실행 비서입니다.</p>
+      <p>Meta는 2026년 7월 24일 "Meta AI Doesn’t Just Think, It Acts"를 공개했습니다. Muse Spark 1.1 기반 Meta AI가 계획 수립, 이메일·캘린더 연동, 슬라이드 작성, 반복 작업 처리까지 수행할 수 있다고 설명했습니다. 공식 예시에는 개인 일정 브리핑, 조사 업무, 무드보드 제작, 주간 계획 생성 같은 실행형 시나리오가 포함됐습니다. 핵심은 대화형 챗봇이 아니라 사용자의 맥락을 받아 실제 후속 조치를 수행하는 개인 비서형 제품 경험입니다.</p>
       <h3>배경·업계 영향</h3>
-      <p>이 움직임은 소비자 AI 제품도 이제 본격적으로 생산성 시장과 겹치기 시작했음을 보여줍니다. 메일, 일정, 웹 탐색, 프레젠테이션 제작이 하나의 에이전트 안으로 들어오면 사용자 락인 효과는 강해지지만 프라이버시와 권한 설계 부담도 함께 커집니다. Meta는 소셜 플랫폼 기업을 넘어 개인 업무 실행 플랫폼으로 역할을 넓히려는 방향을 더 분명히 드러냈습니다.</p>
-      <p class="why">왜 중요한지: 개인 맥락 데이터와 실행 권한을 선점하는 플랫폼이 차세대 소비자 AI 주도권을 잡을 가능성이 큽니다.</p>
+      <p>소비자 AI 시장도 이제 생산성 도구 시장과 직접 겹치기 시작했습니다. 메일과 캘린더, 문서 생성까지 하나의 에이전트 안에 들어오면 사용자 락인 효과가 커지지만, 동시에 권한 관리와 프라이버시 설계 중요성도 더 커집니다. Meta의 방향은 AI 앱 경쟁이 검색형 인터페이스에서 실행형 워크플로 제품 경쟁으로 이동하고 있음을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 개인 데이터를 아는 AI가 실제 작업까지 대신하기 시작하면 소비자 플랫폼 경쟁 구도가 크게 바뀔 수 있습니다.</p>
       <div class="sources">
         <a href="https://about.fb.com/news/2026/07/meta-ai-muse-spark-doesnt-just-think-it-acts/" target="_blank" rel="noopener">Meta, Meta AI Doesn’t Just Think, It Acts</a>
       </div>
     </div>
 
     <div class="news-item">
-      <h2>5. Microsoft, Azure AI·HPC 인프라를 AMD와 함께 확장</h2>
+      <h2>6. GitHub Models, 7월 30일부로 완전 종료</h2>
       <h3>핵심 요약</h3>
-      <p>Microsoft는 2026년 7월 20일 Azure AI 및 HPC 인프라 확장 계획을 공개했습니다. 발표에 따르면 Azure는 AMD의 최신 Helios AI 플랫폼과 차세대 EPYC 프로세서를 기반으로 HDv2, HXv2, ND MI455X v7 계열을 준비하고 있습니다. 이 구성은 각각 AI 데이터 처리, 칩 설계 및 기술 계산, 대규모 추론 워크로드에 맞춰 설계됐습니다. Microsoft는 에이전트형 워크로드와 추론 수요 증가가 단일 인프라 접근으로는 감당하기 어려운 수준까지 올라왔다는 점을 직접 언급했습니다.</p>
+      <p>GitHub는 2026년 7월 30일 changelog를 통해 GitHub Models가 완전히 종료됐다고 발표했습니다. 이에 따라 playground, model catalog, inference API, BYOK 기능이 더 이상 어떤 고객에게도 제공되지 않습니다. GitHub는 대체 경로로 Microsoft Foundry의 모델 카탈로그와 GitHub Copilot 기반 워크플로를 안내했습니다. 이번 종료는 독립형 모델 허브를 접고 더 큰 플랫폼과 통합된 AI 경험에 집중하겠다는 신호로 해석됩니다.</p>
       <h3>배경·업계 영향</h3>
-      <p>모델 경쟁이 뜨거울수록 결국 승부는 이를 얼마나 싸고 안정적으로 서비스하느냐에서 갈립니다. Microsoft의 발표는 추론, 데이터 준비, 반도체 설계처럼 AI 스택을 더 세밀하게 분리해 최적화하는 흐름을 보여줍니다. 인프라 사업자 입장에서는 GPU 숫자만 늘리는 시대에서 벗어나, 작업 유형별 맞춤형 컴퓨팅 조합을 제공하는 것이 핵심 경쟁력이 되고 있습니다.</p>
-      <p class="why">왜 중요한지: 에이전트 시대에는 모델 못지않게 그 뒤를 받치는 추론 인프라 구조가 경쟁력을 결정합니다.</p>
+      <p>개발자용 AI 도구 시장에서는 실험용 모델 카탈로그보다 실제 배포 흐름과 코드 워크플로에 얼마나 자연스럽게 연결되느냐가 중요해지고 있습니다. GitHub Models 종료는 생태계가 별도 모델 마켓보다는 클라우드나 코파일럿형 인터페이스로 수렴할 가능성을 보여줍니다. 개발 조직은 사용 중인 모델 접근 경로와 내부 의존성을 다시 점검할 필요가 있습니다.</p>
+      <p class="why">왜 중요한지: 개발자 AI 스택이 단순 비교·실험 도구에서 실제 배포와 통합된 런타임 중심으로 재편되고 있기 때문입니다.</p>
       <div class="sources">
-        <a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" target="_blank" rel="noopener">Microsoft, expands Azure AI and HPC infrastructure with AMD</a>
+        <a href="https://github.blog/changelog/2026-07-30-github-models-is-now-retired/" target="_blank" rel="noopener">GitHub Changelog, GitHub Models is now retired</a>
       </div>
     </div>
 
