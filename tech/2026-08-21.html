@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-08-21</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-08-21 (금) · 2026-08-20 21:40 UTC / 2026-08-21 06:40 KST 기준, 공식 발표와 릴리즈 노트 중심으로 확인 가능한 핵심만 추려 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>이번 주 기술 업계의 무게중심은 더 큰 모델 경쟁보다 실제 사용자 확장, 에이전트 배포 표준, 운영 통제 계층으로 빠르게 이동하고 있습니다.</li>
+        <li>OpenAI와 Google은 학습·생산성 접점을 넓히는 데 집중했고, GitHub·Microsoft·Cloudflare는 에이전트를 조직 안에서 안전하게 굴리는 기반을 강화했습니다.</li>
+        <li>하반기 경쟁력은 모델 자체 성능보다 도입 속도, 통제 가능성, 플러그인 생태계, 인프라 관측성을 얼마나 자연스럽게 묶느냐에서 갈릴 가능성이 큽니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, `ChatGPT for Teens` 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 8월 18일 `ChatGPT for Teens`를 발표했습니다. 이 경험은 청소년이 AI를 학습 보조 도구로 활용할 때 비판적 사고와 이해 심화를 돕도록 설계됐고, 더 강한 기본 안전 장치와 건강한 사용 유도 기능을 함께 제공합니다. OpenAI 시스템이 사용자를 18세 미만으로 추정하거나 사용자가 13세에서 17세라고 밝히면 자동으로 해당 환경에 배치됩니다. 단순한 연령 구분이 아니라 제품 레벨에서 학습 맥락과 보호자 통제를 묶었다는 점이 핵심입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>생성형 AI가 학교와 가정으로 빠르게 확산되면서 사업자는 성능 외에도 연령별 안전 설계와 보호 장치를 함께 제시해야 하는 국면에 들어섰습니다. 이번 발표는 교육용 AI 경쟁이 모델 능력만이 아니라 신뢰와 사용 습관 설계로 이동하고 있음을 보여줍니다. 다른 대형 AI 서비스도 청소년 전용 계층을 더 명확히 분리할 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 대중화의 다음 단계는 모두에게 같은 경험을 주는 것이 아니라 사용자군별로 안전하게 다르게 설계하는 능력이기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/chatgpt-for-teens/" target="_blank" rel="noopener">OpenAI, Introducing ChatGPT for Teens</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. Google, Gemini 앱 월간 이용자 10억 명 돌파와 연결형 앱 확장 발표</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 2026년 8월 11일 Gemini 앱이 월간 활성 이용자 10억 명을 넘겼다고 밝혔습니다. 공식 설명에 따르면 Gemini는 현재 40개 이상 인기 앱에서 동작을 자동화할 수 있고, iOS에서도 1억 명 이상이 사용 중입니다. 이어 8월 12일에는 Gemini에 더 많은 외부 서비스 연결 기능을 추가해 계획 수립, 생성 작업, 할 일 관리를 한 흐름으로 처리할 수 있게 한다고 발표했습니다. 즉 Gemini는 단순 챗봇에서 대규모 사용자 기반을 가진 연결형 작업 허브로 확장되고 있습니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>대형 AI 제품 경쟁은 이제 모델 성능 비교를 넘어 얼마나 많은 일상 앱과 업무 흐름을 붙잡느냐로 이동하고 있습니다. Google은 대규모 사용자 수치와 연결 기능을 동시에 제시하며 Gemini를 범용 조수이자 운영 인터페이스로 자리매김하려 하고 있습니다. 이는 다른 AI 플랫폼에도 앱 생태계 확보 압력을 더 크게 줄 수 있습니다.</p>
+      <p class="why">왜 중요한지: AI 경쟁의 승부처가 모델 데모보다 실제 사용자 습관과 서비스 연결성으로 옮겨가고 있다는 점을 숫자로 보여주기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/" target="_blank" rel="noopener">Google Blog, More than 1 billion people are using the Gemini app every month</a>
+        <a href="https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-services-gemini-august-2026/" target="_blank" rel="noopener">Google Blog, Now you can connect even more of your favorite apps and services to Gemini</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. GitHub, `Agent Plugins 1.0`을 VS Code·Copilot CLI·Copilot 앱 전반에 적용</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 8월 12일 `Agent Plugins 1.0` 지원을 VS Code, Copilot CLI, GitHub Copilot SDK, Copilot 앱 전반에 일반 제공한다고 발표했습니다. 이 표준은 플러그인을 한 번 패키징하면 여러 호환 에이전트 클라이언트에서 재사용할 수 있게 하는 것이 핵심입니다. GitHub는 해당 규격을 AWS, Anysphere, Microsoft, OpenAI, Vercel과 함께 공개했고, Google도 같은 날 코어 메인테이너로 합류했다고 설명했습니다. 스킬과 MCP 서버를 하나의 설치형 패키지로 묶는 공통 유통 규격이 본격화되는 흐름입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>그동안 에이전트 도구는 비슷한 기능을 클라이언트별로 따로 포장해야 해서 생태계 확장 비용이 컸습니다. 표준 플러그인 형식이 자리잡으면 개발자는 특정 벤더 종속을 줄이고, 플랫폼은 더 빠르게 확장 기능 마켓플레이스를 키울 수 있습니다. 장기적으로 에이전트 경쟁의 중심이 모델 품질에서 배포 표준과 생태계 장악력으로 이동할 가능성을 높입니다.</p>
+      <p class="why">왜 중요한지: 에이전트 시대의 병목이 모델 부족보다 도구 연결 표준 부재였다는 문제를 정면으로 푸는 시도이기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/" target="_blank" rel="noopener">GitHub Changelog, Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. Microsoft, `Azure Cosmos DB in the Agentic Era`로 데이터 계층용 에이전트 도구 체계 제시</h2>
+      <h3>핵심 요약</h3>
+      <p>Microsoft는 2026년 8월 18일 `Azure Cosmos DB in the Agentic Era` 글을 통해 데이터베이스를 에이전트 개발 흐름에 맞게 재구성하는 방향을 제시했습니다. 소개된 구성에는 VS Code용 네이티브 GitHub Copilot 도구, 스키마 기반 자연어 질의 생성, Cosmos DB용 쿼리·베스트프랙티스 스킬, 선택형 MCP 지원, 에뮬레이터 기반 로컬 개발과 CI 테스트, AI 보조 관계형 마이그레이션이 포함됩니다. 핵심 메시지는 에이전트에 무제한 DB 접근을 주는 것이 아니라, 사람이 통제 가능한 범위에서 충분한 맥락과 도구를 제공하는 것입니다. 데이터 계층도 이제 에이전트 친화적 개발 경험으로 재설계되고 있다는 신호입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>AI 코딩 에이전트가 애플리케이션 코드는 잘 다뤄도 데이터 계층에서는 비용, 권한, 스키마 맥락을 놓치기 쉽다는 문제가 꾸준히 있었습니다. Microsoft는 데이터베이스 툴에 스킬과 가시성을 결합해 이 공백을 메우려 하고 있습니다. 이는 개발자 생산성 경쟁이 IDE 내부 모델에서 데이터·인프라 연결성으로 확장되고 있음을 보여줍니다.</p>
+      <p class="why">왜 중요한지: 에이전트 개발의 다음 병목이 코드 생성이 아니라 안전하고 맥락 있는 데이터 접근이라는 점을 분명히 보여주기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-in-the-agentic-era-data-tools-for-developers-and-ai-agents/" target="_blank" rel="noopener">Microsoft DevBlogs, Azure Cosmos DB in the Agentic Era</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Cloudflare, `AI Gateway`를 신원·관측·과금 통합 제어면으로 확장</h2>
+      <h3>핵심 요약</h3>
+      <p>Cloudflare는 2026년 8월 5일부터 Agents Week 발표를 통해 AI 운영 제어 계층을 강화했습니다. 먼저 `Identity-aware AI Gateway`를 오픈 베타로 공개하고 `User Insights`를 일반 제공해, 사람과 에이전트별 행동 기준선을 만들고 이상 사용 패턴을 탐지할 수 있게 했습니다. 이어 8월 7일에는 Workers AI와 AI Gateway를 하나의 제어면으로 통합해 `default` 게이트웨이만 지정해도 요청 로깅, 토큰 추적, 비용 귀속, 통합 청구를 바로 사용할 수 있게 했습니다. AI 인프라를 단순 호출 엔드포인트가 아니라 보안·관측·예산 통제 플랫폼으로 재정의하는 흐름입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트가 늘어날수록 기업의 고민은 모델 품질보다 신원, 비용, 감사 가능성, 장애 대응으로 이동합니다. Cloudflare는 이 문제를 네트워크와 추론 호출 사이의 공통 제어면에서 해결하려 하고 있습니다. 앞으로 AI 플랫폼 경쟁은 모델 제공만이 아니라 운영 관측성과 통제 기본값을 얼마나 잘 제공하느냐가 중요해질 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 에이전트 시대의 핵심 운영 문제인 누가 무엇을 얼마나 쓰는지에 대한 통제를 인프라 기본값으로 끌어내리고 있기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://blog.cloudflare.com/identity-aware-ai-gateway/" target="_blank" rel="noopener">Cloudflare Blog, Catching rogue AI behavior with identity-aware analytics</a>
+        <a href="https://blog.cloudflare.com/workers-ai-gateway-unification/" target="_blank" rel="noopener">Cloudflare Blog, Unifying Workers AI and AI Gateway into a single AI control plane</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
