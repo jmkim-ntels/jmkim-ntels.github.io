@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Tech Briefing | 2026-08-24</title>
+  <style>
+    body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.75; color: #1f2937; max-width: 920px; margin: 0 auto; padding: 36px 20px 60px; background: #f8fafc; }
+    .wrap { background: #fff; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); padding: 36px; }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: #111827; }
+    h2 { font-size: 1.45rem; margin-top: 36px; padding-left: 14px; border-left: 5px solid #2563eb; color: #0f172a; }
+    h3 { margin: 18px 0 8px; font-size: 1rem; color: #1d4ed8; }
+    p { margin: 8px 0; }
+    ul { margin: 10px 0 0 20px; }
+    .meta { color: #6b7280; margin-bottom: 20px; }
+    .summary { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 18px 20px; margin: 24px 0 32px; }
+    .news-item { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid #e5e7eb; }
+    .why { background: #fff7ed; border-left: 4px solid #f97316; padding: 10px 12px; border-radius: 6px; font-weight: 600; }
+    .sources a { display: block; color: #2563eb; text-decoration: none; margin: 4px 0; }
+    .sources a:hover { text-decoration: underline; }
+    footer { margin-top: 36px; color: #6b7280; font-size: 0.95rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily Tech Briefing</h1>
+    <p class="meta">날짜: 2026-08-24 (월) · 서울 기준 2026-08-24 06:40 KST / 참고 시각 2026-08-23 21:40 UTC 기준, 공식 블로그와 릴리즈 노트 중심으로 확인 가능한 핵심만 정리한 데일리 테크 브리핑</p>
+
+    <div class="summary">
+      <strong>오늘의 핵심 포인트</strong>
+      <ul>
+        <li>이번 주 테크 흐름은 "더 강한 모델" 자체보다 프라이버시, 보안 통제, 운영 관측성을 어떻게 제품에 녹이느냐에 집중되고 있습니다.</li>
+        <li>개발자 플랫폼 경쟁도 코드 제안에서 끝나지 않고, 팀 대화와 저장소 워크플로 전체를 에이전트가 이어받는 방향으로 빨라지고 있습니다.</li>
+        <li>동시에 주요 AI 플랫폼은 성능뿐 아니라 가격, 배포 단순화, 거버넌스까지 함께 제시하며 실전 도입 장벽을 낮추고 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="news-item">
+      <h2>1. OpenAI, 프런티어 모델용 Zero Data Retention과 Private Safety Processing 공개</h2>
+      <h3>핵심 요약</h3>
+      <p>OpenAI는 2026년 8월 19일 프런티어 모델 고객을 대상으로 `Zero Data Retention` 제공 계획을 발표했습니다. 회사 설명에 따르면 요청이 처리된 뒤 프롬프트와 응답을 보관하지 않으며, 고객이 명시적으로 동의하지 않는 한 엔터프라이즈 데이터는 학습에 사용되지 않습니다. 동시에 `Private Safety Processing`을 예고하며, 여러 상호작용에 걸친 위험 패턴을 자동 탐지하되 OpenAI 인력이 원문 콘텐츠를 볼 수 없도록 설계했다고 밝혔습니다. 프라이버시와 안전성을 동시에 맞추려는 아키텍처적 접근이 핵심입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>규제 산업과 대기업은 모델 성능 못지않게 데이터가 어디에 남고 누가 접근할 수 있는지를 중요하게 봅니다. 이번 발표는 "강한 안전성은 데이터 보관을 전제로 해야 한다"는 인식을 약화시키는 시도입니다. 경쟁사들도 비슷한 수준의 프라이버시 보장과 감사 가능한 안전 설계를 더 분명히 제시해야 할 압박을 받을 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: 기업 AI 도입의 가장 큰 장벽인 데이터 보관 우려를 정책이 아니라 시스템 설계 수준에서 낮추려는 흐름이기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://openai.com/index/offering-zero-data-retention-for-frontier-models/" target="_blank" rel="noopener">OpenAI, Offering Zero Data Retention for frontier models</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>2. AWS, DynamoDB 실시간 벡터 검색을 정식 출시</h2>
+      <h3>핵심 요약</h3>
+      <p>AWS는 2026년 8월 5일 DynamoDB가 실시간 벡터 검색을 기본 지원한다고 발표했습니다. AWS는 운영 데이터와 벡터 임베딩을 같은 데이터베이스 안에 두고, 단일 자릿수 밀리초 지연시간과 99% 이상 재현율로 유사도 검색을 수행할 수 있다고 설명했습니다. 최대 수조 개 벡터 규모까지 확장 가능하다는 점, 그리고 별도 인프라 관리가 필요 없다는 점도 함께 강조했습니다. RAG와 추천 시스템 구축의 운영 복잡도를 낮추는 업데이트입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>그동안 많은 팀이 운영 DB와 벡터 DB를 따로 굴리며 데이터 복제와 동기화 부담을 감수해 왔습니다. 이번 출시는 벡터 검색이 전문 스택이 아니라 기본 데이터 계층으로 내려오는 신호에 가깝습니다. 기존 DynamoDB 사용자에게는 생성형 AI 기능을 붙이는 진입 장벽을 꽤 낮춰줄 수 있습니다.</p>
+      <p class="why">왜 중요한지: 생성형 AI 기능이 실험용 별도 스택이 아니라 기존 운영 데이터베이스 위에 바로 얹히는 단계로 넘어가고 있기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale/" target="_blank" rel="noopener">AWS News Blog, Amazon DynamoDB now supports real-time vector search at any scale</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>3. Cloudflare, 신원 기반 AI Gateway 분석 기능을 오픈 베타로 확대</h2>
+      <h3>핵심 요약</h3>
+      <p>Cloudflare는 2026년 8월 5일 `Identity-aware AI Gateway`를 오픈 베타로, `User Insights`를 일반 제공한다고 발표했습니다. AI Gateway 요청에 인증된 사용자 ID를 붙여 누가 어떤 모델을 얼마나 쓰는지 추적하고, 비정상 사용량 급증이나 에이전트의 이상행동을 더 쉽게 찾아내도록 만든 기능입니다. 회사는 이를 통해 공유 API 키 환경에서도 사용자별 예산 한도, 접근 통제, 비용 추적이 쉬워진다고 설명했습니다. AI 사용량을 네트워크 게이트웨이 계층에서 보안과 비용 관점으로 함께 관리하려는 접근입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트가 많아질수록 문제는 모델 자체보다 "누가 무엇을 얼마나 호출하는가"로 옮겨갑니다. Cloudflare의 발표는 AI 관측성과 비용 거버넌스가 플랫폼의 부가 기능이 아니라 핵심 운영 기능으로 자리 잡고 있음을 보여줍니다. 기업 입장에서는 AI 운영이 보안, 비용, 신원 관리 문제와 사실상 하나로 묶이고 있다는 신호입니다.</p>
+      <p class="why">왜 중요한지: 에이전트 시대에는 성능만큼이나 신원, 예산, 이상행동 관측이 제품 운영의 핵심이 되기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://blog.cloudflare.com/identity-aware-ai-gateway/" target="_blank" rel="noopener">Cloudflare Blog, Catching rogue AI behavior with identity-aware analytics</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>4. GitHub Copilot, Slack·Microsoft Teams 안에서 공유형 에이전트 세션 지원</h2>
+      <h3>핵심 요약</h3>
+      <p>GitHub는 2026년 8월 21일 Slack과 Microsoft Teams에서 `@GitHub`를 호출해 GitHub Copilot 클라우드 에이전트 세션을 시작할 수 있는 새 경험을 공개했습니다. 공식 설명에 따르면 팀 대화가 오가는 채널과 스레드 안에서 문제 조사, 작업 계획, 코드 변경, PR 생성까지 이어질 수 있습니다. 참가자는 같은 대화 맥락 안에서 질문을 추가하고 방향을 조정할 수 있으며, 실제 변경은 권한과 승인 흐름을 거치게 됩니다. 협업툴 자체가 에이전트 작업 콘솔로 바뀌는 흐름입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>지금까지 AI 코딩 도구는 개인 IDE에서 쓰이는 경우가 많았지만, 실제 업무의 출발점은 메신저와 회의입니다. GitHub는 그 시작점에 에이전트를 붙여 논의, 실행, 검토를 한 흐름으로 묶으려 하고 있습니다. 이 패턴이 자리 잡으면 개발툴과 협업툴의 경계가 더 약해지고 팀 단위 에이전트 운영이 빠르게 늘어날 가능성이 큽니다.</p>
+      <p class="why">왜 중요한지: AI 코딩 보조가 개인 생산성 도구를 넘어 팀 대화와 의사결정 흐름 안으로 직접 들어오기 시작했기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/" target="_blank" rel="noopener">GitHub Changelog, The new GitHub Copilot experience in Slack</a>
+        <a href="https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/" target="_blank" rel="noopener">GitHub Changelog, Shared agentic work with GitHub Copilot in Microsoft Teams</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <h2>5. Google, Gemini 3.7 Flash로 코딩·에이전트용 주력 모델 경쟁 강화</h2>
+      <h3>핵심 요약</h3>
+      <p>Google은 2026년 8월 13일 `Gemini 3.7 Flash`를 공개하며 코딩과 에이전트 워크로드용 "가장 지능적인 workhorse 모델"이라고 소개했습니다. 공식 글에 따르면 3.6 Flash 대비 소프트웨어 엔지니어링, 웹 개발, 장기 작업 흐름에서 성능이 개선됐고, 더 나은 도구 사용과 지시 이행을 제공한다고 설명했습니다. 동시에 1M 입력 토큰당 0.75달러, 출력 토큰당 3.75달러의 도입가를 제시해 가격 경쟁력도 전면에 내세웠습니다. 성능 향상과 비용 절감을 함께 묶은 실전형 공세입니다.</p>
+      <h3>배경·업계 영향</h3>
+      <p>에이전트 워크로드는 호출 횟수와 작업 길이가 길어 성능뿐 아니라 토큰 단가와 재시도 비용이 실제 체감에 큰 영향을 줍니다. 이번 발표는 개발자용 AI 시장의 핵심 경쟁 축이 "최고 성능" 단일 지표에서 "가격 대비 성능과 운영 효율"로 이동하고 있음을 보여줍니다. 다른 플랫폼들도 유사한 가격 재조정이나 실사용성 강조에 더 적극적으로 나설 가능성이 있습니다.</p>
+      <p class="why">왜 중요한지: 개발자용 AI 시장에서 성능뿐 아니라 가격과 운영 효율까지 함께 압박하는 경쟁이 본격화되고 있기 때문입니다.</p>
+      <div class="sources">
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/" target="_blank" rel="noopener">Google Blog, Introducing Gemini 3.7 Flash</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Daily Tech Briefing Archive</p>
+    </footer>
+  </div>
+</body>
+</html>
